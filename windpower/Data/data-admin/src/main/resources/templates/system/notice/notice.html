@@ -11,13 +11,13 @@
 					<div class="select-list">
 						<ul>
 							<li>
-								公告标题：<input type="text" name="noticeTitle"/>
+								工程名称：<input type="text" name="noticeTitle"/>
 							</li>
 							<li>
 								操作人员：<input type="text" name="createBy"/>
 							</li>
 							<li>
-								公告类型：<select name="noticeType" th:with="type=${@dict.getType('sys_notice_type')}">
+								项目类型：<select name="noticeType" th:with="type=${@dict.getType('sys_notice_type')}">
 									<option value="">所有</option>
 									<option th:each="dict : ${type}" th:text="${dict.dictLabel}" th:value="${dict.dictValue}"></option>
 								</select>
@@ -62,7 +62,7 @@
                 createUrl: prefix + "/add",
                 updateUrl: prefix + "/edit/{id}",
                 removeUrl: prefix + "/remove",
-                modalName: "公告",
+                modalName: "工程",
                 columns: [{
 		            checkbox: true
 		        },
@@ -72,11 +72,11 @@
 				},
 				{
 					field : 'noticeTitle', 
-					title : '公告标题' 
+					title : '工程名称' 
 				},
 				{
 		            field: 'noticeType',
-		            title: '公告类型',
+		            title: '项目类型',
 		            align: 'center',
 		            formatter: function(value, row, index) {
 		            	return $.table.selectDictLabel(types, value);
