@@ -11,13 +11,13 @@
 					<div class="select-list">
 						<ul>
 							<li>
-								岗位编码：<input type="text" name="postCode"/>
+								监测方案编码：<input type="text" name="postCode"/>
 							</li>
 							<li>
-								岗位名称：<input type="text" name="postName"/>
+								监测方案：<input type="text" name="postName"/>
 							</li>
 							<li>
-								岗位状态：<select name="status" th:with="type=${@dict.getType('sys_normal_disable')}">
+								方案状态：<select name="status" th:with="type=${@dict.getType('sys_normal_disable')}">
 									<option value="">所有</option>
 									<option th:each="dict : ${type}" th:text="${dict.dictLabel}" th:value="${dict.dictValue}"></option>
 								</select>
@@ -70,18 +70,18 @@
 		        columns: [{
 		            checkbox: true
 		        },
-		        {
+		        /* {
 		            field: 'postId',
-		            title: '岗位编号'
-		        },
+		            title: '方案编号'
+		        }, */
 		        {
 		            field: 'postCode',
-		            title: '岗位编码',
+		            title: '监测方案编码',
 		            sortable: true
 		        },
 		        {
 		            field: 'postName',
-		            title: '岗位名称',
+		            title: '监测方案',
 		            sortable: true
 		        },
 		        {

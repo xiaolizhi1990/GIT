@@ -69,7 +69,7 @@ public interface SysPostMapper
     /**
      * 校验岗位名称
      * 
-     * @param postName 岗位名称
+     * @param postName 监测方案
      * @return 结果
      */
     public SysPost checkPostNameUnique(String postName);
@@ -77,7 +77,7 @@ public interface SysPostMapper
     /**
      * 校验岗位编码
      * 
-     * @param postCode 岗位编码
+     * @param postCode 监测方案编码
      * @return 结果
      */
     public SysPost checkPostCodeUnique(String postCode);

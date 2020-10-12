@@ -37,7 +37,7 @@ import TrendDB.TagConfig;
 @RequestMapping("/windpower/fanlist")
 public class FanListController extends BaseController{
 	/**
-	 * 风机列表
+	 * 设备列表
 	 * 
 	 * @author xzp
 	 */

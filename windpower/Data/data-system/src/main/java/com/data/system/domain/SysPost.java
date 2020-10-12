@@ -21,12 +21,12 @@ public class SysPost extends BaseEntity
     @Excel(name = "岗位序号", cellType = ColumnType.NUMERIC)
     private Long postId;
 
-    /** 岗位编码 */
-    @Excel(name = "岗位编码")
+    /** 监测方案编码 */
+    @Excel(name = "监测方案编码")
     private String postCode;
 
-    /** 岗位名称 */
-    @Excel(name = "岗位名称")
+    /** 监测方案 */
+    @Excel(name = "监测方案")
     private String postName;
 
     /** 岗位排序 */
