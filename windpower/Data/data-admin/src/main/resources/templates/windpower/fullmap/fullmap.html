@@ -30,7 +30,7 @@
         <div id="allmap"></div>
 		<script type="text/javascript">
 		var map = new BMap.Map("allmap",{mapType:BMAP_HYBRID_MAP});
-		var point = new BMap.Point(87.69, 43.66);
+		var point = new BMap.Point(114.4, 30.4);//中心点坐标
 		map.centerAndZoom(point, 10);
 		
 		// 为地图添加控件
@@ -60,7 +60,7 @@
 						var statusStr = "";
 						var colorStr = "black";
 						if(data[i].status == 1 || data[i].status == 0){
-							imgStr = "/img/fanMapItem.gif";
+							imgStr = "/img/fanMap.png";
 							if(data[i].status == 1){
 								statusStr = "启用中<i class='fa fa-lightbulb-o' style='color:#30b60e;'></i><a href='faninfo?fanId="+data[i].fanCode+"'>查看详情</a>";
 								colorStr = "green";
@@ -80,7 +80,7 @@
 						var marker = new BMap.Marker(pt,{icon:myIcon});
 						// 将标注添加到地图中
 						map.addOverlay(marker);
-						var label = new BMap.Label("[风机:"+data[i].fanCode+":"+statusStr+"]",{offset:new BMap.Size(20,-10)});
+						var label = new BMap.Label("[设备:"+data[i].fanCode+":"+statusStr+"]",{offset:new BMap.Size(20,-10)});
 						label.setStyle({
 							 color : colorStr,
 							 fontSize : "10px",

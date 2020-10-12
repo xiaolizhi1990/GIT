@@ -12,7 +12,7 @@
 	
 }
 .leftinfo{
-		background:url("/img/fan.gif")no-repeat;  
+		background:url("/img/fan2.gif")no-repeat;  
     	width:100%;height:227px;  
     	background-size:100%100%;  
     	background-position:center center;
@@ -46,7 +46,7 @@ tbody>tr:hover {
             	
             		<div class="row ">
                     	<div class="pull-left leftinfo">
-                    		大型风力发电机
+                    		<!-- 大型风力发电机 -->
                     	</div>
                     </div>
                     <div class="row ">
@@ -450,7 +450,7 @@ if(typeof(WebSocket) == "undefined") {
 	// 状态0关闭1开启2异常
 	if(fanStatus == 0){
 		// 0关闭
-		$(".leftinfo").css("background","url('/img/fan_stop.png')no-repeat");
+		$(".leftinfo").css("background","url('/img/fan_stoped.png')no-repeat");
 		$(".leftinfo").css("width","100%");
 		$(".leftinfo").css("height","227px");
 		$(".leftinfo").css("background-size","100%100%");
@@ -458,7 +458,7 @@ if(typeof(WebSocket) == "undefined") {
 		$("#status-text").text("关闭");
 	}else if(fanStatus == 2){
 		// 2异常
-		$(".leftinfo").css("background","url('/img/fan_fail.png')no-repeat");
+		$(".leftinfo").css("background","url('/img/fan_failed.png')no-repeat");
 		$(".leftinfo").css("width","100%");
 		$(".leftinfo").css("height","227px");
 		$(".leftinfo").css("background-size","100%100%");

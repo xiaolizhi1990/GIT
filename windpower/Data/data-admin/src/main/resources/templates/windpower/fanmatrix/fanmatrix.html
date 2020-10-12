@@ -142,20 +142,20 @@ tbody>tr td {
            		$("#div1").append("<div class='row'>");
            	}
             var row = data.rows[i];
-            var img = '/img/fan_fail.png';
+            var img = '/img/fan_failed.png';
             var color = '#f00;'
             var status = '故障';
             
             if(row.status==1){
-            	img = '/img/fan.gif';
+            	img = '/img/fan2.gif';
             	color = '#30b60e;';
             	status = '运行中';
             }else if(row.status==0){
-            	img = '/img/fan_stop.png';
+            	img = '/img/fan_stoped.png';
             	color = '#444444;';
             	status = '停止';
             }else{
-            	img = '/img/fan_fail.png';
+            	img = '/img/fan_failed.png';
             	color = '#f00;';
             	status = '故障';
             }
