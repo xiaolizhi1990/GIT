@@ -20,7 +20,7 @@ public class BizPowerPlant extends BaseEntity
     /** 风机总数 */
     private Long total;
 
-    /** 总装机容量 */
+    /** 工作中设备数 */
     private String capacity;
 
     public void setId(Long id) 

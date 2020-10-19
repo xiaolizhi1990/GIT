@@ -5,10 +5,10 @@ import java.math.BigDecimal;
 
 // 运行时数据Vo对象
 public class RunDataVo implements Serializable{
-	private int fanCount;// 风机总台数
-	private BigDecimal generatingHours;// 发电小时数
+	private int fanCount;// 设备总台数
+	private BigDecimal generatingHours;// 暂停设备数
 	private BigDecimal generatingTotal;// 累计发电量
-	private int capacityTotal; // 总装机容量
+	private int capacityTotal; // 工作中设备数
 	private BigDecimal generatingCapacityYear;// 年发电量
 	private BigDecimal generatingCapacityMonth;// 月发电量
 	private BigDecimal generatingCapacityDay;// 日发电量

@@ -2,7 +2,7 @@ package com.data.biz.vo;
 
 // websocket往前端响应的风机实体类
 public class FanSocketVo {
-	private Integer fanCode;// 风机编号
+	private Integer fanCode;// 设备编号
 	private Double instantaneousPower;// 瞬时功率
 	private Double rotateSpeed;// 风轮转速
 	

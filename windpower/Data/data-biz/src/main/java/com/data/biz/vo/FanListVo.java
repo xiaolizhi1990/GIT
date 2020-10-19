@@ -8,7 +8,7 @@ public class FanListVo {
 	/** 序号 */
 	private Long id;
 
-	/** 风机编号 */
+	/** 设备编号 */
 	private String fanCode;
 
 	/** 功率 */

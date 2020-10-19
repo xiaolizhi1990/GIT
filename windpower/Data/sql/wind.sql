@@ -269,7 +269,7 @@ INSERT INTO `biz_cabin` VALUES (106, 17, 6.00, 64.30, 50.00, 57.00, 61.00, 61.00
 DROP TABLE IF EXISTS `biz_fan`;
 CREATE TABLE `biz_fan`  (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '序号',
-  `fan_code` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '风机编号',
+  `fan_code` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '设备编号',
   `brand` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '风机品牌',
   `power` decimal(10, 4) NULL DEFAULT NULL COMMENT '功率',
   `real_power` decimal(10, 4) NULL DEFAULT NULL COMMENT '实际功率',
@@ -637,7 +637,7 @@ CREATE TABLE `biz_power_plant`  (
   `id` bigint(20) NOT NULL COMMENT '序号',
   `plant_code` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '电厂编号',
   `total` int(11) NULL DEFAULT NULL COMMENT '风机总数',
-  `capacity` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '总装机容量',
+  `capacity` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '工作中设备数',
   `create_time` datetime(0) NULL DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
@@ -873,7 +873,7 @@ INSERT INTO `gen_table_column` VALUES (134, '11', 'instantaneous_power', '瞬时
 INSERT INTO `gen_table_column` VALUES (135, '11', 'status', '状态0无效1有效', 'tinyint(1)', 'Integer', 'status', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'radio', '', 14, 'admin', '2019-12-09 16:05:42', '', NULL);
 INSERT INTO `gen_table_column` VALUES (136, '11', 'create_time', '创建时间', 'datetime', 'Date', 'createTime', '0', '0', NULL, '1', NULL, NULL, NULL, 'EQ', 'datetime', '', 15, 'admin', '2019-12-09 16:05:42', '', NULL);
 INSERT INTO `gen_table_column` VALUES (137, '12', 'id', '序号', 'bigint(20)', 'Long', 'id', '1', '0', NULL, '1', NULL, NULL, NULL, 'EQ', 'input', '', 1, 'admin', '2019-12-09 16:05:43', '', NULL);
-INSERT INTO `gen_table_column` VALUES (138, '12', 'fan_code', '风机编号', 'varchar(255)', 'String', 'fanCode', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 2, 'admin', '2019-12-09 16:05:43', '', NULL);
+INSERT INTO `gen_table_column` VALUES (138, '12', 'fan_code', '设备编号', 'varchar(255)', 'String', 'fanCode', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 2, 'admin', '2019-12-09 16:05:43', '', NULL);
 INSERT INTO `gen_table_column` VALUES (139, '12', 'brand', '风机品牌', 'varchar(255)', 'String', 'brand', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 3, 'admin', '2019-12-09 16:05:43', '', NULL);
 INSERT INTO `gen_table_column` VALUES (140, '12', 'power', '功率', 'decimal(10,4)', 'Double', 'power', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 4, 'admin', '2019-12-09 16:05:43', '', NULL);
 INSERT INTO `gen_table_column` VALUES (141, '12', 'real_power', '实际功率', 'decimal(10,4)', 'Double', 'realPower', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 5, 'admin', '2019-12-09 16:05:44', '', NULL);
@@ -936,7 +936,7 @@ INSERT INTO `gen_table_column` VALUES (197, '17', 'create_time', '创建时间',
 INSERT INTO `gen_table_column` VALUES (198, '18', 'id', '序号', 'bigint(20)', 'Long', 'id', '1', '0', NULL, '1', NULL, NULL, NULL, 'EQ', 'input', '', 1, 'admin', '2019-12-09 16:06:01', '', NULL);
 INSERT INTO `gen_table_column` VALUES (199, '18', 'plant_code', '电厂编号', 'varchar(255)', 'String', 'plantCode', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 2, 'admin', '2019-12-09 16:06:01', '', NULL);
 INSERT INTO `gen_table_column` VALUES (200, '18', 'total', '风机总数', 'int(11)', 'Long', 'total', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 3, 'admin', '2019-12-09 16:06:01', '', NULL);
-INSERT INTO `gen_table_column` VALUES (201, '18', 'capacity', '总装机容量', 'varchar(255)', 'String', 'capacity', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 4, 'admin', '2019-12-09 16:06:01', '', NULL);
+INSERT INTO `gen_table_column` VALUES (201, '18', 'capacity', '工作中设备数', 'varchar(255)', 'String', 'capacity', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 4, 'admin', '2019-12-09 16:06:01', '', NULL);
 INSERT INTO `gen_table_column` VALUES (202, '18', 'create_time', '创建时间', 'datetime', 'Date', 'createTime', '0', '0', NULL, '1', NULL, NULL, NULL, 'EQ', 'datetime', '', 5, 'admin', '2019-12-09 16:06:02', '', NULL);
 INSERT INTO `gen_table_column` VALUES (223, '20', 'id', '序号', 'int(11)', 'Long', 'id', '1', '1', NULL, '1', NULL, NULL, NULL, 'EQ', 'input', '', 1, 'admin', '2019-12-19 16:31:51', '', NULL);
 INSERT INTO `gen_table_column` VALUES (224, '20', 'east_time', '东风频率', 'double(4,2)', 'Double', 'eastTime', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 2, 'admin', '2019-12-19 16:31:51', '', NULL);

@@ -2089,7 +2089,7 @@ LABL 0 新宋体,8,N</a:FontList>
 <c:Tables>
 <o:Table Id="o29">
 <a:ObjectID>3E1C0F1F-5871-4A7B-929F-02041E3D0A29</a:ObjectID>
-<a:Name>风机</a:Name>
+<a:Name>设备</a:Name>
 <a:Code>biz_fan</a:Code>
 <a:CreationDate>1575526738</a:CreationDate>
 <a:Creator>wangze</a:Creator>
@@ -2111,13 +2111,13 @@ LABL 0 新宋体,8,N</a:FontList>
 </o:Column>
 <o:Column Id="o44">
 <a:ObjectID>40BE75D0-9A71-434A-AB18-68F17481FC50</a:ObjectID>
-<a:Name>风机编号</a:Name>
+<a:Name>设备编号</a:Name>
 <a:Code>fan_code</a:Code>
 <a:CreationDate>1575526745</a:CreationDate>
 <a:Creator>wangze</a:Creator>
 <a:ModificationDate>1575530122</a:ModificationDate>
 <a:Modifier>wangze</a:Modifier>
-<a:Comment>风机编号</a:Comment>
+<a:Comment>设备编号</a:Comment>
 <a:DataType>varchar(255)</a:DataType>
 <a:Length>255</a:Length>
 </o:Column>
@@ -2371,13 +2371,13 @@ LABL 0 新宋体,8,N</a:FontList>
 </o:Column>
 <o:Column Id="o63">
 <a:ObjectID>D44C6D80-0202-4A67-8922-CAFDD7172301</a:ObjectID>
-<a:Name>总装机容量</a:Name>
+<a:Name>工作中设备数</a:Name>
 <a:Code>capacity</a:Code>
 <a:CreationDate>1575527507</a:CreationDate>
 <a:Creator>wangze</a:Creator>
 <a:ModificationDate>1575529953</a:ModificationDate>
 <a:Modifier>wangze</a:Modifier>
-<a:Comment>总装机容量</a:Comment>
+<a:Comment>工作中设备数</a:Comment>
 <a:DataType>varchar(255)</a:DataType>
 <a:Length>255</a:Length>
 </o:Column>

@@ -17,7 +17,7 @@ public class BizFan extends BaseEntity
 	/** 序号 */
 	private Long id;
 
-	/** 风机编号 */
+	/** 设备编号 */
 	private String fanCode;
 
 	/** 风机品牌 */

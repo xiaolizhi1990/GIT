@@ -8,7 +8,7 @@ public class WindAlertSelectVo {
 	private long id;
 	/** 统计时间 */
 	private Date create_time;
-	/** 风机编号 */
+	/** 设备编号 */
 	private long fanId;
 	/** 叶片故障(次数) */
 	private int vaneCount;

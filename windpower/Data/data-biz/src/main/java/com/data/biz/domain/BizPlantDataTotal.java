@@ -8,19 +8,19 @@ import java.math.BigDecimal;
  */
 public class BizPlantDataTotal {
 	/**
-	 * 风机总数
+	 * 设备总台数
 	 */
 	private Integer fanNum;
 	/**
-	 * 装机总容量
+	 * 工作中设备数
 	 */
 	private BigDecimal capacity;
 	/**
-	 * 发电总量
+	 * 故障设备数
 	 */
 	private BigDecimal powerGenerationNum;
 	/**
-	 * 发电总小时数
+	 * 暂停设备数
 	 */
 	private Integer hours;
 	public Integer getFanNum() {
