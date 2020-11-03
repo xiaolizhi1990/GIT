@@ -50,7 +50,7 @@
                 <a class="btn btn-warning" onclick="$.table.exportExcel()" shiro:hasPermission="system:datatotal:export">
                     <i class="fa fa-download"></i> 导出
                  </a>
-                      单位:(次数)
+                      <!-- 单位:(次数) -->
             </div>
             <div class="col-sm-12 select-table table-striped">
                 <table id="bootstrap-table" data-mobile-responsive="true"></table>
@@ -79,6 +79,22 @@
                     title : '序号'
                 },
                 {
+                    field : 'eastNum', 
+                    title : '设备名称'
+                },
+                {
+                    field : 'eastSpeed', 
+                    title : '温度',
+                },
+                {
+                    field : 'westNum', 
+                    title : 'X轴'
+                },
+                {
+                    field : 'westSpeed', 
+                    title : 'Y轴',
+                },
+                /*{
                     field : 'eastNum', 
                     title : '东风'
                 },
@@ -136,7 +152,7 @@
                     field : 'southeastNum', 
                     title : '东南风'
                 },
-                {
+                 {
                     field : 'southeastSpeed', 
                     title : '东南风均速',
                     visible: false
@@ -231,7 +247,7 @@
                     field : 'status', 
                     title : '状态 0无效 1有效',
                     visible: false
-                },
+                }, */
                 {
                     field : 'createTime', 
                     title : '统计时间'

@@ -90,25 +90,25 @@
 				},
 				{
 					field : 'brand', 
-					title : '风机品牌'
+					title : '设备名称'
 				},
-				{
+				/* {
 					field : 'power', 
 					title : '风机功率(KW)',
 					formatter:function(value,row,index){
 						return value;
 					}
-				},
+				}, */
 				{
 					field : 'type', 
 					title : '报警类型',
 					formatter:function(value,row,index){
 						if(value==1){
-							return "叶片故障";
+							return "X轴数据异常";
 						}else if(value==2){
-							return "转向故障";
+							return "Y轴数据异常";
 						}else if(value==3){
-							return "发电机故障";
+							return "温度数据异常";
 						}else if(value==4){
 							return "其他故障";
 						}
