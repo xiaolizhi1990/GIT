@@ -1,105 +1,127 @@
 <!DOCTYPE html>
-<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="/css/editor.css"/>
-		<script src="/js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="https://code.highcharts.com.cn/highcharts/highcharts.js"></script>
-        <script src="https://code.highcharts.com.cn/highcharts/modules/exporting.js"></script>
-        <script src="https://code.highcharts.com.cn/highcharts/modules/series-label.js"></script>
-        <script src="https://code.highcharts.com.cn/highcharts/modules/oldie.js"></script>
-        <script src="https://code.highcharts.com.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
-        <script src="https://code.highcharts.com.cn/highcharts/themes/grid-light.js"></script>
-		<th:block th:include="include :: header('卡片列表')" />
-		<style type="text/css">
-		.row h1 {
-			font-size: 20px;
-		}
-		
-		.col-sm-2 {
-			padding: 2px;
-			margin-top: 2px;
-		}
-		
-		.ibox {
-			margin: 0 0 1px;
-		}
-		</style>
-</head>
-<body  class="gray-bg">
-<!-- <div class="container-fluid">
-	<div class="row-fluid">
-		<div class="span4">
-			<div class="row-fluid">
-				<div class="span12">
-					<div class="media">
-						<div class="media-body">
-							 <div id="PowerGR" style="width: 100%;height:600px;"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/xadmin.css">
+    <link rel="stylesheet" href="/css/jquery.contextMenu.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/layui/css/layui.css">
+    <script src="/lib/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/lib/jquery.min.js"></script>
+	<th:block th:include="include :: header('卡片列表')" />
+	<style type="text/css">
+	.row h1 {
+		font-size: 20px;
+	}
+	
+	.col-sm-2 {
+		padding: 2px;
+		margin-top: 2px;
+	}
+	
+	.ibox {
+		margin: 0 0 1px;
+	}
+	</style>
+    <script type="text/javascript" src="/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/xadmin.js"></script>
+    <script type="text/javascript" src="/js/showtime.js"></script>
+    <script type="text/javascript" src="/js/jquery.contextMenu.min.js"></script>
+    
+  </head>
+  
+  <body>
+    <div class="x-body">
+     <!--  <div class="layui-row">
+     
+      </div> -->
 
-<div class="container-fluid">
-	<div class="row-fluid">
-		<div class="span4">
-			<div class="row-fluid">
-				<div class="span12">
-					<div class="media">
-						<div class="media-body">
-							 <div id="PowerGR1" style="width: 100%;height:815px;"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+      <table class="layui-table">
+        <thead>
+          <tr>
+            <th>测试点号</th>
+            <th>设备ID</th>
+            <th>X轴数据</th>
+            <th>Y轴数据</th>
+            <th>温度</th>
+            <th>采集仪电压</th>
+            <th>记录时间</th>
+          </tr>
+        </thead>
+        <tbody class="trhtml">
+           
+        </tbody>
+      </table>
+     <!--  <fieldset>
+        <div class="charts-box">
+          <div id="chart1" style="height:500px"></div>
+          <div id="chart2" style="height: 500px"></div>     
+        </div>
+      </fieldset> -->
+    </div>
+   
+    <script>
+      layui.use('laydate', function(){
+        var laydate = layui.laydate;
+        
+        //执行一个laydate实例
+        laydate.render({
+          elem: '#start' //指定元素
+        });
 
-<script>
-var chart = Highcharts.chart('PowerGR1', {
-    chart: {
-        type: 'line'
-    },
-    title: {
-        text: '温度(°C)'
-    },
-   /*  subtitle: {
-        text: '数据来源: WorldClimate.com'
-    }, */
-    xAxis: {
-        categories: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00']
-    },
-    yAxis: {
-        title: {
-            text: '气温 (°C)'
-        }
-    },
-    plotOptions: {
-        line: {
-            dataLabels: {
-                // 开启数据标签
-                enabled: true          
-            },
-            // 关闭鼠标跟踪，对应的提示框、点击事件会失效
-            enableMouseTracking: true
-        }
-    },
-    series: [{
-        name: '设备一',
-        data: [27.0, 26.9, 29.5, 24.5, 28.4, 21.5, 25.2, 26.5, 23.3, 28.3, 23.9, 29.6,25.0, 26.9, 29.5, 24.5, 28.4, 27.5, 29.2, 26.5, 23.3, 28.3, 23.9, 29.6]
-    }, {
-        name: '设备二',
-        data: [23.9, 24.2, 25.7, 28.5, 21.9, 25.2, 27.0, 26.6, 24.2, 20.3, 26.6, 24.8,23.9, 24.2, 25.7, 28.5, 21.9, 25.2, 27.0, 26.6, 24.2, 20.3, 26.6, 24.8]
-    }]
-});
+        //执行一个laydate实例
+        laydate.render({
+          elem: '#end' //指定元素
+        });
+      });
 
-</script>
-		
-</body>
+     
+      /*设备1的表格数据*/
+     function showData() {
+        $.ajax({
+          type: 'post',
+          async : true,//是否异步请求
+          url: 'http://114.55.243.223/openapi/singlewirelesspowsaving/devicedata',
+          contentType: "application/json;charset=utf-8",
+          data: JSON.stringify({"device_id":"323869557729001474","page_num":1,"page_size":18}),
+          dataType: 'json',
+          success: function (result) {
+            var data = result.data; //要导出的json数据
+//          	collector_temperature: 20.968262
+//				collector_voltage: 6.756342
+//				create_time: "2020-11-05 09:19:08"
+//				sensor1_temperature: 20.968262
+//				x_angle: -244.82034
+//				y_angle: -59.521046
+            //data = data.reverse();        /* data.reverse(); */
+            var s = "";
+            for (var i = 0; i < data.list.length; i++) {
+              s+= "<tr>"+      
+            	  "<td>"+"1#设备"+"</td>"            /*测试点号*/
+                        +"<td>"+"323869557729001474"+"</td>"        /*设备ID*/
+                        +"<td>"+data.list[i].x_angle+"</td>"       /*X轴数据*/
+                        +"<td>"+data.list[i].y_angle+"</td>"       /*Y轴数据*/
+                        +"<td>"+data.list[i].collector_temperature+"</td>"       /*温度*/
+                        +"<td>"+data.list[i].collector_voltage+"</td>"    /*采集仪电压*/
+                        +"<td>"+data.list[i].create_time+"</td>"
+                        +"</tr>";     /*记录时间*/
+            }
+           $(".trhtml").append(s);
+          },
+	          error : function (arg1) {
+	              alert("加载数据失败");
+	              console.log(arg1);
+	          }
+        })
+      }
+      showData();
+    </script>
+
+  </body>
+
 </html>
