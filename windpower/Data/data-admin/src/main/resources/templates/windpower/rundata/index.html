@@ -88,7 +88,7 @@
           async : true,//是否异步请求
           url: 'http://114.55.243.223/openapi/singlewirelesspowsaving/devicedata',
           contentType: "application/json;charset=utf-8",
-          data: JSON.stringify({"device_id":"323869557729001474","page_num":1,"page_size":18}),
+          data: JSON.stringify({"device_id":"323869557729001474","page_num":1,"page_size":30}),
           dataType: 'json',
           success: function (result) {
             var data = result.data; //要导出的json数据
@@ -102,7 +102,7 @@
             var s = "";
             for (var i = 0; i < data.list.length; i++) {
               s+= "<tr>"+      
-            	  "<td>"+"1#设备"+"</td>"            /*测试点号*/
+            	  "<td>"+"倾角仪"+"</td>"            /*测试点号*/
                         +"<td>"+"323869557729001474"+"</td>"        /*设备ID*/
                         +"<td>"+data.list[i].x_angle+"</td>"       /*X轴数据*/
                         +"<td>"+data.list[i].y_angle+"</td>"       /*Y轴数据*/
