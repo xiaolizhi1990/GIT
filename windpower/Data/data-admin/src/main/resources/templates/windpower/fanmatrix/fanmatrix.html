@@ -108,11 +108,11 @@ tbody>tr td {
         index.onclose = function() {
             console.log("Socket已关闭");
         };
-        //发生了错误事件
+       /*  //发生了错误事件
         index.onerror = function() {
             alert("Socket发生了错误");
             //此时可以尝试刷新页面
-        }
+        } */
     }
 	function pagehtml(pageNum) {
 	
@@ -125,7 +125,7 @@ tbody>tr td {
         url: "/windpower/fanmatrix/list",
         type: "POST",
         data: {
-            pageSize: 9999,
+            pageSize: 3,
             pageNum: pageNum
         },
         async:false,
@@ -210,57 +210,57 @@ tbody>tr td {
                 "                </tr>\n" +
                 "                <tr>\n" +
                 "                <td class='fname'>\n" +
-                "                	实际功率：\n" +
+                "                	时间：\n" +
                 "                </td>\n" +
                 "            <td class='fvalue'>\n" +
-                "                <em>"+row.realPower+"</em>\n" +
+                "                <em>"+"13:35"+"</em>\n" +
                 "                </td>\n" +
                 "            	 <td class='funit'>\n" +
-                "                <em> kw </em>\n" +
+                "                <em></em>\n" +
                 "                </td>\n" +
                 "                </tr>\n" +
                 "                <tr>\n" +
                 "                <td class='fname'>\n" +
-                "               	 瞬时功率：\n" +
+                "               	 温度：\n" +
                 "                </td>\n" +
                 "            <td class='fvalue'>\n" +
-                "                <em class='em_instantaneousPower'>"+instantaneousPower+"</em>\n" +
+                "                <em class='em_instantaneousPower'>"+"24"+"</em>\n" +
                 "                </td>\n" +
                 "            	 <td class='funit'>\n" +
-                "                <em> kw </em>\n" +
+                "                <em> °C </em>\n" +
                 "                </td>\n" +
                 "                </tr>\n" +
                 "                <tr>\n" +
                 "                <td class='fname'>\n" +
-                "                	风轮转速：\n" +
+                "                	X轴：\n" +
                 "                </td>\n" +
                 "            <td class='fvalue'>\n" +
-                "                <em class='em_rotateSpeed'>"+rotateSpeed+"</em>\n" +
-                "                </td>\n" +
-                "            	 <td class='funit'>\n" +
-                "                <em> 转/S </em>\n" +
-                "                </td>\n" +
-                "                </tr>\n" +
-                "                <tr>\n" +
-                "                <td class='fname'>\n" +
-                "                	风速：\n" +
-                "                </td>\n" +
-                "            <td class='fvalue'>\n" +
-                "                <em class='em_windspeed'></em>\n" +
-                "                </td>\n" +
-                "            	 <td class='funit'>\n" +
-                "                <em> M/S </em>\n" +
-                "                </td>\n" +
-                "                </tr>\n" +
-                "                <tr>\n" +
-                "                <td class='fname'>\n" +
-                "                	风向角：\n" +
-                "                </td>\n" +
-                "            <td class='fvalue'>\n" +
-                "                <em class='em_direction'>"+row.direction+"</em>\n" +
+                "                <em class='em_rotateSpeed'>"+"12"+"</em>\n" +
                 "                </td>\n" +
                 "            	 <td class='funit'>\n" +
                 "                <em> ° </em>\n" +
+                "                </td>\n" +
+                "                </tr>\n" +
+                "                <tr>\n" +
+                "                <td class='fname'>\n" +
+                "                	Y轴：\n" +
+                "                </td>\n" +
+                "            <td class='fvalue'>\n" +
+                "                <em class='em_windspeed'>"+"8"+"</em>\n" +
+                "                </td>\n" +
+                "            	 <td class='funit'>\n" +
+                "                <em> ° </em>\n" +
+                "                </td>\n" +
+                "                </tr>\n" +
+                "                <tr>\n" +
+                "                <td class='fname'>\n" +
+                "                	电压：\n" +
+                "                </td>\n" +
+                "            <td class='fvalue'>\n" +
+                "                <em class='em_direction'>"+"6.7392945"+"</em>\n" +
+                "                </td>\n" +
+                "            	 <td class='funit'>\n" +
+                "                <em> V </em>\n" +
                 "                </td>\n" +
                 "                </tr>\n" +
                 "                </tbody>\n" +
@@ -277,7 +277,7 @@ tbody>tr td {
             options1 = {
                     currentPage: 1,
                     numberOfPages: 5,
-                    totalPages:11,
+                    totalPages:5,
                     bootstrapMajorVersion: 3
                 }
             $("#page").bootstrapPaginator(options);
