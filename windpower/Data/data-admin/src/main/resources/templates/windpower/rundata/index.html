@@ -53,12 +53,6 @@
            
         </tbody>
       </table>
-     <!--  <fieldset>
-        <div class="charts-box">
-          <div id="chart1" style="height:500px"></div>
-          <div id="chart2" style="height: 500px"></div>     
-        </div>
-      </fieldset> -->
     </div>
    
     <script>
@@ -94,7 +88,7 @@
 //				sensor1_temperature: 20.968262
 //				x_angle: -244.82034
 //				y_angle: -59.521046
-            //data = data.reverse();        /* data.reverse(); */
+            //data = data.reverse();        /* data.reverse(); 数据顺序*/
             var s = "";
             for (var i = 0; i < data.list.length; i++) {
               s+= "<tr>"+      
@@ -105,7 +99,7 @@
                         +"<td>"+data.list[i].collector_temperature+"</td>"       /*温度*/
                         +"<td>"+data.list[i].collector_voltage+"</td>"    /*采集仪电压*/
                         +"<td>"+data.list[i].create_time+"</td>"
-                        +"</tr>";     /*记录时间*/
+                +"</tr>";     /*记录时间*/
             }
            $(".trhtml").append(s);
           },
