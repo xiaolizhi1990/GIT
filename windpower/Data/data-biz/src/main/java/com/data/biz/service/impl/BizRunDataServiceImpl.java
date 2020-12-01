@@ -56,7 +56,7 @@ public class BizRunDataServiceImpl implements IBizRunDataService {
 		runDataVo.setGeneratingCapacityDay(runDataDTODay.getGeneratingCapacity());// 日发电量
 		// 平均风速 年月日平均风速查询
 		BigDecimal avgWindSpeedSum = runDataDTOYear.getAvgWindSpeed().add(runDataDTOMonth.getAvgWindSpeed()).add(runDataDTODay.getAvgWindSpeed());
-		System.out.println("平均风速:"+avgWindSpeedSum);
+		//System.out.println("平均风速:"+avgWindSpeedSum);
 		runDataVo.setAvgWindSpeed(avgWindSpeedSum.divide(new BigDecimal(3),2,BigDecimal.ROUND_DOWN));// 平均风速
 		runDataVo.setAvgWindSpeedYear(runDataDTOYear.getAvgWindSpeed());// 年平均风速
 		runDataVo.setAvgWindSpeedMonth(runDataDTOMonth.getAvgWindSpeed());// 月平均风速
