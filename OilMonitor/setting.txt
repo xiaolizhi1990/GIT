@@ -1,0 +1,25 @@
+
+localConnStr $ server=localhost;user id=root;password=root;database=shaft;
+
+remoteConnStr $ server=172.16.197.217;user id=admin;password=whutEdu-1234;database=shaft;
+
+#水分，waterOpen=1 表示打开 ,0表示不打开
+waterCom $ COM10
+waterRate $ 9600
+waterOpen $ 0
+
+#颗粒污染度
+granularityCom $ COM6
+granularityRate $ 9600
+granularityOpen $ 1
+
+#粘度
+viscosityCom $ COM3
+viscosityRate $ 9600
+viscosityOpen $ 0
+
+#启动数值变换
+startNumberConvert $ 0
+
+
+
