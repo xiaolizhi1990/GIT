@@ -44,6 +44,18 @@
             System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("6");
             System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("7");
             System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("8");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("2");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("3");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("4");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("5");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("6");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("7");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("8");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("20");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("30");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("40");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("50");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("60");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -83,6 +95,28 @@
             this.uiLabel15 = new Sunny.UI.UILabel();
             this.uiLabel14 = new Sunny.UI.UILabel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.uiButton8 = new Sunny.UI.UIButton();
+            this.uiButton7 = new Sunny.UI.UIButton();
+            this.uiLabel24 = new Sunny.UI.UILabel();
+            this.uiRichTextBox11 = new Sunny.UI.UIRichTextBox();
+            this.uiLabel25 = new Sunny.UI.UILabel();
+            this.uiLabel22 = new Sunny.UI.UILabel();
+            this.uiRichTextBox10 = new Sunny.UI.UIRichTextBox();
+            this.uiLabel23 = new Sunny.UI.UILabel();
+            this.uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
+            this.uiDatePicker2 = new Sunny.UI.UIDatePicker();
+            this.uiTimePicker1 = new Sunny.UI.UITimePicker();
+            this.uiComboTreeView6 = new Sunny.UI.UIComboTreeView();
+            this.uiLabel21 = new Sunny.UI.UILabel();
+            this.uiButton6 = new Sunny.UI.UIButton();
+            this.uiLabel20 = new Sunny.UI.UILabel();
+            this.uiComboTreeView5 = new Sunny.UI.UIComboTreeView();
+            this.uiLine2 = new Sunny.UI.UILine();
+            this.uiLine1 = new Sunny.UI.UILine();
+            this.uiRichTextBox9 = new Sunny.UI.UIRichTextBox();
+            this.uiLabel18 = new Sunny.UI.UILabel();
+            this.uiLabel19 = new Sunny.UI.UILabel();
+            this.uiLabel26 = new Sunny.UI.UILabel();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -93,6 +127,7 @@
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.uiPanel1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // uiTabControlMenu1
@@ -626,12 +661,340 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.uiButton8);
+            this.tabPage3.Controls.Add(this.uiButton7);
+            this.tabPage3.Controls.Add(this.uiLabel24);
+            this.tabPage3.Controls.Add(this.uiRichTextBox11);
+            this.tabPage3.Controls.Add(this.uiLabel25);
+            this.tabPage3.Controls.Add(this.uiLabel22);
+            this.tabPage3.Controls.Add(this.uiRichTextBox10);
+            this.tabPage3.Controls.Add(this.uiLabel23);
+            this.tabPage3.Controls.Add(this.uiSymbolLabel1);
+            this.tabPage3.Controls.Add(this.uiDatePicker2);
+            this.tabPage3.Controls.Add(this.uiTimePicker1);
+            this.tabPage3.Controls.Add(this.uiComboTreeView6);
+            this.tabPage3.Controls.Add(this.uiLabel21);
+            this.tabPage3.Controls.Add(this.uiButton6);
+            this.tabPage3.Controls.Add(this.uiLabel20);
+            this.tabPage3.Controls.Add(this.uiComboTreeView5);
+            this.tabPage3.Controls.Add(this.uiLine2);
+            this.tabPage3.Controls.Add(this.uiLine1);
+            this.tabPage3.Controls.Add(this.uiRichTextBox9);
+            this.tabPage3.Controls.Add(this.uiLabel18);
+            this.tabPage3.Controls.Add(this.uiLabel19);
+            this.tabPage3.Controls.Add(this.uiLabel26);
             this.tabPage3.Location = new System.Drawing.Point(131, 0);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1141, 642);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "系统设置";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // uiButton8
+            // 
+            this.uiButton8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton8.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton8.Location = new System.Drawing.Point(866, 518);
+            this.uiButton8.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton8.Name = "uiButton8";
+            this.uiButton8.Size = new System.Drawing.Size(172, 53);
+            this.uiButton8.TabIndex = 46;
+            this.uiButton8.Text = "设置系统时间";
+            // 
+            // uiButton7
+            // 
+            this.uiButton7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton7.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton7.Location = new System.Drawing.Point(866, 307);
+            this.uiButton7.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton7.Name = "uiButton7";
+            this.uiButton7.Size = new System.Drawing.Size(172, 53);
+            this.uiButton7.TabIndex = 45;
+            this.uiButton7.Text = "保存警报设置";
+            // 
+            // uiLabel24
+            // 
+            this.uiLabel24.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel24.Location = new System.Drawing.Point(823, 320);
+            this.uiLabel24.Name = "uiLabel24";
+            this.uiLabel24.Size = new System.Drawing.Size(143, 69);
+            this.uiLabel24.TabIndex = 43;
+            this.uiLabel24.Text = "m";
+            this.uiLabel24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiRichTextBox11
+            // 
+            this.uiRichTextBox11.AutoWordSelection = true;
+            this.uiRichTextBox11.FillColor = System.Drawing.Color.White;
+            this.uiRichTextBox11.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiRichTextBox11.Location = new System.Drawing.Point(624, 335);
+            this.uiRichTextBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiRichTextBox11.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiRichTextBox11.Name = "uiRichTextBox11";
+            this.uiRichTextBox11.Padding = new System.Windows.Forms.Padding(2);
+            this.uiRichTextBox11.Size = new System.Drawing.Size(190, 42);
+            this.uiRichTextBox11.Style = Sunny.UI.UIStyle.Custom;
+            this.uiRichTextBox11.TabIndex = 42;
+            // 
+            // uiLabel25
+            // 
+            this.uiLabel25.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel25.Location = new System.Drawing.Point(503, 320);
+            this.uiLabel25.Name = "uiLabel25";
+            this.uiLabel25.Size = new System.Drawing.Size(143, 69);
+            this.uiLabel25.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLabel25.TabIndex = 41;
+            this.uiLabel25.Text = "报警下限：";
+            this.uiLabel25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiLabel22
+            // 
+            this.uiLabel22.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel22.Location = new System.Drawing.Point(421, 320);
+            this.uiLabel22.Name = "uiLabel22";
+            this.uiLabel22.Size = new System.Drawing.Size(143, 69);
+            this.uiLabel22.TabIndex = 40;
+            this.uiLabel22.Text = "m";
+            this.uiLabel22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiRichTextBox10
+            // 
+            this.uiRichTextBox10.AutoWordSelection = true;
+            this.uiRichTextBox10.FillColor = System.Drawing.Color.White;
+            this.uiRichTextBox10.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiRichTextBox10.Location = new System.Drawing.Point(224, 335);
+            this.uiRichTextBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiRichTextBox10.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiRichTextBox10.Name = "uiRichTextBox10";
+            this.uiRichTextBox10.Padding = new System.Windows.Forms.Padding(2);
+            this.uiRichTextBox10.Size = new System.Drawing.Size(190, 42);
+            this.uiRichTextBox10.Style = Sunny.UI.UIStyle.Custom;
+            this.uiRichTextBox10.TabIndex = 39;
+            // 
+            // uiLabel23
+            // 
+            this.uiLabel23.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel23.Location = new System.Drawing.Point(102, 320);
+            this.uiLabel23.Name = "uiLabel23";
+            this.uiLabel23.Size = new System.Drawing.Size(143, 69);
+            this.uiLabel23.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLabel23.TabIndex = 38;
+            this.uiLabel23.Text = "报警上限：";
+            this.uiLabel23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiSymbolLabel1
+            // 
+            this.uiSymbolLabel1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiSymbolLabel1.Location = new System.Drawing.Point(476, 278);
+            this.uiSymbolLabel1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSymbolLabel1.Name = "uiSymbolLabel1";
+            this.uiSymbolLabel1.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.uiSymbolLabel1.Size = new System.Drawing.Size(170, 35);
+            this.uiSymbolLabel1.TabIndex = 37;
+            this.uiSymbolLabel1.Text = "选择全部罐";
+            this.uiSymbolLabel1.UseDoubleClick = true;
+            // 
+            // uiDatePicker2
+            // 
+            this.uiDatePicker2.FillColor = System.Drawing.Color.White;
+            this.uiDatePicker2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiDatePicker2.Location = new System.Drawing.Point(224, 532);
+            this.uiDatePicker2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiDatePicker2.MaxLength = 10;
+            this.uiDatePicker2.MinimumSize = new System.Drawing.Size(63, 0);
+            this.uiDatePicker2.Name = "uiDatePicker2";
+            this.uiDatePicker2.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.uiDatePicker2.Size = new System.Drawing.Size(150, 29);
+            this.uiDatePicker2.SymbolDropDown = 61555;
+            this.uiDatePicker2.SymbolNormal = 61555;
+            this.uiDatePicker2.TabIndex = 36;
+            this.uiDatePicker2.Text = "2021-01-07";
+            this.uiDatePicker2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiDatePicker2.Value = new System.DateTime(2021, 1, 7, 11, 52, 12, 784);
+            // 
+            // uiTimePicker1
+            // 
+            this.uiTimePicker1.FillColor = System.Drawing.Color.White;
+            this.uiTimePicker1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTimePicker1.Location = new System.Drawing.Point(386, 532);
+            this.uiTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTimePicker1.MaxLength = 8;
+            this.uiTimePicker1.MinimumSize = new System.Drawing.Size(63, 0);
+            this.uiTimePicker1.Name = "uiTimePicker1";
+            this.uiTimePicker1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.uiTimePicker1.Size = new System.Drawing.Size(150, 29);
+            this.uiTimePicker1.SymbolDropDown = 61555;
+            this.uiTimePicker1.SymbolNormal = 61555;
+            this.uiTimePicker1.TabIndex = 35;
+            this.uiTimePicker1.Text = "11:51:57";
+            this.uiTimePicker1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiTimePicker1.Value = new System.DateTime(2021, 1, 7, 11, 51, 57, 711);
+            // 
+            // uiComboTreeView6
+            // 
+            this.uiComboTreeView6.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
+            this.uiComboTreeView6.FillColor = System.Drawing.Color.White;
+            this.uiComboTreeView6.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiComboTreeView6.Location = new System.Drawing.Point(224, 278);
+            this.uiComboTreeView6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiComboTreeView6.MinimumSize = new System.Drawing.Size(63, 0);
+            this.uiComboTreeView6.Name = "uiComboTreeView6";
+            treeNode17.Name = "节点0";
+            treeNode17.Text = "2";
+            treeNode18.Name = "节点1";
+            treeNode18.Text = "3";
+            treeNode19.Name = "节点2";
+            treeNode19.Text = "4";
+            treeNode20.Name = "节点3";
+            treeNode20.Text = "5";
+            treeNode21.Name = "节点4";
+            treeNode21.Text = "6";
+            treeNode22.Name = "节点5";
+            treeNode22.Text = "7";
+            treeNode23.Name = "节点6";
+            treeNode23.Text = "8";
+            this.uiComboTreeView6.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode17,
+            treeNode18,
+            treeNode19,
+            treeNode20,
+            treeNode21,
+            treeNode22,
+            treeNode23});
+            this.uiComboTreeView6.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.uiComboTreeView6.Size = new System.Drawing.Size(150, 29);
+            this.uiComboTreeView6.TabIndex = 34;
+            this.uiComboTreeView6.Text = "1";
+            this.uiComboTreeView6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiLabel21
+            // 
+            this.uiLabel21.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel21.Location = new System.Drawing.Point(102, 259);
+            this.uiLabel21.Name = "uiLabel21";
+            this.uiLabel21.Size = new System.Drawing.Size(127, 66);
+            this.uiLabel21.TabIndex = 33;
+            this.uiLabel21.Text = "罐号：";
+            this.uiLabel21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiButton6
+            // 
+            this.uiButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton6.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton6.Location = new System.Drawing.Point(866, 86);
+            this.uiButton6.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton6.Name = "uiButton6";
+            this.uiButton6.Size = new System.Drawing.Size(172, 53);
+            this.uiButton6.TabIndex = 32;
+            this.uiButton6.Text = "保存";
+            // 
+            // uiLabel20
+            // 
+            this.uiLabel20.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel20.Location = new System.Drawing.Point(381, 131);
+            this.uiLabel20.Name = "uiLabel20";
+            this.uiLabel20.Size = new System.Drawing.Size(143, 69);
+            this.uiLabel20.TabIndex = 31;
+            this.uiLabel20.Text = "s";
+            this.uiLabel20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiComboTreeView5
+            // 
+            this.uiComboTreeView5.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
+            this.uiComboTreeView5.FillColor = System.Drawing.Color.White;
+            this.uiComboTreeView5.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiComboTreeView5.Location = new System.Drawing.Point(224, 151);
+            this.uiComboTreeView5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiComboTreeView5.MinimumSize = new System.Drawing.Size(63, 0);
+            this.uiComboTreeView5.Name = "uiComboTreeView5";
+            treeNode24.Name = "节点0";
+            treeNode24.Text = "20";
+            treeNode25.Name = "节点1";
+            treeNode25.Text = "30";
+            treeNode26.Name = "节点2";
+            treeNode26.Text = "40";
+            treeNode27.Name = "节点3";
+            treeNode27.Text = "50";
+            treeNode28.Name = "节点4";
+            treeNode28.Text = "60";
+            this.uiComboTreeView5.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode24,
+            treeNode25,
+            treeNode26,
+            treeNode27,
+            treeNode28});
+            this.uiComboTreeView5.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.uiComboTreeView5.Size = new System.Drawing.Size(150, 29);
+            this.uiComboTreeView5.TabIndex = 29;
+            this.uiComboTreeView5.Text = "10";
+            this.uiComboTreeView5.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiLine2
+            // 
+            this.uiLine2.FillColor = System.Drawing.Color.White;
+            this.uiLine2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLine2.Location = new System.Drawing.Point(2, 432);
+            this.uiLine2.MinimumSize = new System.Drawing.Size(2, 2);
+            this.uiLine2.Name = "uiLine2";
+            this.uiLine2.Size = new System.Drawing.Size(1135, 29);
+            this.uiLine2.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine2.TabIndex = 28;
+            // 
+            // uiLine1
+            // 
+            this.uiLine1.FillColor = System.Drawing.Color.White;
+            this.uiLine1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLine1.Location = new System.Drawing.Point(2, 216);
+            this.uiLine1.MinimumSize = new System.Drawing.Size(2, 2);
+            this.uiLine1.Name = "uiLine1";
+            this.uiLine1.Size = new System.Drawing.Size(1135, 29);
+            this.uiLine1.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine1.TabIndex = 27;
+            // 
+            // uiRichTextBox9
+            // 
+            this.uiRichTextBox9.AutoWordSelection = true;
+            this.uiRichTextBox9.FillColor = System.Drawing.Color.White;
+            this.uiRichTextBox9.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiRichTextBox9.Location = new System.Drawing.Point(224, 61);
+            this.uiRichTextBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiRichTextBox9.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiRichTextBox9.Name = "uiRichTextBox9";
+            this.uiRichTextBox9.Padding = new System.Windows.Forms.Padding(2);
+            this.uiRichTextBox9.Size = new System.Drawing.Size(400, 52);
+            this.uiRichTextBox9.Style = Sunny.UI.UIStyle.Custom;
+            this.uiRichTextBox9.TabIndex = 26;
+            // 
+            // uiLabel18
+            // 
+            this.uiLabel18.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel18.Location = new System.Drawing.Point(102, 53);
+            this.uiLabel18.Name = "uiLabel18";
+            this.uiLabel18.Size = new System.Drawing.Size(143, 69);
+            this.uiLabel18.TabIndex = 25;
+            this.uiLabel18.Text = "井名：";
+            this.uiLabel18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiLabel19
+            // 
+            this.uiLabel19.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel19.Location = new System.Drawing.Point(102, 131);
+            this.uiLabel19.Name = "uiLabel19";
+            this.uiLabel19.Size = new System.Drawing.Size(143, 69);
+            this.uiLabel19.TabIndex = 30;
+            this.uiLabel19.Text = "存储间隔：";
+            this.uiLabel19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiLabel26
+            // 
+            this.uiLabel26.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel26.Location = new System.Drawing.Point(102, 511);
+            this.uiLabel26.Name = "uiLabel26";
+            this.uiLabel26.Size = new System.Drawing.Size(143, 69);
+            this.uiLabel26.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLabel26.TabIndex = 44;
+            this.uiLabel26.Text = "时间选择：";
+            this.uiLabel26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tabPage4
             // 
@@ -720,6 +1083,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.uiPanel1.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -770,6 +1134,28 @@
         private Sunny.UI.UIRichTextBox uiRichTextBox7;
         private Sunny.UI.UILabel uiLabel15;
         private Sunny.UI.UILabel uiLabel14;
+        private Sunny.UI.UILabel uiLabel24;
+        private Sunny.UI.UIRichTextBox uiRichTextBox11;
+        private Sunny.UI.UILabel uiLabel25;
+        private Sunny.UI.UILabel uiLabel22;
+        private Sunny.UI.UIRichTextBox uiRichTextBox10;
+        private Sunny.UI.UILabel uiLabel23;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel1;
+        private Sunny.UI.UIDatePicker uiDatePicker2;
+        private Sunny.UI.UITimePicker uiTimePicker1;
+        private Sunny.UI.UIComboTreeView uiComboTreeView6;
+        private Sunny.UI.UILabel uiLabel21;
+        private Sunny.UI.UIButton uiButton6;
+        private Sunny.UI.UILabel uiLabel20;
+        private Sunny.UI.UILabel uiLabel19;
+        private Sunny.UI.UIComboTreeView uiComboTreeView5;
+        private Sunny.UI.UILine uiLine2;
+        private Sunny.UI.UILine uiLine1;
+        private Sunny.UI.UIRichTextBox uiRichTextBox9;
+        private Sunny.UI.UILabel uiLabel18;
+        private Sunny.UI.UILabel uiLabel26;
+        private Sunny.UI.UIButton uiButton7;
+        private Sunny.UI.UIButton uiButton8;
     }
 }
 
