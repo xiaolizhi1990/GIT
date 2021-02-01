@@ -50,5 +50,15 @@ namespace WindowsFormsApplication2
         {
 
         }
+
+        private void uiLabel29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiLineChart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

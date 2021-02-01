@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication2", "WindowsFormsApplication2\WindowsFormsApplication2.csproj", "{64D3560C-67D3-419E-A09C-2BAE88CCA3AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MudTankMonitoringSystem", "WindowsFormsApplication2\MudTankMonitoringSystem.csproj", "{64D3560C-67D3-419E-A09C-2BAE88CCA3AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
