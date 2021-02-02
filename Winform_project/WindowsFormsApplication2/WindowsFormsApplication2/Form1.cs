@@ -60,5 +60,10 @@ namespace WindowsFormsApplication2
         {
 
         }
+
+        private void uiRichTextBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
