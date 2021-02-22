@@ -33,7 +33,8 @@ namespace WindowsFormsApplication2
 
         private void uiButton1_Click(object sender, EventArgs e)
         {
-
+            Form2 f = new Form2();
+            f.Show();
         }
 
         private void uiLabel2_Click(object sender, EventArgs e)
@@ -65,5 +66,32 @@ namespace WindowsFormsApplication2
         {
 
         }
+
+        private void uiButton2_Click(object sender, EventArgs e)
+        {
+            Form3 f = new Form3();
+            f.Show();
+        }
+
+        private void uiButton3_Click(object sender, EventArgs e)
+        {
+            Form3 f = new Form3();
+            f.Show();
+        }
+
+        private void uiTabControlMenu1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void uiButton12_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form4 f = new Form4();
+            f.Show();
+      
+         
+        }
+         
     }
 }

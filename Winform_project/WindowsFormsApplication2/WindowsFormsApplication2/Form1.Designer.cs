@@ -88,6 +88,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.uiTextBox9 = new Sunny.UI.UITextBox();
+            this.uiTextBox8 = new Sunny.UI.UITextBox();
+            this.uiTextBox7 = new Sunny.UI.UITextBox();
+            this.uiTextBox6 = new Sunny.UI.UITextBox();
             this.uiComboTreeView2 = new Sunny.UI.UIComboTreeView();
             this.uiButton4 = new Sunny.UI.UIButton();
             this.uiLabel7 = new Sunny.UI.UILabel();
@@ -101,6 +105,8 @@
             this.uiButton1 = new Sunny.UI.UIButton();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.uiTextBox11 = new Sunny.UI.UITextBox();
+            this.uiTextBox10 = new Sunny.UI.UITextBox();
             this.uiButton5 = new Sunny.UI.UIButton();
             this.uiLabel13 = new Sunny.UI.UILabel();
             this.uiLabel12 = new Sunny.UI.UILabel();
@@ -111,11 +117,17 @@
             this.uiComboTreeView3 = new Sunny.UI.UIComboTreeView();
             this.uiLabel8 = new Sunny.UI.UILabel();
             this.uiPanel1 = new Sunny.UI.UIPanel();
+            this.uiTextBox13 = new Sunny.UI.UITextBox();
+            this.uiTextBox12 = new Sunny.UI.UITextBox();
             this.uiLabel17 = new Sunny.UI.UILabel();
             this.uiLabel16 = new Sunny.UI.UILabel();
             this.uiLabel15 = new Sunny.UI.UILabel();
             this.uiLabel14 = new Sunny.UI.UILabel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.uiTextBox4 = new Sunny.UI.UITextBox();
+            this.uiTextBox3 = new Sunny.UI.UITextBox();
+            this.uiTextBox2 = new Sunny.UI.UITextBox();
+            this.uiSwitch3 = new Sunny.UI.UISwitch();
             this.uiButton8 = new Sunny.UI.UIButton();
             this.uiButton7 = new Sunny.UI.UIButton();
             this.uiLabel24 = new Sunny.UI.UILabel();
@@ -172,22 +184,11 @@
             this.uiComboTreeView9 = new Sunny.UI.UIComboTreeView();
             this.uiLabel35 = new Sunny.UI.UILabel();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.uiButton12 = new Sunny.UI.UIButton();
             this.uiComboTreeView1 = new Sunny.UI.UIComboTreeView();
             this.uiDatePicker1 = new Sunny.UI.UIDatePicker();
-            this.uiSwitch3 = new Sunny.UI.UISwitch();
             this.uiTextBox1 = new Sunny.UI.UITextBox();
-            this.uiTextBox2 = new Sunny.UI.UITextBox();
-            this.uiTextBox3 = new Sunny.UI.UITextBox();
-            this.uiTextBox4 = new Sunny.UI.UITextBox();
             this.uiTextBox5 = new Sunny.UI.UITextBox();
-            this.uiTextBox6 = new Sunny.UI.UITextBox();
-            this.uiTextBox7 = new Sunny.UI.UITextBox();
-            this.uiTextBox8 = new Sunny.UI.UITextBox();
-            this.uiTextBox9 = new Sunny.UI.UITextBox();
-            this.uiTextBox10 = new Sunny.UI.UITextBox();
-            this.uiTextBox11 = new Sunny.UI.UITextBox();
-            this.uiTextBox12 = new Sunny.UI.UITextBox();
-            this.uiTextBox13 = new Sunny.UI.UITextBox();
             this.uiTabControlMenu1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -196,6 +197,7 @@
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // uiTabControlMenu1
@@ -221,6 +223,7 @@
             this.uiTabControlMenu1.Size = new System.Drawing.Size(1272, 642);
             this.uiTabControlMenu1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.uiTabControlMenu1.TabIndex = 0;
+            this.uiTabControlMenu1.Click += new System.EventHandler(this.uiTabControlMenu1_Click);
             // 
             // tabPage1
             // 
@@ -247,6 +250,75 @@
             this.tabPage1.Text = "刻度设置";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // uiTextBox9
+            // 
+            this.uiTextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox9.FillColor = System.Drawing.Color.White;
+            this.uiTextBox9.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox9.Location = new System.Drawing.Point(751, 397);
+            this.uiTextBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox9.Maximum = 2147483647D;
+            this.uiTextBox9.Minimum = -2147483648D;
+            this.uiTextBox9.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox9.Name = "uiTextBox9";
+            this.uiTextBox9.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox9.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox9.TabIndex = 74;
+            this.uiTextBox9.Text = "0.00";
+            this.uiTextBox9.Type = Sunny.UI.UITextBox.UIEditType.Double;
+            // 
+            // uiTextBox8
+            // 
+            this.uiTextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox8.FillColor = System.Drawing.Color.White;
+            this.uiTextBox8.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox8.Location = new System.Drawing.Point(751, 268);
+            this.uiTextBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox8.Maximum = 2147483647D;
+            this.uiTextBox8.Minimum = -2147483648D;
+            this.uiTextBox8.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox8.Name = "uiTextBox8";
+            this.uiTextBox8.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox8.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox8.TabIndex = 76;
+            this.uiTextBox8.Text = "0.00";
+            this.uiTextBox8.Type = Sunny.UI.UITextBox.UIEditType.Double;
+            // 
+            // uiTextBox7
+            // 
+            this.uiTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox7.FillColor = System.Drawing.Color.White;
+            this.uiTextBox7.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox7.Location = new System.Drawing.Point(248, 397);
+            this.uiTextBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox7.Maximum = 2147483647D;
+            this.uiTextBox7.Minimum = -2147483648D;
+            this.uiTextBox7.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox7.Name = "uiTextBox7";
+            this.uiTextBox7.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox7.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox7.TabIndex = 75;
+            this.uiTextBox7.Text = "0.00";
+            this.uiTextBox7.Type = Sunny.UI.UITextBox.UIEditType.Double;
+            // 
+            // uiTextBox6
+            // 
+            this.uiTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox6.FillColor = System.Drawing.Color.White;
+            this.uiTextBox6.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox6.Location = new System.Drawing.Point(248, 268);
+            this.uiTextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox6.Maximum = 2147483647D;
+            this.uiTextBox6.Minimum = -2147483648D;
+            this.uiTextBox6.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox6.Name = "uiTextBox6";
+            this.uiTextBox6.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox6.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox6.Style = Sunny.UI.UIStyle.Custom;
+            this.uiTextBox6.TabIndex = 74;
+            this.uiTextBox6.Text = "0.00";
+            this.uiTextBox6.Type = Sunny.UI.UITextBox.UIEditType.Double;
             // 
             // uiComboTreeView2
             // 
@@ -319,6 +391,7 @@
             this.uiButton3.Size = new System.Drawing.Size(172, 69);
             this.uiButton3.TabIndex = 12;
             this.uiButton3.Text = "锁定AD";
+            this.uiButton3.Click += new System.EventHandler(this.uiButton3_Click);
             // 
             // uiLabel6
             // 
@@ -350,6 +423,7 @@
             this.uiButton2.Size = new System.Drawing.Size(172, 69);
             this.uiButton2.TabIndex = 7;
             this.uiButton2.Text = "锁定AD";
+            this.uiButton2.Click += new System.EventHandler(this.uiButton2_Click);
             // 
             // uiLabel4
             // 
@@ -384,6 +458,9 @@
             // 
             // uiButton1
             // 
+            this.uiButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.uiButton1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiButton1.Location = new System.Drawing.Point(751, 71);
@@ -426,6 +503,42 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "罐型选择";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // uiTextBox11
+            // 
+            this.uiTextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox11.FillColor = System.Drawing.Color.White;
+            this.uiTextBox11.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox11.Location = new System.Drawing.Point(267, 404);
+            this.uiTextBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox11.Maximum = 2147483647D;
+            this.uiTextBox11.Minimum = -2147483648D;
+            this.uiTextBox11.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox11.Name = "uiTextBox11";
+            this.uiTextBox11.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox11.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox11.Style = Sunny.UI.UIStyle.Custom;
+            this.uiTextBox11.TabIndex = 74;
+            this.uiTextBox11.Text = "0.00";
+            this.uiTextBox11.Type = Sunny.UI.UITextBox.UIEditType.Double;
+            // 
+            // uiTextBox10
+            // 
+            this.uiTextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox10.FillColor = System.Drawing.Color.White;
+            this.uiTextBox10.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox10.Location = new System.Drawing.Point(267, 263);
+            this.uiTextBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox10.Maximum = 2147483647D;
+            this.uiTextBox10.Minimum = -2147483648D;
+            this.uiTextBox10.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox10.Name = "uiTextBox10";
+            this.uiTextBox10.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox10.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox10.Style = Sunny.UI.UIStyle.Custom;
+            this.uiTextBox10.TabIndex = 74;
+            this.uiTextBox10.Text = "0.00";
+            this.uiTextBox10.Type = Sunny.UI.UITextBox.UIEditType.Double;
             // 
             // uiButton5
             // 
@@ -586,6 +699,40 @@
             this.uiPanel1.Text = null;
             this.uiPanel1.Click += new System.EventHandler(this.uiPanel1_Click);
             // 
+            // uiTextBox13
+            // 
+            this.uiTextBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox13.FillColor = System.Drawing.Color.White;
+            this.uiTextBox13.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox13.Location = new System.Drawing.Point(165, 192);
+            this.uiTextBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox13.Maximum = 2147483647D;
+            this.uiTextBox13.Minimum = -2147483648D;
+            this.uiTextBox13.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox13.Name = "uiTextBox13";
+            this.uiTextBox13.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox13.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox13.TabIndex = 75;
+            this.uiTextBox13.Text = "0.00";
+            this.uiTextBox13.Type = Sunny.UI.UITextBox.UIEditType.Double;
+            // 
+            // uiTextBox12
+            // 
+            this.uiTextBox12.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox12.FillColor = System.Drawing.Color.White;
+            this.uiTextBox12.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox12.Location = new System.Drawing.Point(165, 51);
+            this.uiTextBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox12.Maximum = 2147483647D;
+            this.uiTextBox12.Minimum = -2147483648D;
+            this.uiTextBox12.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox12.Name = "uiTextBox12";
+            this.uiTextBox12.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox12.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox12.TabIndex = 74;
+            this.uiTextBox12.Text = "0.00";
+            this.uiTextBox12.Type = Sunny.UI.UITextBox.UIEditType.Double;
+            // 
             // uiLabel17
             // 
             this.uiLabel17.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -656,6 +803,68 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "系统设置";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // uiTextBox4
+            // 
+            this.uiTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox4.FillColor = System.Drawing.Color.White;
+            this.uiTextBox4.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox4.Location = new System.Drawing.Point(633, 340);
+            this.uiTextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox4.Maximum = 2147483647D;
+            this.uiTextBox4.Minimum = -2147483648D;
+            this.uiTextBox4.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox4.Name = "uiTextBox4";
+            this.uiTextBox4.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox4.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox4.TabIndex = 74;
+            this.uiTextBox4.Text = "0";
+            this.uiTextBox4.Type = Sunny.UI.UITextBox.UIEditType.Integer;
+            // 
+            // uiTextBox3
+            // 
+            this.uiTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox3.FillColor = System.Drawing.Color.White;
+            this.uiTextBox3.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox3.Location = new System.Drawing.Point(224, 340);
+            this.uiTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox3.Maximum = 2147483647D;
+            this.uiTextBox3.Minimum = -2147483648D;
+            this.uiTextBox3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox3.Name = "uiTextBox3";
+            this.uiTextBox3.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox3.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox3.TabIndex = 73;
+            this.uiTextBox3.Text = "0";
+            this.uiTextBox3.Type = Sunny.UI.UITextBox.UIEditType.Integer;
+            // 
+            // uiTextBox2
+            // 
+            this.uiTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox2.FillColor = System.Drawing.Color.White;
+            this.uiTextBox2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox2.Location = new System.Drawing.Point(224, 74);
+            this.uiTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox2.Maximum = 2147483647D;
+            this.uiTextBox2.Minimum = -2147483648D;
+            this.uiTextBox2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox2.Name = "uiTextBox2";
+            this.uiTextBox2.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox2.Size = new System.Drawing.Size(250, 29);
+            this.uiTextBox2.TabIndex = 72;
+            // 
+            // uiSwitch3
+            // 
+            this.uiSwitch3.ActiveText = "选择全部罐";
+            this.uiSwitch3.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiSwitch3.InActiveText = "选择全部罐";
+            this.uiSwitch3.Location = new System.Drawing.Point(426, 273);
+            this.uiSwitch3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSwitch3.Name = "uiSwitch3";
+            this.uiSwitch3.Size = new System.Drawing.Size(138, 35);
+            this.uiSwitch3.Style = Sunny.UI.UIStyle.Custom;
+            this.uiSwitch3.TabIndex = 71;
+            this.uiSwitch3.Text = "uiSwitch3";
             // 
             // uiButton8
             // 
@@ -1527,12 +1736,25 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.uiButton12);
             this.tabPage7.Location = new System.Drawing.Point(131, 0);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Size = new System.Drawing.Size(1141, 642);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "返回";
             this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // uiButton12
+            // 
+            this.uiButton12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton12.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiButton12.Location = new System.Drawing.Point(416, 243);
+            this.uiButton12.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton12.Name = "uiButton12";
+            this.uiButton12.Size = new System.Drawing.Size(261, 94);
+            this.uiButton12.TabIndex = 0;
+            this.uiButton12.Text = "返回首页";
+            this.uiButton12.Click += new System.EventHandler(this.uiButton12_Click);
             // 
             // uiComboTreeView1
             // 
@@ -1567,19 +1789,6 @@
             this.uiDatePicker1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiDatePicker1.Value = new System.DateTime(2021, 1, 5, 10, 17, 5, 954);
             // 
-            // uiSwitch3
-            // 
-            this.uiSwitch3.ActiveText = "选择全部罐";
-            this.uiSwitch3.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiSwitch3.InActiveText = "选择全部罐";
-            this.uiSwitch3.Location = new System.Drawing.Point(426, 273);
-            this.uiSwitch3.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSwitch3.Name = "uiSwitch3";
-            this.uiSwitch3.Size = new System.Drawing.Size(138, 35);
-            this.uiSwitch3.Style = Sunny.UI.UIStyle.Custom;
-            this.uiSwitch3.TabIndex = 71;
-            this.uiSwitch3.Text = "uiSwitch3";
-            // 
             // uiTextBox1
             // 
             this.uiTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1597,55 +1806,6 @@
             this.uiTextBox1.TabIndex = 72;
             this.uiTextBox1.Text = "uiTextBox1";
             // 
-            // uiTextBox2
-            // 
-            this.uiTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox2.FillColor = System.Drawing.Color.White;
-            this.uiTextBox2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox2.Location = new System.Drawing.Point(224, 74);
-            this.uiTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox2.Maximum = 2147483647D;
-            this.uiTextBox2.Minimum = -2147483648D;
-            this.uiTextBox2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox2.Name = "uiTextBox2";
-            this.uiTextBox2.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox2.Size = new System.Drawing.Size(250, 29);
-            this.uiTextBox2.TabIndex = 72;
-            // 
-            // uiTextBox3
-            // 
-            this.uiTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox3.FillColor = System.Drawing.Color.White;
-            this.uiTextBox3.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox3.Location = new System.Drawing.Point(224, 340);
-            this.uiTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox3.Maximum = 2147483647D;
-            this.uiTextBox3.Minimum = -2147483648D;
-            this.uiTextBox3.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox3.Name = "uiTextBox3";
-            this.uiTextBox3.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox3.Size = new System.Drawing.Size(150, 29);
-            this.uiTextBox3.TabIndex = 73;
-            this.uiTextBox3.Text = "0";
-            this.uiTextBox3.Type = Sunny.UI.UITextBox.UIEditType.Integer;
-            // 
-            // uiTextBox4
-            // 
-            this.uiTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox4.FillColor = System.Drawing.Color.White;
-            this.uiTextBox4.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox4.Location = new System.Drawing.Point(633, 340);
-            this.uiTextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox4.Maximum = 2147483647D;
-            this.uiTextBox4.Minimum = -2147483648D;
-            this.uiTextBox4.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox4.Name = "uiTextBox4";
-            this.uiTextBox4.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox4.Size = new System.Drawing.Size(150, 29);
-            this.uiTextBox4.TabIndex = 74;
-            this.uiTextBox4.Text = "0";
-            this.uiTextBox4.Type = Sunny.UI.UITextBox.UIEditType.Integer;
-            // 
             // uiTextBox5
             // 
             this.uiTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -1662,158 +1822,20 @@
             this.uiTextBox5.Style = Sunny.UI.UIStyle.Custom;
             this.uiTextBox5.TabIndex = 74;
             // 
-            // uiTextBox6
-            // 
-            this.uiTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox6.FillColor = System.Drawing.Color.White;
-            this.uiTextBox6.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox6.Location = new System.Drawing.Point(248, 268);
-            this.uiTextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox6.Maximum = 2147483647D;
-            this.uiTextBox6.Minimum = -2147483648D;
-            this.uiTextBox6.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox6.Name = "uiTextBox6";
-            this.uiTextBox6.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox6.Size = new System.Drawing.Size(150, 29);
-            this.uiTextBox6.Style = Sunny.UI.UIStyle.Custom;
-            this.uiTextBox6.TabIndex = 74;
-            this.uiTextBox6.Text = "0.00";
-            this.uiTextBox6.Type = Sunny.UI.UITextBox.UIEditType.Double;
-            // 
-            // uiTextBox7
-            // 
-            this.uiTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox7.FillColor = System.Drawing.Color.White;
-            this.uiTextBox7.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox7.Location = new System.Drawing.Point(248, 397);
-            this.uiTextBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox7.Maximum = 2147483647D;
-            this.uiTextBox7.Minimum = -2147483648D;
-            this.uiTextBox7.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox7.Name = "uiTextBox7";
-            this.uiTextBox7.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox7.Size = new System.Drawing.Size(150, 29);
-            this.uiTextBox7.TabIndex = 75;
-            this.uiTextBox7.Text = "0.00";
-            this.uiTextBox7.Type = Sunny.UI.UITextBox.UIEditType.Double;
-            // 
-            // uiTextBox8
-            // 
-            this.uiTextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox8.FillColor = System.Drawing.Color.White;
-            this.uiTextBox8.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox8.Location = new System.Drawing.Point(751, 268);
-            this.uiTextBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox8.Maximum = 2147483647D;
-            this.uiTextBox8.Minimum = -2147483648D;
-            this.uiTextBox8.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox8.Name = "uiTextBox8";
-            this.uiTextBox8.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox8.Size = new System.Drawing.Size(150, 29);
-            this.uiTextBox8.TabIndex = 76;
-            this.uiTextBox8.Text = "0.00";
-            this.uiTextBox8.Type = Sunny.UI.UITextBox.UIEditType.Double;
-            // 
-            // uiTextBox9
-            // 
-            this.uiTextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox9.FillColor = System.Drawing.Color.White;
-            this.uiTextBox9.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox9.Location = new System.Drawing.Point(751, 397);
-            this.uiTextBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox9.Maximum = 2147483647D;
-            this.uiTextBox9.Minimum = -2147483648D;
-            this.uiTextBox9.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox9.Name = "uiTextBox9";
-            this.uiTextBox9.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox9.Size = new System.Drawing.Size(150, 29);
-            this.uiTextBox9.TabIndex = 74;
-            this.uiTextBox9.Text = "0.00";
-            this.uiTextBox9.Type = Sunny.UI.UITextBox.UIEditType.Double;
-            // 
-            // uiTextBox10
-            // 
-            this.uiTextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox10.FillColor = System.Drawing.Color.White;
-            this.uiTextBox10.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox10.Location = new System.Drawing.Point(267, 263);
-            this.uiTextBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox10.Maximum = 2147483647D;
-            this.uiTextBox10.Minimum = -2147483648D;
-            this.uiTextBox10.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox10.Name = "uiTextBox10";
-            this.uiTextBox10.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox10.Size = new System.Drawing.Size(150, 29);
-            this.uiTextBox10.Style = Sunny.UI.UIStyle.Custom;
-            this.uiTextBox10.TabIndex = 74;
-            this.uiTextBox10.Text = "0.00";
-            this.uiTextBox10.Type = Sunny.UI.UITextBox.UIEditType.Double;
-            // 
-            // uiTextBox11
-            // 
-            this.uiTextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox11.FillColor = System.Drawing.Color.White;
-            this.uiTextBox11.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox11.Location = new System.Drawing.Point(267, 404);
-            this.uiTextBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox11.Maximum = 2147483647D;
-            this.uiTextBox11.Minimum = -2147483648D;
-            this.uiTextBox11.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox11.Name = "uiTextBox11";
-            this.uiTextBox11.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox11.Size = new System.Drawing.Size(150, 29);
-            this.uiTextBox11.Style = Sunny.UI.UIStyle.Custom;
-            this.uiTextBox11.TabIndex = 74;
-            this.uiTextBox11.Text = "0.00";
-            this.uiTextBox11.Type = Sunny.UI.UITextBox.UIEditType.Double;
-            // 
-            // uiTextBox12
-            // 
-            this.uiTextBox12.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox12.FillColor = System.Drawing.Color.White;
-            this.uiTextBox12.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox12.Location = new System.Drawing.Point(165, 51);
-            this.uiTextBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox12.Maximum = 2147483647D;
-            this.uiTextBox12.Minimum = -2147483648D;
-            this.uiTextBox12.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox12.Name = "uiTextBox12";
-            this.uiTextBox12.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox12.Size = new System.Drawing.Size(150, 29);
-            this.uiTextBox12.TabIndex = 74;
-            this.uiTextBox12.Text = "0.00";
-            this.uiTextBox12.Type = Sunny.UI.UITextBox.UIEditType.Double;
-            // 
-            // uiTextBox13
-            // 
-            this.uiTextBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox13.FillColor = System.Drawing.Color.White;
-            this.uiTextBox13.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox13.Location = new System.Drawing.Point(165, 192);
-            this.uiTextBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox13.Maximum = 2147483647D;
-            this.uiTextBox13.Minimum = -2147483648D;
-            this.uiTextBox13.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox13.Name = "uiTextBox13";
-            this.uiTextBox13.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox13.Size = new System.Drawing.Size(150, 29);
-            this.uiTextBox13.TabIndex = 75;
-            this.uiTextBox13.Text = "0.00";
-            this.uiTextBox13.Type = Sunny.UI.UITextBox.UIEditType.Double;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1296, 666);
             this.Controls.Add(this.uiTabControlMenu1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "泥罐液面监测系统";
+            this.Text = "设置";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.uiTabControlMenu1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -1823,6 +1845,7 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1835,7 +1858,6 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TabPage tabPage1;
         private Sunny.UI.UIButton uiButton4;
         private Sunny.UI.UILabel uiLabel7;
@@ -1931,6 +1953,8 @@
         private Sunny.UI.UITextBox uiTextBox10;
         private Sunny.UI.UITextBox uiTextBox13;
         private Sunny.UI.UITextBox uiTextBox12;
+        private System.Windows.Forms.TabPage tabPage7;
+        private Sunny.UI.UIButton uiButton12;
     }
 }
 
