@@ -28,6 +28,17 @@ namespace WindowsFormsApplication2
 
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime dt = DateTime.Now;
+            uiLabel35.Text = dt.ToString();
+        }
+
+        private void Form4_Load_1(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
         
     }
 }

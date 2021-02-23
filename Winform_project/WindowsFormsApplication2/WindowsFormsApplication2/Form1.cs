@@ -11,6 +11,8 @@ namespace WindowsFormsApplication2
 {
     public partial class Form1 : Form
     {
+        int count;
+        int time;
         public Form1()
         {
             InitializeComponent();
@@ -18,7 +20,7 @@ namespace WindowsFormsApplication2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void uiRichTextBox1_TextChanged(object sender, EventArgs e)
@@ -92,6 +94,52 @@ namespace WindowsFormsApplication2
       
          
         }
+
+        private void uiButton9_Click(object sender, EventArgs e)
+        {
+            string str = "5 秒";
+            time = Convert.ToInt16(str.Substring(0, 2));//将下拉菜单中的字符串内容转换成整形
+            uiProcessBar1.Maximum = time;//进度条的最大值
+            timer1.Start();//开始定时器
+            ///MessageBox.Show("绘制曲线图中......", "提示");//提示对话框
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            count++;//每到一定时间进入这个私有函数
+
+            uiProcessBar1.Value = count;
+            if (count == time)
+            {
+                timer1.Stop();
+                System.Media.SystemSounds.Asterisk.Play();//提示音
+                RealChart f = new RealChart();
+                f.Show();
+            }
+        }
+
+        private void uiButton11_Click(object sender, EventArgs e)
+        {
+            string str = "5 秒";
+            time = Convert.ToInt16(str.Substring(0, 2));//将下拉菜单中的字符串内容转换成整形
+            uiProcessBar2.Maximum = time;//进度条的最大值
+            timer2.Start();//开始定时器
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            count++;//每到一定时间进入这个私有函数
+
+            uiProcessBar2.Value = count;
+            if (count == time)
+            {
+                timer2.Stop();
+                System.Media.SystemSounds.Asterisk.Play();//提示音
+                MessageBox.Show("数据复制成功！", "提示");
+            }
+        }
+
+       
          
     }
 }
