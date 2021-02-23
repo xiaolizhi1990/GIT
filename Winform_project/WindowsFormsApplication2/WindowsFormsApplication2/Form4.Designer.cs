@@ -119,7 +119,6 @@
             this.uiProcessBar1.Location = new System.Drawing.Point(13, 172);
             this.uiProcessBar1.MinimumSize = new System.Drawing.Size(70, 5);
             this.uiProcessBar1.Name = "uiProcessBar1";
-            this.uiProcessBar1.RectColor = System.Drawing.Color.Red;
             this.uiProcessBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiProcessBar1.Size = new System.Drawing.Size(232, 43);
             this.uiProcessBar1.Style = Sunny.UI.UIStyle.Custom;
@@ -930,13 +929,16 @@
             // uiButton2
             // 
             this.uiButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton2.FillColor = System.Drawing.Color.DodgerBlue;
             this.uiButton2.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiButton2.Location = new System.Drawing.Point(221, 580);
             this.uiButton2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton2.Name = "uiButton2";
             this.uiButton2.Size = new System.Drawing.Size(148, 69);
+            this.uiButton2.Style = Sunny.UI.UIStyle.Custom;
             this.uiButton2.TabIndex = 13;
             this.uiButton2.Text = "关闭警报";
+            this.uiButton2.Click += new System.EventHandler(this.uiButton2_Click);
             // 
             // uiLabel1
             // 

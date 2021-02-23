@@ -39,6 +39,22 @@ namespace WindowsFormsApplication2
             timer1.Enabled = true;
         }
 
-        
+        private void uiButton2_Click(object sender, EventArgs e)
+        {
+          
+            if (this.uiButton2.Text == "关闭警报")
+            {
+                this.uiButton2.Text = "打开警报";
+                this.uiButton2.FillColor = Color.Gray;
+            }
+            else
+            {
+                this.uiButton2.Text = "关闭警报";
+                this.uiButton2.FillColor = Color.DodgerBlue;
+            }
+
+        }
+
+
     }
 }
