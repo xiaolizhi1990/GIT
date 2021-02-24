@@ -116,6 +116,7 @@
             this.uiButton2.Size = new System.Drawing.Size(140, 49);
             this.uiButton2.TabIndex = 78;
             this.uiButton2.Text = "保存";
+            this.uiButton2.Click += new System.EventHandler(this.uiButton2_Click);
             // 
             // uiLabel4
             // 
@@ -192,6 +193,7 @@
             this.uiButton1.Size = new System.Drawing.Size(140, 49);
             this.uiButton1.TabIndex = 84;
             this.uiButton1.Text = "保存";
+            this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
             // 
             // uiLabel3
             // 
@@ -648,6 +650,7 @@
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "手动修改参数";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
 
         }

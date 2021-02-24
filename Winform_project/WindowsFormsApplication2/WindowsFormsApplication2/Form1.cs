@@ -13,6 +13,7 @@ namespace WindowsFormsApplication2
     {
         int count;
         int time;
+        
         public Form1()
         {
             InitializeComponent();
