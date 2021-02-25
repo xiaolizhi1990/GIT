@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication2
 {
-    partial class Form2
+    partial class HandSettings
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HandSettings));
             this.uiTextBox8 = new Sunny.UI.UITextBox();
             this.uiTextBox6 = new Sunny.UI.UITextBox();
             this.uiButton2 = new Sunny.UI.UIButton();
@@ -260,6 +260,7 @@
             this.uiButton3.Size = new System.Drawing.Size(140, 49);
             this.uiButton3.TabIndex = 89;
             this.uiButton3.Text = "保存";
+            this.uiButton3.Click += new System.EventHandler(this.uiButton3_Click);
             // 
             // uiLabel6
             // 
@@ -326,6 +327,7 @@
             this.uiButton4.Size = new System.Drawing.Size(140, 49);
             this.uiButton4.TabIndex = 94;
             this.uiButton4.Text = "保存";
+            this.uiButton4.Click += new System.EventHandler(this.uiButton4_Click);
             // 
             // uiLabel8
             // 
@@ -392,6 +394,7 @@
             this.uiButton5.Size = new System.Drawing.Size(140, 49);
             this.uiButton5.TabIndex = 114;
             this.uiButton5.Text = "保存";
+            this.uiButton5.Click += new System.EventHandler(this.uiButton5_Click);
             // 
             // uiLabel10
             // 
@@ -458,6 +461,7 @@
             this.uiButton6.Size = new System.Drawing.Size(140, 49);
             this.uiButton6.TabIndex = 109;
             this.uiButton6.Text = "保存";
+            this.uiButton6.Click += new System.EventHandler(this.uiButton6_Click);
             // 
             // uiLabel12
             // 
@@ -524,6 +528,7 @@
             this.uiButton7.Size = new System.Drawing.Size(140, 49);
             this.uiButton7.TabIndex = 104;
             this.uiButton7.Text = "保存";
+            this.uiButton7.Click += new System.EventHandler(this.uiButton7_Click);
             // 
             // uiLabel14
             // 
@@ -590,6 +595,7 @@
             this.uiButton8.Size = new System.Drawing.Size(140, 49);
             this.uiButton8.TabIndex = 99;
             this.uiButton8.Text = "保存";
+            this.uiButton8.Click += new System.EventHandler(this.uiButton8_Click);
             // 
             // uiLabel16
             // 
@@ -601,7 +607,7 @@
             this.uiLabel16.Text = "罐5系数A";
             this.uiLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Form2
+            // HandSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -647,7 +653,7 @@
             this.Controls.Add(this.uiButton2);
             this.Controls.Add(this.uiLabel4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form2";
+            this.Name = "HandSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "手动修改参数";
             this.Load += new System.EventHandler(this.Form2_Load);

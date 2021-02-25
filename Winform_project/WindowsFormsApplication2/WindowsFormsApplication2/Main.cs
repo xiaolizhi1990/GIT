@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication2
 {
-    public partial class Form4 : Form
+    public partial class Main : Form
     {
-        public Form4()
+        public Main()
         {
             InitializeComponent();
         }
@@ -19,7 +19,7 @@ namespace WindowsFormsApplication2
         private void uiButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 f = new Form1();
+            Settings f = new Settings();
             f.Show();
         }
 

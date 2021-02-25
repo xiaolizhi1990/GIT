@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication2
 {
-    partial class Form3
+    partial class LockAD
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LockAD));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.uiButton1 = new Sunny.UI.UIButton();
             this.uiProcessBar1 = new Sunny.UI.UIProcessBar();

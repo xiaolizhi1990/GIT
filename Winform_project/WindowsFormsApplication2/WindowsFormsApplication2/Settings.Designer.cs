@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication2
 {
-    partial class Form1
+    partial class Settings
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -86,7 +86,7 @@
             System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("6");
             System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("7");
             System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("8");
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.uiTextBox9 = new Sunny.UI.UITextBox();
@@ -171,6 +171,7 @@
             this.uiComboTreeView8 = new Sunny.UI.UIComboTreeView();
             this.uiLabel32 = new Sunny.UI.UILabel();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.uiLine4 = new Sunny.UI.UILine();
             this.uiButton11 = new Sunny.UI.UIButton();
             this.uiButton10 = new Sunny.UI.UIButton();
             this.uiDatePicker7 = new Sunny.UI.UIDatePicker();
@@ -191,7 +192,6 @@
             this.uiTextBox5 = new Sunny.UI.UITextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.uiLine4 = new Sunny.UI.UILine();
             this.uiTabControlMenu1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -821,8 +821,8 @@
             this.uiTextBox4.Padding = new System.Windows.Forms.Padding(5);
             this.uiTextBox4.Size = new System.Drawing.Size(150, 29);
             this.uiTextBox4.TabIndex = 74;
-            this.uiTextBox4.Text = "0";
-            this.uiTextBox4.Type = Sunny.UI.UITextBox.UIEditType.Integer;
+            this.uiTextBox4.Text = "0.00";
+            this.uiTextBox4.Type = Sunny.UI.UITextBox.UIEditType.Double;
             // 
             // uiTextBox3
             // 
@@ -838,8 +838,8 @@
             this.uiTextBox3.Padding = new System.Windows.Forms.Padding(5);
             this.uiTextBox3.Size = new System.Drawing.Size(150, 29);
             this.uiTextBox3.TabIndex = 73;
-            this.uiTextBox3.Text = "0";
-            this.uiTextBox3.Type = Sunny.UI.UITextBox.UIEditType.Integer;
+            this.uiTextBox3.Text = "0.00";
+            this.uiTextBox3.Type = Sunny.UI.UITextBox.UIEditType.Double;
             // 
             // uiTextBox2
             // 
@@ -858,16 +858,17 @@
             // 
             // uiSwitch3
             // 
-            this.uiSwitch3.ActiveText = "选择全部罐";
+            this.uiSwitch3.ActiveText = "取消选择";
             this.uiSwitch3.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiSwitch3.InActiveText = "选择全部罐";
+            this.uiSwitch3.InActiveText = "选择全部";
             this.uiSwitch3.Location = new System.Drawing.Point(426, 273);
             this.uiSwitch3.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSwitch3.Name = "uiSwitch3";
-            this.uiSwitch3.Size = new System.Drawing.Size(138, 35);
+            this.uiSwitch3.Size = new System.Drawing.Size(110, 35);
             this.uiSwitch3.Style = Sunny.UI.UIStyle.Custom;
             this.uiSwitch3.TabIndex = 71;
             this.uiSwitch3.Text = "uiSwitch3";
+            this.uiSwitch3.ValueChanged += new Sunny.UI.UISwitch.OnValueChanged(this.uiSwitch3_ValueChanged);
             // 
             // uiButton8
             // 
@@ -890,6 +891,7 @@
             this.uiButton7.Size = new System.Drawing.Size(172, 53);
             this.uiButton7.TabIndex = 45;
             this.uiButton7.Text = "保存警报设置";
+            this.uiButton7.Click += new System.EventHandler(this.uiButton7_Click);
             // 
             // uiLabel24
             // 
@@ -1008,6 +1010,7 @@
             this.uiComboTreeView6.TabIndex = 34;
             this.uiComboTreeView6.Text = "1";
             this.uiComboTreeView6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiComboTreeView6.NodeSelected += new Sunny.UI.UIComboTreeView.OnNodeSelected(this.uiComboTreeView6_NodeSelected);
             // 
             // uiLabel21
             // 
@@ -1029,6 +1032,7 @@
             this.uiButton6.Size = new System.Drawing.Size(172, 53);
             this.uiButton6.TabIndex = 32;
             this.uiButton6.Text = "保存";
+            this.uiButton6.Click += new System.EventHandler(this.uiButton6_Click);
             // 
             // uiLabel20
             // 
@@ -1536,6 +1540,17 @@
             this.tabPage6.Text = "U盘操作";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // uiLine4
+            // 
+            this.uiLine4.FillColor = System.Drawing.Color.White;
+            this.uiLine4.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLine4.Location = new System.Drawing.Point(3, 480);
+            this.uiLine4.MinimumSize = new System.Drawing.Size(2, 2);
+            this.uiLine4.Name = "uiLine4";
+            this.uiLine4.Size = new System.Drawing.Size(1135, 29);
+            this.uiLine4.Style = Sunny.UI.UIStyle.Custom;
+            this.uiLine4.TabIndex = 78;
+            // 
             // uiButton11
             // 
             this.uiButton11.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1823,18 +1838,7 @@
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // uiLine4
-            // 
-            this.uiLine4.FillColor = System.Drawing.Color.White;
-            this.uiLine4.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiLine4.Location = new System.Drawing.Point(3, 480);
-            this.uiLine4.MinimumSize = new System.Drawing.Size(2, 2);
-            this.uiLine4.Name = "uiLine4";
-            this.uiLine4.Size = new System.Drawing.Size(1135, 29);
-            this.uiLine4.Style = Sunny.UI.UIStyle.Custom;
-            this.uiLine4.TabIndex = 78;
-            // 
-            // Form1
+            // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1845,7 +1849,7 @@
             this.Controls.Add(this.uiTabControlMenu1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "设置";
             this.Load += new System.EventHandler(this.Form1_Load);
