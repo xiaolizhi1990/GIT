@@ -14,7 +14,8 @@ namespace WindowsFormsApplication2
         int count;
         int time;
         
-        IniFiles ini = new IniFiles(Application.StartupPath + @"\MyConfig.INI");
+        IniFiles ini = new IniFiles(Application.StartupPath + @"\MyConfig.INI");//声明配置文件路径
+
         public Settings()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace WindowsFormsApplication2
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            if (ini.ExistINIFile())
+            if (ini.ExistINIFile())               //读取ini配置文件，并在窗体加载时显示数据
             {               
                 uiTextBox2.Text = ini.IniReadValue("井名", "ProjectName");
                 uiComboTreeView5.Text = ini.IniReadValue("存储间隔", "TIME");
@@ -168,7 +169,7 @@ namespace WindowsFormsApplication2
                 Num = Convert.ToInt32(str);
                 String str1 = uiTextBox3.Text;       //获取输入的最大值
                 String str2 = uiTextBox4.Text;       //获取输入的最小值
-                switch (Num)
+                switch (Num)                        //循环写入数据
                 {
                     case 1: ini.IniWriteValue("1#泥浆罐", "ALARM_H", str1); ini.IniWriteValue("1#泥浆罐", "ALARM_L", str2); MessageBox.Show("1#泥浆罐设置成功！", "提示"); break;
                     case 2: ini.IniWriteValue("2#泥浆罐", "ALARM_H", str1); ini.IniWriteValue("2#泥浆罐", "ALARM_L", str2); MessageBox.Show("2#泥浆罐设置成功！", "提示"); break;
@@ -181,7 +182,7 @@ namespace WindowsFormsApplication2
 
                 }
             }
-            else if (uiComboTreeView6.Enabled == false)
+            else if (uiComboTreeView6.Enabled == false) //下拉框不可用时，统一修改数据
             {
                 int i;
                 for (i = 1; i < 9; i++) 
@@ -218,7 +219,7 @@ namespace WindowsFormsApplication2
            
         }
 
-        private void uiSwitch3_ValueChanged(object sender, bool value)
+        private void uiSwitch3_ValueChanged(object sender, bool value)      //开关按钮开启改变下拉选择框为不可选中
         {
             if (uiSwitch3.Active == true) 
             {
