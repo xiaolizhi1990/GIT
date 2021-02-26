@@ -197,7 +197,7 @@ namespace WindowsFormsApplication2
 
         }
 
-        private void uiComboTreeView6_NodeSelected(object sender, TreeNode node)
+        private void uiComboTreeView6_NodeSelected(object sender, TreeNode node)    //下拉框的对应显示数值
         {
             if (uiComboTreeView6.Enabled == true)
             {

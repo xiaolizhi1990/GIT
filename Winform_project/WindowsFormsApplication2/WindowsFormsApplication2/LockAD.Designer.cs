@@ -88,17 +88,18 @@
             this.uiLabel3.Text = "定时时间：";
             this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Form3
+            // LockAD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(581, 414);
             this.Controls.Add(this.uiLabel3);
             this.Controls.Add(this.uiComboBox1);
             this.Controls.Add(this.uiProcessBar1);
             this.Controls.Add(this.uiButton1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form3";
+            this.Name = "LockAD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "锁定AD";
             this.Load += new System.EventHandler(this.Form3_Load);

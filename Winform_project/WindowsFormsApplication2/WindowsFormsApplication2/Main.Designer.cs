@@ -157,7 +157,6 @@
             this.uiLight1.OffColor = System.Drawing.Color.Red;
             this.uiLight1.Radius = 35;
             this.uiLight1.Size = new System.Drawing.Size(35, 35);
-            this.uiLight1.State = Sunny.UI.UILightState.Blink;
             this.uiLight1.Style = Sunny.UI.UIStyle.Custom;
             this.uiLight1.TabIndex = 6;
             this.uiLight1.Text = "uiLight1";
@@ -992,10 +991,11 @@
             this.uiLabel35.Text = "uiLabel35";
             this.uiLabel35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Form4
+            // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1296, 666);
             this.Controls.Add(this.uiLabel35);
             this.Controls.Add(this.uiLabel2);
@@ -1012,7 +1012,8 @@
             this.Controls.Add(this.uiGroupBox2);
             this.Controls.Add(this.uiGroupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form4";
+            this.MaximizeBox = false;
+            this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "泥罐液面监测系统";
             this.Load += new System.EventHandler(this.Form4_Load_1);
