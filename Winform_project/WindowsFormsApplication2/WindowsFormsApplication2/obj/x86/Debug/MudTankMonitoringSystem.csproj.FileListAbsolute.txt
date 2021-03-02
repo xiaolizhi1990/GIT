@@ -11,5 +11,6 @@ D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.RealChart.resources
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Settings.resources
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.HandSettings.resources
-D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.LockAD.resources
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Main.resources
+D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.LockAD1.resources
+D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.LockAD2.resources

@@ -13,20 +13,22 @@ namespace WindowsFormsApplication2
     {
         int count;
         int time;
-        
+
         IniFiles ini = new IniFiles(Application.StartupPath + @"\MyConfig.INI");//声明配置文件路径
 
         public Settings()
         {
             InitializeComponent();
-         
+            pCurrentWin = this; //构造函数中，给静态成员初始化
+
         }
+        public static Settings pCurrentWin = null;//在窗体类中定义一个静态成员，来保存当前主窗体对象
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
             if (ini.ExistINIFile())               //读取ini配置文件，并在窗体加载时显示数据
-            {               
+            {
                 uiTextBox2.Text = ini.IniReadValue("井名", "ProjectName");
                 uiComboTreeView5.Text = ini.IniReadValue("存储间隔", "TIME");
                 uiTextBox3.Text = ini.IniReadValue("1#泥浆罐", "ALARM_H");
@@ -83,19 +85,19 @@ namespace WindowsFormsApplication2
 
         private void uiButton2_Click(object sender, EventArgs e)
         {
-            LockAD f = new LockAD();
+            LockAD1 f = new LockAD1();
             f.Show();
         }
 
         private void uiButton3_Click(object sender, EventArgs e)
         {
-            LockAD f = new LockAD();
+            LockAD2 f = new LockAD2();
             f.Show();
         }
 
         private void uiTabControlMenu1_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void uiButton12_Click(object sender, EventArgs e)
@@ -103,8 +105,8 @@ namespace WindowsFormsApplication2
             this.Close();
             Main f = new Main();
             f.Show();
-      
-         
+
+
         }
 
         private void uiButton9_Click(object sender, EventArgs e)
@@ -185,12 +187,12 @@ namespace WindowsFormsApplication2
             else if (uiComboTreeView6.Enabled == false) //下拉框不可用时，统一修改数据
             {
                 int i;
-                for (i = 1; i < 9; i++) 
+                for (i = 1; i < 9; i++)
                 {
                     String str1 = uiTextBox3.Text;       //获取输入的最大值
                     String str2 = uiTextBox4.Text;       //获取输入的最小值
-                    ini.IniWriteValue(i+"#泥浆罐", "ALARM_H", str1); 
-                    ini.IniWriteValue(i+"#泥浆罐", "ALARM_L", str2); 
+                    ini.IniWriteValue(i + "#泥浆罐", "ALARM_H", str1);
+                    ini.IniWriteValue(i + "#泥浆罐", "ALARM_L", str2);
                 }
                 MessageBox.Show("全部泥浆罐设置成功！", "提示");
             }
@@ -216,18 +218,36 @@ namespace WindowsFormsApplication2
                     case 8: uiTextBox3.Text = ini.IniReadValue("8#泥浆罐", "ALARM_H"); uiTextBox4.Text = ini.IniReadValue("8#泥浆罐", "ALARM_L"); break;
                 }
             }
-           
+
         }
+
+
 
         private void uiSwitch3_ValueChanged(object sender, bool value)      //开关按钮开启改变下拉选择框为不可选中
         {
-            if (uiSwitch3.Active == true) 
+            if (uiSwitch3.Active == true)
             {
                 uiComboTreeView6.Enabled = false;
             }
             else
                 uiComboTreeView6.Enabled = true;
         }
-         
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            count++;//每到一定时间进入这个私有函数
+
+            uiProcessBar1.Value = count;
+            if (count == time)
+            {
+                timer3.Stop();
+                System.Media.SystemSounds.Asterisk.Play();//提示音
+                RealChart f = new RealChart();
+                f.Show();
+            }
+
+        }
+
+
     }
 }
