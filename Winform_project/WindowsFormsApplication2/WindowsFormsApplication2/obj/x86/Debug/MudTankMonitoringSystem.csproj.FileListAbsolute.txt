@@ -14,3 +14,6 @@ D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Main.resources
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.LockAD1.resources
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.LockAD2.resources
+D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\LiveCharts.WinForms.dll
+D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\LiveCharts.WinForms.pdb
+D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\LiveCharts.WinForms.xml
