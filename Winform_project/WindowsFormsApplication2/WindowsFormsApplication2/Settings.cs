@@ -15,13 +15,23 @@ namespace WindowsFormsApplication2
         int time;
 
         IniFiles ini = new IniFiles(Application.StartupPath + @"\MyConfig.INI");//声明配置文件路径
-
+        HandSettings HandSettingsWin;
         public Settings()
         {
             InitializeComponent();
             pCurrentWin = this; //构造函数中，给静态成员初始化
 
         }
+        public Settings(HandSettings HandSettingsWin)
+            : this()
+        {
+            // 建立对HandSettings实例的引用
+            this.HandSettingsWin = HandSettingsWin;
+            // 通过HandSettingsWin.StringValue1A属性获取HandSettings上TextBox1A显示的内容
+            string str1A = HandSettingsWin.StringValue1A;
+            string str1B = HandSettingsWin.StringValue1B;
+             
+        }
         public static Settings pCurrentWin = null;//在窗体类中定义一个静态成员，来保存当前主窗体对象
 
         private void Form1_Load(object sender, EventArgs e)
@@ -248,6 +258,36 @@ namespace WindowsFormsApplication2
 
         }
 
+        private void uiButton4_Click(object sender, EventArgs e)
+        {
+            String str0 = uiComboTreeView2.Text;  //获取罐号
+            String str1 = uiTextBox8.Text;       //获取输入的刻度一测量的高度值
+            String str2 = uiTextBox9.Text;       //获取输入的刻度二测量的高度值
+            String str3 = uiTextBox6.Text;       //AD1
+            String str4 = uiTextBox7.Text;       //AD2
+            int a = Convert.ToInt32(str0);
+            Double b = Convert.ToDouble(str1);
+            Double c = Convert.ToDouble(str2);
+            Double AD1 = Convert.ToDouble(str3);
+            Double AD2 = Convert.ToDouble(str4);
+            Double A = (b - c) / (AD1 - AD2);
+            String AA = Convert.ToString(A);
+            Double B = b - (A * AD1);
+            String BB = Convert.ToString(B);
+
+            switch (a) 
+            {
+                case 1: ini.IniWriteValue("1#泥浆罐", "A", AA); ini.IniWriteValue("1#泥浆罐", "B", BB); MessageBox.Show("1#泥浆罐设置成功！", "提示"); break;
+                case 2: ini.IniWriteValue("2#泥浆罐", "A", AA); ini.IniWriteValue("2#泥浆罐", "B", BB); MessageBox.Show("2#泥浆罐设置成功！", "提示"); break;
+                case 3: ini.IniWriteValue("3#泥浆罐", "A", AA); ini.IniWriteValue("3#泥浆罐", "B", BB); MessageBox.Show("3#泥浆罐设置成功！", "提示"); break;
+                case 4: ini.IniWriteValue("4#泥浆罐", "A", AA); ini.IniWriteValue("4#泥浆罐", "B", BB); MessageBox.Show("4#泥浆罐设置成功！", "提示"); break;
+                case 5: ini.IniWriteValue("5#泥浆罐", "A", AA); ini.IniWriteValue("5#泥浆罐", "B", BB); MessageBox.Show("5#泥浆罐设置成功！", "提示"); break;
+                case 6: ini.IniWriteValue("6#泥浆罐", "A", AA); ini.IniWriteValue("6#泥浆罐", "B", BB); MessageBox.Show("6#泥浆罐设置成功！", "提示"); break;
+                case 7: ini.IniWriteValue("7#泥浆罐", "A", AA); ini.IniWriteValue("7#泥浆罐", "B", BB); MessageBox.Show("7#泥浆罐设置成功！", "提示"); break;
+                case 8: ini.IniWriteValue("8#泥浆罐", "A", AA); ini.IniWriteValue("8#泥浆罐", "B", BB); MessageBox.Show("8#泥浆罐设置成功！", "提示"); break;
+            }
+
+        }
 
     }
 }

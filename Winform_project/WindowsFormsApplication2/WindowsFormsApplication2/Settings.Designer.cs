@@ -374,6 +374,7 @@
             this.uiButton4.Size = new System.Drawing.Size(172, 53);
             this.uiButton4.TabIndex = 15;
             this.uiButton4.Text = "确定刻度";
+            this.uiButton4.Click += new System.EventHandler(this.uiButton4_Click);
             // 
             // uiLabel7
             // 

@@ -3,7 +3,6 @@ D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\SunnyUI.dll
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\SunnyUI.pdb
-D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\MudTankMonitoringSystem.csprojResolveAssemblyReference.cache
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Properties.Resources.resources
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\MudTankMonitoringSystem.csproj.GenerateResource.Cache
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
@@ -14,6 +13,8 @@ D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Main.resources
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.LockAD1.resources
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.LockAD2.resources
-D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\LiveCharts.WinForms.dll
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\LiveCharts.WinForms.pdb
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\LiveCharts.WinForms.xml
+D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\HZH_Controls.dll
+D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\HZH_Controls.pdb
+D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\MudTankMonitoringSystem.csprojResolveAssemblyReference.cache

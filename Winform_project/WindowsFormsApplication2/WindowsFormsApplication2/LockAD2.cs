@@ -57,15 +57,12 @@ namespace WindowsFormsApplication2
                 System.Media.SystemSounds.Asterisk.Play();//提示音
                 MessageBox.Show("锁定完成！", "提示");//提示对话框
                 Close();
-                Random ran = new Random();
-                double randNum = NextDouble1(ran, 2.90, 3.00, 2);// 保留两位小数
+                Random ran = new Random();  //定义一个随机变量存储随机数
+                //double randNum = NextDouble1(ran, 4.00, 20.00, 2);// 保留两位小数
+                int randNum = ran.Next(4,20);
                 string randNUM = randNum.ToString();
                 Settings.pCurrentWin.uiTextBox7.Text = randNUM;//随机数赋值到文本框中
             }
-        }
-     
-
-       
-
+        }  
     }
 }

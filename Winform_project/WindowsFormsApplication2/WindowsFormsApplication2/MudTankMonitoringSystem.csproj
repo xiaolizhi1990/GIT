@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HZH_Controls">
+      <HintPath>..\..\..\HZH_Controls\HZH_Controls\HZH_Controls\bin\Debug\HZH_Controls.dll</HintPath>
+    </Reference>
     <Reference Include="LiveCharts.WinForms">
       <HintPath>..\..\..\HZHControls\HZH_Controls\packages\LiveCharts.WinForms.0.9.7.1\lib\net40\LiveCharts.WinForms.dll</HintPath>
     </Reference>
@@ -49,6 +52,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Messaging" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Web.Services" />

@@ -58,7 +58,8 @@ namespace WindowsFormsApplication2
                 MessageBox.Show("锁定完成！", "提示");//提示对话框
                 Close();
                 Random ran = new Random();
-                double randNum = NextDouble(ran, 0.30, 0.35, 2);// 保留两位小数
+                //double randNum = NextDouble(ran, 4.00, 20.00, 2);// 保留两位小数
+                int randNum = ran.Next(4, 20);
                 string randNUM = randNum.ToString();
                 Settings.pCurrentWin.uiTextBox6.Text = randNUM;//随机数赋值到文本框中
             }

@@ -157,6 +157,7 @@
             this.uiLight1.OffColor = System.Drawing.Color.Red;
             this.uiLight1.Radius = 35;
             this.uiLight1.Size = new System.Drawing.Size(35, 35);
+            this.uiLight1.State = Sunny.UI.UILightState.Blink;
             this.uiLight1.Style = Sunny.UI.UIStyle.Custom;
             this.uiLight1.TabIndex = 6;
             this.uiLight1.Text = "uiLight1";
