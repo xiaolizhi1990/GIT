@@ -37,55 +37,54 @@
             System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("6");
             System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("7");
             System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("8");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("长方形罐");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("带梯形底罐型");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("回流槽罐型");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("2");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("3");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("4");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("5");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("6");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("7");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("8");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("2");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("3");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("4");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("5");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("6");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("7");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("8");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("10");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("20");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("30");
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("40");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("50");
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("60");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("2");
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("3");
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("4");
-            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("5");
-            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("6");
-            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("7");
-            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("8");
-            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("2");
-            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("3");
-            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("4");
-            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("5");
-            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("6");
-            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("7");
-            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("8");
-            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("2");
-            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("3");
-            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("4");
-            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("5");
-            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("6");
-            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("7");
-            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("8");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("长方形罐体");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("锥形罐体");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("2");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("3");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("4");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("5");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("6");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("7");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("8");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("2");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("3");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("4");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("5");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("6");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("7");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("8");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("10");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("20");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("30");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("40");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("50");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("60");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("2");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("3");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("4");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("5");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("6");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("7");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("8");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("2");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("3");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("4");
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("5");
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("6");
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("7");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("8");
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("1");
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("2");
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("3");
+            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("4");
+            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("5");
+            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("6");
+            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("7");
+            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("8");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -193,6 +192,9 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.uiTextBox14 = new Sunny.UI.UITextBox();
+            this.uiLabel37 = new Sunny.UI.UILabel();
+            this.uiLabel38 = new Sunny.UI.UILabel();
             this.uiTabControlMenu1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -490,6 +492,9 @@
             // tabPage2
             // 
             this.tabPage2.AutoScroll = true;
+            this.tabPage2.Controls.Add(this.uiTextBox14);
+            this.tabPage2.Controls.Add(this.uiLabel37);
+            this.tabPage2.Controls.Add(this.uiLabel38);
             this.tabPage2.Controls.Add(this.uiTextBox11);
             this.tabPage2.Controls.Add(this.uiTextBox10);
             this.tabPage2.Controls.Add(this.uiButton5);
@@ -554,7 +559,8 @@
             this.uiButton5.Name = "uiButton5";
             this.uiButton5.Size = new System.Drawing.Size(172, 53);
             this.uiButton5.TabIndex = 30;
-            this.uiButton5.Text = "确定刻度";
+            this.uiButton5.Text = "保存";
+            this.uiButton5.Click += new System.EventHandler(this.uiButton5_Click);
             // 
             // uiLabel13
             // 
@@ -607,21 +613,19 @@
             this.uiComboTreeView4.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboTreeView4.Name = "uiComboTreeView4";
             treeNode9.Name = "节点0";
-            treeNode9.Text = "长方形罐";
+            treeNode9.Text = "长方形罐体";
             treeNode10.Name = "节点2";
-            treeNode10.Text = "带梯形底罐型";
-            treeNode11.Name = "节点3";
-            treeNode11.Text = "回流槽罐型";
+            treeNode10.Text = "锥形罐体";
             this.uiComboTreeView4.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode9,
-            treeNode10,
-            treeNode11});
+            treeNode10});
             this.uiComboTreeView4.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.uiComboTreeView4.Size = new System.Drawing.Size(150, 29);
             this.uiComboTreeView4.TabIndex = 22;
             this.uiComboTreeView4.Text = "长方形罐体";
             this.uiComboTreeView4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiComboTreeView4.UseWaitCursor = true;
+            this.uiComboTreeView4.NodeSelected += new Sunny.UI.UIComboTreeView.OnNodeSelected(this.uiComboTreeView4_NodeSelected);
             // 
             // uiLabel9
             // 
@@ -642,31 +646,31 @@
             this.uiComboTreeView3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboTreeView3.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboTreeView3.Name = "uiComboTreeView3";
+            treeNode11.Name = "节点0";
+            treeNode11.Text = "1";
             treeNode12.Name = "节点0";
-            treeNode12.Text = "1";
-            treeNode13.Name = "节点0";
-            treeNode13.Text = "2";
-            treeNode14.Name = "节点1";
-            treeNode14.Text = "3";
-            treeNode15.Name = "节点2";
-            treeNode15.Text = "4";
-            treeNode16.Name = "节点3";
-            treeNode16.Text = "5";
-            treeNode17.Name = "节点4";
-            treeNode17.Text = "6";
-            treeNode18.Name = "节点5";
-            treeNode18.Text = "7";
-            treeNode19.Name = "节点6";
-            treeNode19.Text = "8";
+            treeNode12.Text = "2";
+            treeNode13.Name = "节点1";
+            treeNode13.Text = "3";
+            treeNode14.Name = "节点2";
+            treeNode14.Text = "4";
+            treeNode15.Name = "节点3";
+            treeNode15.Text = "5";
+            treeNode16.Name = "节点4";
+            treeNode16.Text = "6";
+            treeNode17.Name = "节点5";
+            treeNode17.Text = "7";
+            treeNode18.Name = "节点6";
+            treeNode18.Text = "8";
             this.uiComboTreeView3.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode11,
             treeNode12,
             treeNode13,
             treeNode14,
             treeNode15,
             treeNode16,
             treeNode17,
-            treeNode18,
-            treeNode19});
+            treeNode18});
             this.uiComboTreeView3.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.uiComboTreeView3.Size = new System.Drawing.Size(150, 29);
             this.uiComboTreeView3.TabIndex = 20;
@@ -982,31 +986,31 @@
             this.uiComboTreeView6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboTreeView6.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboTreeView6.Name = "uiComboTreeView6";
+            treeNode19.Name = "节点0";
+            treeNode19.Text = "1";
             treeNode20.Name = "节点0";
-            treeNode20.Text = "1";
-            treeNode21.Name = "节点0";
-            treeNode21.Text = "2";
-            treeNode22.Name = "节点1";
-            treeNode22.Text = "3";
-            treeNode23.Name = "节点2";
-            treeNode23.Text = "4";
-            treeNode24.Name = "节点3";
-            treeNode24.Text = "5";
-            treeNode25.Name = "节点4";
-            treeNode25.Text = "6";
-            treeNode26.Name = "节点5";
-            treeNode26.Text = "7";
-            treeNode27.Name = "节点6";
-            treeNode27.Text = "8";
+            treeNode20.Text = "2";
+            treeNode21.Name = "节点1";
+            treeNode21.Text = "3";
+            treeNode22.Name = "节点2";
+            treeNode22.Text = "4";
+            treeNode23.Name = "节点3";
+            treeNode23.Text = "5";
+            treeNode24.Name = "节点4";
+            treeNode24.Text = "6";
+            treeNode25.Name = "节点5";
+            treeNode25.Text = "7";
+            treeNode26.Name = "节点6";
+            treeNode26.Text = "8";
             this.uiComboTreeView6.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode19,
             treeNode20,
             treeNode21,
             treeNode22,
             treeNode23,
             treeNode24,
             treeNode25,
-            treeNode26,
-            treeNode27});
+            treeNode26});
             this.uiComboTreeView6.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.uiComboTreeView6.Size = new System.Drawing.Size(150, 29);
             this.uiComboTreeView6.TabIndex = 34;
@@ -1055,25 +1059,25 @@
             this.uiComboTreeView5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboTreeView5.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboTreeView5.Name = "uiComboTreeView5";
+            treeNode27.Name = "节点0";
+            treeNode27.Text = "10";
             treeNode28.Name = "节点0";
-            treeNode28.Text = "10";
-            treeNode29.Name = "节点0";
-            treeNode29.Text = "20";
-            treeNode30.Name = "节点1";
-            treeNode30.Text = "30";
-            treeNode31.Name = "节点2";
-            treeNode31.Text = "40";
-            treeNode32.Name = "节点3";
-            treeNode32.Text = "50";
-            treeNode33.Name = "节点4";
-            treeNode33.Text = "60";
+            treeNode28.Text = "20";
+            treeNode29.Name = "节点1";
+            treeNode29.Text = "30";
+            treeNode30.Name = "节点2";
+            treeNode30.Text = "40";
+            treeNode31.Name = "节点3";
+            treeNode31.Text = "50";
+            treeNode32.Name = "节点4";
+            treeNode32.Text = "60";
             this.uiComboTreeView5.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode27,
             treeNode28,
             treeNode29,
             treeNode30,
             treeNode31,
-            treeNode32,
-            treeNode33});
+            treeNode32});
             this.uiComboTreeView5.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.uiComboTreeView5.Size = new System.Drawing.Size(150, 29);
             this.uiComboTreeView5.TabIndex = 29;
@@ -1269,31 +1273,31 @@
             this.uiComboTreeView7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboTreeView7.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboTreeView7.Name = "uiComboTreeView7";
+            treeNode33.Name = "节点0";
+            treeNode33.Text = "1";
             treeNode34.Name = "节点0";
-            treeNode34.Text = "1";
-            treeNode35.Name = "节点0";
-            treeNode35.Text = "2";
-            treeNode36.Name = "节点1";
-            treeNode36.Text = "3";
-            treeNode37.Name = "节点2";
-            treeNode37.Text = "4";
-            treeNode38.Name = "节点3";
-            treeNode38.Text = "5";
-            treeNode39.Name = "节点4";
-            treeNode39.Text = "6";
-            treeNode40.Name = "节点5";
-            treeNode40.Text = "7";
-            treeNode41.Name = "节点6";
-            treeNode41.Text = "8";
+            treeNode34.Text = "2";
+            treeNode35.Name = "节点1";
+            treeNode35.Text = "3";
+            treeNode36.Name = "节点2";
+            treeNode36.Text = "4";
+            treeNode37.Name = "节点3";
+            treeNode37.Text = "5";
+            treeNode38.Name = "节点4";
+            treeNode38.Text = "6";
+            treeNode39.Name = "节点5";
+            treeNode39.Text = "7";
+            treeNode40.Name = "节点6";
+            treeNode40.Text = "8";
             this.uiComboTreeView7.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode33,
             treeNode34,
             treeNode35,
             treeNode36,
             treeNode37,
             treeNode38,
             treeNode39,
-            treeNode40,
-            treeNode41});
+            treeNode40});
             this.uiComboTreeView7.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.uiComboTreeView7.Size = new System.Drawing.Size(150, 29);
             this.uiComboTreeView7.TabIndex = 36;
@@ -1479,31 +1483,31 @@
             this.uiComboTreeView8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboTreeView8.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboTreeView8.Name = "uiComboTreeView8";
+            treeNode41.Name = "节点0";
+            treeNode41.Text = "1";
             treeNode42.Name = "节点0";
-            treeNode42.Text = "1";
-            treeNode43.Name = "节点0";
-            treeNode43.Text = "2";
-            treeNode44.Name = "节点1";
-            treeNode44.Text = "3";
-            treeNode45.Name = "节点2";
-            treeNode45.Text = "4";
-            treeNode46.Name = "节点3";
-            treeNode46.Text = "5";
-            treeNode47.Name = "节点4";
-            treeNode47.Text = "6";
-            treeNode48.Name = "节点5";
-            treeNode48.Text = "7";
-            treeNode49.Name = "节点6";
-            treeNode49.Text = "8";
+            treeNode42.Text = "2";
+            treeNode43.Name = "节点1";
+            treeNode43.Text = "3";
+            treeNode44.Name = "节点2";
+            treeNode44.Text = "4";
+            treeNode45.Name = "节点3";
+            treeNode45.Text = "5";
+            treeNode46.Name = "节点4";
+            treeNode46.Text = "6";
+            treeNode47.Name = "节点5";
+            treeNode47.Text = "7";
+            treeNode48.Name = "节点6";
+            treeNode48.Text = "8";
             this.uiComboTreeView8.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode41,
             treeNode42,
             treeNode43,
             treeNode44,
             treeNode45,
             treeNode46,
             treeNode47,
-            treeNode48,
-            treeNode49});
+            treeNode48});
             this.uiComboTreeView8.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.uiComboTreeView8.Size = new System.Drawing.Size(150, 29);
             this.uiComboTreeView8.TabIndex = 52;
@@ -1701,31 +1705,31 @@
             this.uiComboTreeView9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboTreeView9.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboTreeView9.Name = "uiComboTreeView9";
+            treeNode49.Name = "节点0";
+            treeNode49.Text = "1";
             treeNode50.Name = "节点0";
-            treeNode50.Text = "1";
-            treeNode51.Name = "节点0";
-            treeNode51.Text = "2";
-            treeNode52.Name = "节点1";
-            treeNode52.Text = "3";
-            treeNode53.Name = "节点2";
-            treeNode53.Text = "4";
-            treeNode54.Name = "节点3";
-            treeNode54.Text = "5";
-            treeNode55.Name = "节点4";
-            treeNode55.Text = "6";
-            treeNode56.Name = "节点5";
-            treeNode56.Text = "7";
-            treeNode57.Name = "节点6";
-            treeNode57.Text = "8";
+            treeNode50.Text = "2";
+            treeNode51.Name = "节点1";
+            treeNode51.Text = "3";
+            treeNode52.Name = "节点2";
+            treeNode52.Text = "4";
+            treeNode53.Name = "节点3";
+            treeNode53.Text = "5";
+            treeNode54.Name = "节点4";
+            treeNode54.Text = "6";
+            treeNode55.Name = "节点5";
+            treeNode55.Text = "7";
+            treeNode56.Name = "节点6";
+            treeNode56.Text = "8";
             this.uiComboTreeView9.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode49,
             treeNode50,
             treeNode51,
             treeNode52,
             treeNode53,
             treeNode54,
             treeNode55,
-            treeNode56,
-            treeNode57});
+            treeNode56});
             this.uiComboTreeView9.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.uiComboTreeView9.Size = new System.Drawing.Size(150, 29);
             this.uiComboTreeView9.TabIndex = 66;
@@ -1843,6 +1847,43 @@
             // timer3
             // 
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // uiTextBox14
+            // 
+            this.uiTextBox14.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox14.FillColor = System.Drawing.Color.White;
+            this.uiTextBox14.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox14.Location = new System.Drawing.Point(267, 333);
+            this.uiTextBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox14.Maximum = 2147483647D;
+            this.uiTextBox14.Minimum = -2147483648D;
+            this.uiTextBox14.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox14.Name = "uiTextBox14";
+            this.uiTextBox14.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox14.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox14.TabIndex = 78;
+            this.uiTextBox14.Text = "0.00";
+            this.uiTextBox14.Type = Sunny.UI.UITextBox.UIEditType.Double;
+            // 
+            // uiLabel37
+            // 
+            this.uiLabel37.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel37.Location = new System.Drawing.Point(464, 312);
+            this.uiLabel37.Name = "uiLabel37";
+            this.uiLabel37.Size = new System.Drawing.Size(44, 69);
+            this.uiLabel37.TabIndex = 77;
+            this.uiLabel37.Text = "m";
+            this.uiLabel37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiLabel38
+            // 
+            this.uiLabel38.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel38.Location = new System.Drawing.Point(118, 312);
+            this.uiLabel38.Name = "uiLabel38";
+            this.uiLabel38.Size = new System.Drawing.Size(143, 69);
+            this.uiLabel38.TabIndex = 76;
+            this.uiLabel38.Text = "锥高度：";
+            this.uiLabel38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Settings
             // 
@@ -1980,6 +2021,9 @@
         public Sunny.UI.UITextBox uiTextBox6;
         public Sunny.UI.UITextBox uiTextBox7;
         private System.Windows.Forms.Timer timer3;
+        private Sunny.UI.UITextBox uiTextBox14;
+        private Sunny.UI.UILabel uiLabel37;
+        private Sunny.UI.UILabel uiLabel38;
     }
 }
 

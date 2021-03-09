@@ -43,7 +43,13 @@ namespace WindowsFormsApplication2
                 uiComboTreeView5.Text = ini.IniReadValue("存储间隔", "TIME");
                 uiTextBox3.Text = ini.IniReadValue("1#泥浆罐", "ALARM_H");
                 uiTextBox4.Text = ini.IniReadValue("1#泥浆罐", "ALARM_L");
-
+                uiTextBox10.Text = ini.IniReadValue("1#泥浆罐", "V");
+                uiTextBox11.Text = ini.IniReadValue("1#泥浆罐", "L");
+                uiTextBox12.Text = ini.IniReadValue("1#泥浆罐", "W");
+                uiTextBox13.Text = ini.IniReadValue("1#泥浆罐", "H");
+                uiLabel38.Visible = false;         //加载时隐藏锥高度
+                uiTextBox14.Visible = false;
+                uiLabel37.Visible = false;
             }
         }
 
@@ -286,8 +292,59 @@ namespace WindowsFormsApplication2
                 case 7: ini.IniWriteValue("7#泥浆罐", "A", AA); ini.IniWriteValue("7#泥浆罐", "B", BB); MessageBox.Show("7#泥浆罐设置成功！", "提示"); break;
                 case 8: ini.IniWriteValue("8#泥浆罐", "A", AA); ini.IniWriteValue("8#泥浆罐", "B", BB); MessageBox.Show("8#泥浆罐设置成功！", "提示"); break;
             }
-
         }
 
+        private void uiButton5_Click(object sender, EventArgs e)
+        {
+            String str = uiComboTreeView3.Text;
+            String G_type = uiComboTreeView4.Text;
+            String V = uiTextBox10.Text;
+            Double VV = Convert.ToDouble(V);
+            String L = uiTextBox11.Text;
+            Double LL = Convert.ToDouble(L);
+            String W = uiTextBox12.Text;
+            Double WW = Convert.ToDouble(W);
+            String H = uiTextBox13.Text;
+            Double HH = Convert.ToDouble(H);
+            if (G_type == "长方形罐体")
+            {
+                ini.IniWriteValue(str+"#泥浆罐", "G_type", "0");
+                VV = LL * WW * HH;
+                ini.IniWriteValue(str + "#泥浆罐", "L", L);
+                ini.IniWriteValue(str + "#泥浆罐", "W", W);
+                ini.IniWriteValue(str + "#泥浆罐", "H", H);
+                ini.IniWriteValue(str + "#泥浆罐", "V", Convert.ToString(VV));
+                
+            }
+            else if (G_type == "锥形罐体") 
+            {
+                ini.IniWriteValue(str + "#泥浆罐", "G_type", "1");
+                String ZH = uiTextBox14.Text;
+                Double ZZHH = Convert.ToDouble(ZH);
+                VV = (LL * WW * (HH-ZZHH)) + (ZZHH * WW * LL/3);
+                ini.IniWriteValue(str + "#泥浆罐", "L", L);
+                ini.IniWriteValue(str + "#泥浆罐", "W", W);
+                ini.IniWriteValue(str + "#泥浆罐", "H", H);
+                ini.IniWriteValue(str + "#泥浆罐", "ZH", ZH);
+                ini.IniWriteValue(str + "#泥浆罐", "V", Convert.ToString(VV));
+            }
+            MessageBox.Show("保存成功！","提示");
+        }
+
+        private void uiComboTreeView4_NodeSelected(object sender, TreeNode node)
+        {
+            if (uiComboTreeView4.Text == "长方形罐体")  //G_type为0时隐藏
+            {
+                uiLabel38.Visible = false;         //加载时隐藏锥高度
+                uiTextBox14.Visible = false;
+                uiLabel37.Visible = false;
+            }
+            else
+            {
+                uiLabel38.Visible = true;
+                uiTextBox14.Visible = true;
+                uiLabel37.Visible = true;
+            }
+        }
     }
 }

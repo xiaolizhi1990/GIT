@@ -43,7 +43,7 @@
             this.uiLabel7 = new Sunny.UI.UILabel();
             this.uiLabel8 = new Sunny.UI.UILabel();
             this.uiProcessBar2 = new Sunny.UI.UIProcessBar();
-            this.uiSwitch3 = new Sunny.UI.UISwitch();
+            this.uiSwitch2 = new Sunny.UI.UISwitch();
             this.uiLabel9 = new Sunny.UI.UILabel();
             this.uiLabel10 = new Sunny.UI.UILabel();
             this.uiGroupBox3 = new Sunny.UI.UIGroupBox();
@@ -51,7 +51,7 @@
             this.uiLabel11 = new Sunny.UI.UILabel();
             this.uiLabel12 = new Sunny.UI.UILabel();
             this.uiProcessBar3 = new Sunny.UI.UIProcessBar();
-            this.uiSwitch7 = new Sunny.UI.UISwitch();
+            this.uiSwitch3 = new Sunny.UI.UISwitch();
             this.uiLabel13 = new Sunny.UI.UILabel();
             this.uiLabel14 = new Sunny.UI.UILabel();
             this.uiGroupBox4 = new Sunny.UI.UIGroupBox();
@@ -61,13 +61,13 @@
             this.uiLabel17 = new Sunny.UI.UILabel();
             this.uiLabel18 = new Sunny.UI.UILabel();
             this.uiProcessBar4 = new Sunny.UI.UIProcessBar();
-            this.uiSwitch11 = new Sunny.UI.UISwitch();
+            this.uiSwitch4 = new Sunny.UI.UISwitch();
             this.uiGroupBox5 = new Sunny.UI.UIGroupBox();
             this.uiLight5 = new Sunny.UI.UILight();
             this.uiLabel19 = new Sunny.UI.UILabel();
             this.uiProcessBar5 = new Sunny.UI.UIProcessBar();
             this.uiLabel20 = new Sunny.UI.UILabel();
-            this.uiSwitch2 = new Sunny.UI.UISwitch();
+            this.uiSwitch5 = new Sunny.UI.UISwitch();
             this.uiLabel21 = new Sunny.UI.UILabel();
             this.uiLabel22 = new Sunny.UI.UILabel();
             this.uiGroupBox6 = new Sunny.UI.UIGroupBox();
@@ -77,7 +77,7 @@
             this.uiLabel25 = new Sunny.UI.UILabel();
             this.uiLabel26 = new Sunny.UI.UILabel();
             this.uiProcessBar6 = new Sunny.UI.UIProcessBar();
-            this.uiSwitch5 = new Sunny.UI.UISwitch();
+            this.uiSwitch6 = new Sunny.UI.UISwitch();
             this.uiGroupBox7 = new Sunny.UI.UIGroupBox();
             this.uiLight7 = new Sunny.UI.UILight();
             this.uiLabel27 = new Sunny.UI.UILabel();
@@ -85,7 +85,7 @@
             this.uiLabel29 = new Sunny.UI.UILabel();
             this.uiLabel30 = new Sunny.UI.UILabel();
             this.uiProcessBar7 = new Sunny.UI.UIProcessBar();
-            this.uiSwitch9 = new Sunny.UI.UISwitch();
+            this.uiSwitch7 = new Sunny.UI.UISwitch();
             this.uiGroupBox8 = new Sunny.UI.UIGroupBox();
             this.uiLight8 = new Sunny.UI.UILight();
             this.uiLabel31 = new Sunny.UI.UILabel();
@@ -93,7 +93,7 @@
             this.uiLabel33 = new Sunny.UI.UILabel();
             this.uiLabel34 = new Sunny.UI.UILabel();
             this.uiProcessBar8 = new Sunny.UI.UIProcessBar();
-            this.uiSwitch13 = new Sunny.UI.UISwitch();
+            this.uiSwitch8 = new Sunny.UI.UISwitch();
             this.uiButton1 = new Sunny.UI.UIButton();
             this.uiButton2 = new Sunny.UI.UIButton();
             this.uiLabel1 = new Sunny.UI.UILabel();
@@ -125,7 +125,6 @@
             this.uiProcessBar1.TabIndex = 0;
             this.uiProcessBar1.Text = "16.0%";
             this.uiProcessBar1.Value = 80;
-            this.uiProcessBar1.ValueChanged += new Sunny.UI.UIProcessBar.OnValueChanged(this.uiProcessBar1_ValueChanged);
             // 
             // uiGroupBox1
             // 
@@ -154,7 +153,7 @@
             this.uiLight1.Location = new System.Drawing.Point(22, 33);
             this.uiLight1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiLight1.Name = "uiLight1";
-            this.uiLight1.OffColor = System.Drawing.Color.Red;
+            this.uiLight1.OffColor = System.Drawing.Color.Gray;
             this.uiLight1.Radius = 35;
             this.uiLight1.Size = new System.Drawing.Size(35, 35);
             this.uiLight1.State = Sunny.UI.UILightState.Blink;
@@ -221,6 +220,7 @@
             this.uiSwitch1.Style = Sunny.UI.UIStyle.Custom;
             this.uiSwitch1.TabIndex = 1;
             this.uiSwitch1.Text = "uiSwitch1";
+            this.uiSwitch1.ValueChanged += new Sunny.UI.UISwitch.OnValueChanged(this.uiSwitch1_ValueChanged);
             // 
             // uiGroupBox2
             // 
@@ -228,7 +228,7 @@
             this.uiGroupBox2.Controls.Add(this.uiLabel7);
             this.uiGroupBox2.Controls.Add(this.uiLabel8);
             this.uiGroupBox2.Controls.Add(this.uiProcessBar2);
-            this.uiGroupBox2.Controls.Add(this.uiSwitch3);
+            this.uiGroupBox2.Controls.Add(this.uiSwitch2);
             this.uiGroupBox2.Controls.Add(this.uiLabel9);
             this.uiGroupBox2.Controls.Add(this.uiLabel10);
             this.uiGroupBox2.Font = new System.Drawing.Font("微软雅黑", 12F);
@@ -289,16 +289,17 @@
             this.uiProcessBar2.Text = "16.0%";
             this.uiProcessBar2.Value = 50;
             // 
-            // uiSwitch3
+            // uiSwitch2
             // 
-            this.uiSwitch3.Active = true;
-            this.uiSwitch3.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiSwitch3.Location = new System.Drawing.Point(177, 33);
-            this.uiSwitch3.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSwitch3.Name = "uiSwitch3";
-            this.uiSwitch3.Size = new System.Drawing.Size(75, 29);
-            this.uiSwitch3.TabIndex = 3;
-            this.uiSwitch3.Text = "uiSwitch3";
+            this.uiSwitch2.Active = true;
+            this.uiSwitch2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiSwitch2.Location = new System.Drawing.Point(177, 33);
+            this.uiSwitch2.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSwitch2.Name = "uiSwitch2";
+            this.uiSwitch2.Size = new System.Drawing.Size(75, 29);
+            this.uiSwitch2.TabIndex = 2;
+            this.uiSwitch2.Text = "uiSwitch2";
+            this.uiSwitch2.ValueChanged += new Sunny.UI.UISwitch.OnValueChanged(this.uiSwitch2_ValueChanged);
             // 
             // uiLabel9
             // 
@@ -328,7 +329,7 @@
             this.uiGroupBox3.Controls.Add(this.uiLabel11);
             this.uiGroupBox3.Controls.Add(this.uiLabel12);
             this.uiGroupBox3.Controls.Add(this.uiProcessBar3);
-            this.uiGroupBox3.Controls.Add(this.uiSwitch7);
+            this.uiGroupBox3.Controls.Add(this.uiSwitch3);
             this.uiGroupBox3.Controls.Add(this.uiLabel13);
             this.uiGroupBox3.Controls.Add(this.uiLabel14);
             this.uiGroupBox3.Font = new System.Drawing.Font("微软雅黑", 12F);
@@ -389,16 +390,17 @@
             this.uiProcessBar3.Text = "16.0%";
             this.uiProcessBar3.Value = 50;
             // 
-            // uiSwitch7
+            // uiSwitch3
             // 
-            this.uiSwitch7.Active = true;
-            this.uiSwitch7.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiSwitch7.Location = new System.Drawing.Point(174, 33);
-            this.uiSwitch7.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSwitch7.Name = "uiSwitch7";
-            this.uiSwitch7.Size = new System.Drawing.Size(75, 29);
-            this.uiSwitch7.TabIndex = 7;
-            this.uiSwitch7.Text = "uiSwitch7";
+            this.uiSwitch3.Active = true;
+            this.uiSwitch3.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiSwitch3.Location = new System.Drawing.Point(174, 33);
+            this.uiSwitch3.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSwitch3.Name = "uiSwitch3";
+            this.uiSwitch3.Size = new System.Drawing.Size(75, 29);
+            this.uiSwitch3.TabIndex = 3;
+            this.uiSwitch3.Text = "uiSwitch3";
+            this.uiSwitch3.ValueChanged += new Sunny.UI.UISwitch.OnValueChanged(this.uiSwitch3_ValueChanged);
             // 
             // uiLabel13
             // 
@@ -430,7 +432,7 @@
             this.uiGroupBox4.Controls.Add(this.uiLabel17);
             this.uiGroupBox4.Controls.Add(this.uiLabel18);
             this.uiGroupBox4.Controls.Add(this.uiProcessBar4);
-            this.uiGroupBox4.Controls.Add(this.uiSwitch11);
+            this.uiGroupBox4.Controls.Add(this.uiSwitch4);
             this.uiGroupBox4.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiGroupBox4.Location = new System.Drawing.Point(993, 14);
             this.uiGroupBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -511,16 +513,17 @@
             this.uiProcessBar4.Text = "16.0%";
             this.uiProcessBar4.Value = 50;
             // 
-            // uiSwitch11
+            // uiSwitch4
             // 
-            this.uiSwitch11.Active = true;
-            this.uiSwitch11.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiSwitch11.Location = new System.Drawing.Point(178, 33);
-            this.uiSwitch11.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSwitch11.Name = "uiSwitch11";
-            this.uiSwitch11.Size = new System.Drawing.Size(75, 29);
-            this.uiSwitch11.TabIndex = 14;
-            this.uiSwitch11.Text = "uiSwitch11";
+            this.uiSwitch4.Active = true;
+            this.uiSwitch4.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiSwitch4.Location = new System.Drawing.Point(178, 33);
+            this.uiSwitch4.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSwitch4.Name = "uiSwitch4";
+            this.uiSwitch4.Size = new System.Drawing.Size(75, 29);
+            this.uiSwitch4.TabIndex = 4;
+            this.uiSwitch4.Text = "uiSwitch4";
+            this.uiSwitch4.ValueChanged += new Sunny.UI.UISwitch.OnValueChanged(this.uiSwitch4_ValueChanged);
             // 
             // uiGroupBox5
             // 
@@ -528,7 +531,7 @@
             this.uiGroupBox5.Controls.Add(this.uiLabel19);
             this.uiGroupBox5.Controls.Add(this.uiProcessBar5);
             this.uiGroupBox5.Controls.Add(this.uiLabel20);
-            this.uiGroupBox5.Controls.Add(this.uiSwitch2);
+            this.uiGroupBox5.Controls.Add(this.uiSwitch5);
             this.uiGroupBox5.Controls.Add(this.uiLabel21);
             this.uiGroupBox5.Controls.Add(this.uiLabel22);
             this.uiGroupBox5.Font = new System.Drawing.Font("微软雅黑", 12F);
@@ -574,6 +577,7 @@
             this.uiProcessBar5.Name = "uiProcessBar5";
             this.uiProcessBar5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiProcessBar5.Size = new System.Drawing.Size(232, 43);
+            this.uiProcessBar5.Style = Sunny.UI.UIStyle.Custom;
             this.uiProcessBar5.TabIndex = 16;
             this.uiProcessBar5.Text = "16.0%";
             // 
@@ -588,15 +592,16 @@
             this.uiLabel20.Text = "0.00";
             this.uiLabel20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // uiSwitch2
+            // uiSwitch5
             // 
-            this.uiSwitch2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiSwitch2.Location = new System.Drawing.Point(174, 33);
-            this.uiSwitch2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSwitch2.Name = "uiSwitch2";
-            this.uiSwitch2.Size = new System.Drawing.Size(75, 29);
-            this.uiSwitch2.TabIndex = 2;
-            this.uiSwitch2.Text = "uiSwitch2";
+            this.uiSwitch5.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiSwitch5.Location = new System.Drawing.Point(174, 33);
+            this.uiSwitch5.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSwitch5.Name = "uiSwitch5";
+            this.uiSwitch5.Size = new System.Drawing.Size(75, 29);
+            this.uiSwitch5.TabIndex = 5;
+            this.uiSwitch5.Text = "uiSwitch5";
+            this.uiSwitch5.ValueChanged += new Sunny.UI.UISwitch.OnValueChanged(this.uiSwitch5_ValueChanged);
             // 
             // uiLabel21
             // 
@@ -628,7 +633,7 @@
             this.uiGroupBox6.Controls.Add(this.uiLabel25);
             this.uiGroupBox6.Controls.Add(this.uiLabel26);
             this.uiGroupBox6.Controls.Add(this.uiProcessBar6);
-            this.uiGroupBox6.Controls.Add(this.uiSwitch5);
+            this.uiGroupBox6.Controls.Add(this.uiSwitch6);
             this.uiGroupBox6.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiGroupBox6.Location = new System.Drawing.Point(355, 302);
             this.uiGroupBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -708,15 +713,16 @@
             this.uiProcessBar6.TabIndex = 17;
             this.uiProcessBar6.Text = "16.0%";
             // 
-            // uiSwitch5
+            // uiSwitch6
             // 
-            this.uiSwitch5.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiSwitch5.Location = new System.Drawing.Point(177, 33);
-            this.uiSwitch5.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSwitch5.Name = "uiSwitch5";
-            this.uiSwitch5.Size = new System.Drawing.Size(75, 29);
-            this.uiSwitch5.TabIndex = 5;
-            this.uiSwitch5.Text = "uiSwitch5";
+            this.uiSwitch6.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiSwitch6.Location = new System.Drawing.Point(177, 33);
+            this.uiSwitch6.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSwitch6.Name = "uiSwitch6";
+            this.uiSwitch6.Size = new System.Drawing.Size(75, 29);
+            this.uiSwitch6.TabIndex = 6;
+            this.uiSwitch6.Text = "uiSwitch6";
+            this.uiSwitch6.ValueChanged += new Sunny.UI.UISwitch.OnValueChanged(this.uiSwitch6_ValueChanged);
             // 
             // uiGroupBox7
             // 
@@ -726,7 +732,7 @@
             this.uiGroupBox7.Controls.Add(this.uiLabel29);
             this.uiGroupBox7.Controls.Add(this.uiLabel30);
             this.uiGroupBox7.Controls.Add(this.uiProcessBar7);
-            this.uiGroupBox7.Controls.Add(this.uiSwitch9);
+            this.uiGroupBox7.Controls.Add(this.uiSwitch7);
             this.uiGroupBox7.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiGroupBox7.Location = new System.Drawing.Point(674, 302);
             this.uiGroupBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -806,15 +812,16 @@
             this.uiProcessBar7.TabIndex = 18;
             this.uiProcessBar7.Text = "16.0%";
             // 
-            // uiSwitch9
+            // uiSwitch7
             // 
-            this.uiSwitch9.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiSwitch9.Location = new System.Drawing.Point(174, 33);
-            this.uiSwitch9.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSwitch9.Name = "uiSwitch9";
-            this.uiSwitch9.Size = new System.Drawing.Size(75, 29);
-            this.uiSwitch9.TabIndex = 9;
-            this.uiSwitch9.Text = "uiSwitch9";
+            this.uiSwitch7.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiSwitch7.Location = new System.Drawing.Point(174, 33);
+            this.uiSwitch7.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSwitch7.Name = "uiSwitch7";
+            this.uiSwitch7.Size = new System.Drawing.Size(75, 29);
+            this.uiSwitch7.TabIndex = 7;
+            this.uiSwitch7.Text = "uiSwitch7";
+            this.uiSwitch7.ValueChanged += new Sunny.UI.UISwitch.OnValueChanged(this.uiSwitch7_ValueChanged);
             // 
             // uiGroupBox8
             // 
@@ -824,7 +831,7 @@
             this.uiGroupBox8.Controls.Add(this.uiLabel33);
             this.uiGroupBox8.Controls.Add(this.uiLabel34);
             this.uiGroupBox8.Controls.Add(this.uiProcessBar8);
-            this.uiGroupBox8.Controls.Add(this.uiSwitch13);
+            this.uiGroupBox8.Controls.Add(this.uiSwitch8);
             this.uiGroupBox8.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiGroupBox8.Location = new System.Drawing.Point(993, 302);
             this.uiGroupBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -901,18 +908,20 @@
             this.uiProcessBar8.Name = "uiProcessBar8";
             this.uiProcessBar8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiProcessBar8.Size = new System.Drawing.Size(232, 43);
+            this.uiProcessBar8.Style = Sunny.UI.UIStyle.Custom;
             this.uiProcessBar8.TabIndex = 19;
             this.uiProcessBar8.Text = "16.0%";
             // 
-            // uiSwitch13
+            // uiSwitch8
             // 
-            this.uiSwitch13.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiSwitch13.Location = new System.Drawing.Point(178, 33);
-            this.uiSwitch13.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSwitch13.Name = "uiSwitch13";
-            this.uiSwitch13.Size = new System.Drawing.Size(75, 29);
-            this.uiSwitch13.TabIndex = 16;
-            this.uiSwitch13.Text = "uiSwitch13";
+            this.uiSwitch8.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiSwitch8.Location = new System.Drawing.Point(178, 33);
+            this.uiSwitch8.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSwitch8.Name = "uiSwitch8";
+            this.uiSwitch8.Size = new System.Drawing.Size(75, 29);
+            this.uiSwitch8.TabIndex = 8;
+            this.uiSwitch8.Text = "uiSwitch8";
+            this.uiSwitch8.ValueChanged += new Sunny.UI.UISwitch.OnValueChanged(this.uiSwitch8_ValueChanged);
             // 
             // uiButton1
             // 
@@ -1044,20 +1053,19 @@
         private Sunny.UI.UIButton uiButton1;
         private Sunny.UI.UIButton uiButton2;
         private Sunny.UI.UISwitch uiSwitch1;
-        private Sunny.UI.UISwitch uiSwitch3;
-        private Sunny.UI.UISwitch uiSwitch7;
-        private Sunny.UI.UISwitch uiSwitch11;
         private Sunny.UI.UISwitch uiSwitch2;
+        private Sunny.UI.UISwitch uiSwitch3;
+        private Sunny.UI.UISwitch uiSwitch4;
         private Sunny.UI.UISwitch uiSwitch5;
-        private Sunny.UI.UISwitch uiSwitch9;
-        private Sunny.UI.UISwitch uiSwitch13;
+        private Sunny.UI.UISwitch uiSwitch6;
+        private Sunny.UI.UISwitch uiSwitch7;
+        private Sunny.UI.UISwitch uiSwitch8;
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UITextBox uiTextBox8;
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UIProcessBar uiProcessBar2;
         private Sunny.UI.UIProcessBar uiProcessBar3;
         private Sunny.UI.UIProcessBar uiProcessBar4;
-        private Sunny.UI.UIProcessBar uiProcessBar5;
         private Sunny.UI.UIProcessBar uiProcessBar6;
         private Sunny.UI.UIProcessBar uiProcessBar7;
         private Sunny.UI.UIProcessBar uiProcessBar8;
@@ -1103,6 +1111,7 @@
         private Sunny.UI.UILight uiLight6;
         private Sunny.UI.UILight uiLight7;
         private Sunny.UI.UILight uiLight8;
+        private Sunny.UI.UIProcessBar uiProcessBar5;
 
     }
 }
