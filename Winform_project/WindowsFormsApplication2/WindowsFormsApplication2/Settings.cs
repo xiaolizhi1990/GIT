@@ -120,9 +120,7 @@ namespace WindowsFormsApplication2
         {
             this.Close();
             Main f = new Main();
-            f.Show();
-
-
+            f.ShowDialog();
         }
 
         private void uiButton9_Click(object sender, EventArgs e)

@@ -38,6 +38,7 @@ namespace WindowsFormsApplication2
             if (ini.IniReadValue("1#泥浆罐", "State") == "1")
             {
                 uiLight1.State = Sunny.UI.UILightState.On;
+                uiSwitch1.Active = true;
                 uiLabel6.Text = ini.IniReadValue("1#泥浆罐", "H");
                 uiLabel5.Text = ini.IniReadValue("1#泥浆罐", "V");
                 String str0 = uiLabel5.Text;
@@ -62,6 +63,7 @@ namespace WindowsFormsApplication2
             if (ini.IniReadValue("2#泥浆罐", "State") == "1")
             {
                 uiLight2.State = Sunny.UI.UILightState.On;
+                uiSwitch2.Active = true;
                 uiLabel7.Text = ini.IniReadValue("2#泥浆罐", "H");
                 uiLabel8.Text = ini.IniReadValue("2#泥浆罐", "V");
                 String str0 = uiLabel8.Text;
@@ -86,6 +88,7 @@ namespace WindowsFormsApplication2
             if (ini.IniReadValue("3#泥浆罐", "State") == "1")
             {
                 uiLight3.State = Sunny.UI.UILightState.On;
+                uiSwitch3.Active = true;
                 uiLabel11.Text = ini.IniReadValue("3#泥浆罐", "H");
                 uiLabel12.Text = ini.IniReadValue("3#泥浆罐", "V");
                 String str0 = uiLabel12.Text;
@@ -110,6 +113,7 @@ namespace WindowsFormsApplication2
             if (ini.IniReadValue("4#泥浆罐", "State") == "1")
             {
                 uiLight4.State = Sunny.UI.UILightState.On;
+                uiSwitch4.Active = true;
                 uiLabel15.Text = ini.IniReadValue("4#泥浆罐", "H");
                 uiLabel16.Text = ini.IniReadValue("4#泥浆罐", "V");
                 String str0 = uiLabel16.Text;
@@ -134,6 +138,7 @@ namespace WindowsFormsApplication2
             if (ini.IniReadValue("5#泥浆罐", "State") == "1")
             {
                 uiLight5.State = Sunny.UI.UILightState.On;
+                uiSwitch5.Active = true;
                 uiLabel19.Text = ini.IniReadValue("5#泥浆罐", "H");
                 uiLabel20.Text = ini.IniReadValue("5#泥浆罐", "V");
                 String str0 = uiLabel20.Text;
@@ -158,6 +163,7 @@ namespace WindowsFormsApplication2
             if (ini.IniReadValue("6#泥浆罐", "State") == "1")
             {
                 uiLight6.State = Sunny.UI.UILightState.On;
+                uiSwitch6.Active = true;
                 uiLabel23.Text = ini.IniReadValue("6#泥浆罐", "H");
                 uiLabel24.Text = ini.IniReadValue("6#泥浆罐", "V");
                 String str0 = uiLabel24.Text;
@@ -182,6 +188,7 @@ namespace WindowsFormsApplication2
             if (ini.IniReadValue("7#泥浆罐", "State") == "1")
             {
                 uiLight7.State = Sunny.UI.UILightState.On;
+                uiSwitch7.Active = true;
                 uiLabel27.Text = ini.IniReadValue("7#泥浆罐", "H");
                 uiLabel28.Text = ini.IniReadValue("7#泥浆罐", "V");
                 String str0 = uiLabel28.Text;
@@ -199,13 +206,14 @@ namespace WindowsFormsApplication2
             }
             else
             {
-                uiLight4.State = Sunny.UI.UILightState.Off;
+                uiLight7.State = Sunny.UI.UILightState.Off;
                 uiSwitch7.Active = false;
             }
 
             if (ini.IniReadValue("8#泥浆罐", "State") == "1")
             {
                 uiLight8.State = Sunny.UI.UILightState.On;
+                uiSwitch8.Active = true;
                 uiLabel31.Text = ini.IniReadValue("8#泥浆罐", "H");
                 uiLabel32.Text = ini.IniReadValue("8#泥浆罐", "V");
                 String str0 = uiLabel32.Text;
@@ -259,7 +267,7 @@ namespace WindowsFormsApplication2
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar1.Value = PP;
-                if (PP >= 80 && PP <= 20)
+                if (PP >= 80 || PP <= 20)
                 {
                     uiLight5.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar1.RectColor = System.Drawing.Color.Red;
@@ -395,7 +403,7 @@ namespace WindowsFormsApplication2
                 }
             }
             else
-            {
+            {    
                 uiLight5.State = Sunny.UI.UILightState.Off;
                 ini.IniWriteValue("5#泥浆罐", "State", "0");
                 uiLabel19.Text = "0.00";
@@ -479,7 +487,7 @@ namespace WindowsFormsApplication2
                 uiLabel32.Text = ini.IniReadValue("8#泥浆罐", "V");
                 String str0 = uiLabel32.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 70.00;                //设置总体积
+                Double Vum = 100.00;                //设置总体积
                 Double Percent = (str00 / Vum) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);

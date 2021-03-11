@@ -158,7 +158,7 @@
             this.uiLight1.Size = new System.Drawing.Size(35, 35);
             this.uiLight1.State = Sunny.UI.UILightState.Blink;
             this.uiLight1.Style = Sunny.UI.UIStyle.Custom;
-            this.uiLight1.TabIndex = 6;
+            this.uiLight1.TabIndex = 1;
             this.uiLight1.Text = "uiLight1";
             // 
             // uiLabel6
@@ -250,7 +250,7 @@
             this.uiLight2.Name = "uiLight2";
             this.uiLight2.Radius = 35;
             this.uiLight2.Size = new System.Drawing.Size(35, 35);
-            this.uiLight2.TabIndex = 10;
+            this.uiLight2.TabIndex = 2;
             this.uiLight2.Text = "uiLight2";
             // 
             // uiLabel7
@@ -351,7 +351,7 @@
             this.uiLight3.Name = "uiLight3";
             this.uiLight3.Radius = 35;
             this.uiLight3.Size = new System.Drawing.Size(35, 35);
-            this.uiLight3.TabIndex = 11;
+            this.uiLight3.TabIndex = 3;
             this.uiLight3.Text = "uiLight3";
             // 
             // uiLabel11
@@ -452,7 +452,7 @@
             this.uiLight4.Name = "uiLight4";
             this.uiLight4.Radius = 35;
             this.uiLight4.Size = new System.Drawing.Size(35, 35);
-            this.uiLight4.TabIndex = 19;
+            this.uiLight4.TabIndex = 4;
             this.uiLight4.Text = "uiLight4";
             // 
             // uiLabel15
@@ -553,7 +553,7 @@
             this.uiLight5.Name = "uiLight5";
             this.uiLight5.Radius = 35;
             this.uiLight5.Size = new System.Drawing.Size(35, 35);
-            this.uiLight5.TabIndex = 20;
+            this.uiLight5.TabIndex = 5;
             this.uiLight5.Text = "uiLight5";
             // 
             // uiLabel19
@@ -577,7 +577,6 @@
             this.uiProcessBar5.Name = "uiProcessBar5";
             this.uiProcessBar5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiProcessBar5.Size = new System.Drawing.Size(232, 43);
-            this.uiProcessBar5.Style = Sunny.UI.UIStyle.Custom;
             this.uiProcessBar5.TabIndex = 16;
             this.uiProcessBar5.Text = "16.0%";
             // 
@@ -653,7 +652,7 @@
             this.uiLight6.Name = "uiLight6";
             this.uiLight6.Radius = 35;
             this.uiLight6.Size = new System.Drawing.Size(35, 35);
-            this.uiLight6.TabIndex = 22;
+            this.uiLight6.TabIndex = 6;
             this.uiLight6.Text = "uiLight6";
             // 
             // uiLabel23
@@ -752,7 +751,7 @@
             this.uiLight7.Name = "uiLight7";
             this.uiLight7.Radius = 35;
             this.uiLight7.Size = new System.Drawing.Size(35, 35);
-            this.uiLight7.TabIndex = 23;
+            this.uiLight7.TabIndex = 7;
             this.uiLight7.Text = "uiLight7";
             // 
             // uiLabel27
@@ -851,7 +850,7 @@
             this.uiLight8.Name = "uiLight8";
             this.uiLight8.Radius = 35;
             this.uiLight8.Size = new System.Drawing.Size(35, 35);
-            this.uiLight8.TabIndex = 24;
+            this.uiLight8.TabIndex = 8;
             this.uiLight8.Text = "uiLight8";
             // 
             // uiLabel31
@@ -908,7 +907,6 @@
             this.uiProcessBar8.Name = "uiProcessBar8";
             this.uiProcessBar8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiProcessBar8.Size = new System.Drawing.Size(232, 43);
-            this.uiProcessBar8.Style = Sunny.UI.UIStyle.Custom;
             this.uiProcessBar8.TabIndex = 19;
             this.uiProcessBar8.Text = "16.0%";
             // 
