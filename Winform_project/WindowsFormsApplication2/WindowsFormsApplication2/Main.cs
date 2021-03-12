@@ -12,9 +12,14 @@ namespace WindowsFormsApplication2
     public partial class Main : Form
     {
         IniFiles ini = new IniFiles(Application.StartupPath + @"\MyConfig.INI");//声明配置文件路径
+        Double count = 4.00;
         public Main()
         {
             InitializeComponent();
+            Timer t = new Timer();
+            t.Interval = 2000;
+            t.Tick += timer2_Tick;//注册时钟事件
+            t.Enabled = true;
         }
 
         private void uiButton1_Click(object sender, EventArgs e)
@@ -48,7 +53,7 @@ namespace WindowsFormsApplication2
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar1.Value = PP;
-                if (PP >= 80 && PP <= 20) 
+                if (PP >= 80 && PP <= 20) //判断报警变红
                 {
                     uiLight5.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar1.RectColor = System.Drawing.Color.Red;
@@ -252,13 +257,13 @@ namespace WindowsFormsApplication2
 
         }
 
-        private void uiSwitch1_ValueChanged(object sender, bool value)
+        private void uiSwitch1_ValueChanged(object sender, bool value)        //每个开关单独控制，打开加载数据，关闭清空数据。
         {
             if (uiSwitch1.Active == true)
             {
                 uiLight1.State = Sunny.UI.UILightState.On;
                 ini.IniWriteValue("1#泥浆罐", "State", "1");
-                uiLabel6.Text = ini.IniReadValue("1#泥浆罐", "H");
+                //uiLabel6.Text = ini.IniReadValue("1#泥浆罐", "H");
                 uiLabel5.Text = ini.IniReadValue("1#泥浆罐", "V");
                 String str0 = uiLabel5.Text;
                 Double str00 = Convert.ToDouble(str0);
@@ -511,6 +516,24 @@ namespace WindowsFormsApplication2
             }
         }
 
-
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            count-=0.1;//每到一定时间进入这个私有函数
+            ini.IniWriteValue("1#泥浆罐", "H", Convert.ToString(count));
+            String W = ini.IniReadValue("1#泥浆罐", "W");
+            String L = ini.IniReadValue("1#泥浆罐", "L");
+            Double w = Convert.ToDouble(W);
+            Double l = Convert.ToDouble(L);
+            Double V = count * w * l;
+            uiLabel6.Text = Convert.ToString(count);
+            uiLabel5.Text = Convert.ToString(V);
+            Double P = Convert.ToDouble(uiLabel5.Text);
+            uiProcessBar1.Value = Convert.ToInt32(P);
+            if (Convert.ToInt32(P) >= 80 || Convert.ToInt32(P) <= 20)
+            {
+                uiLight1.State = Sunny.UI.UILightState.Blink;
+                uiProcessBar1.RectColor = System.Drawing.Color.Red;
+            }
+        }
     }
 }

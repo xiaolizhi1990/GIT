@@ -101,6 +101,7 @@
             this.uiLabel2 = new Sunny.UI.UILabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.uiLabel35 = new Sunny.UI.UILabel();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.uiGroupBox1.SuspendLayout();
             this.uiGroupBox2.SuspendLayout();
             this.uiGroupBox3.SuspendLayout();
@@ -999,6 +1000,10 @@
             this.uiLabel35.Text = "uiLabel35";
             this.uiLabel35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1110,6 +1115,7 @@
         private Sunny.UI.UILight uiLight7;
         private Sunny.UI.UILight uiLight8;
         private Sunny.UI.UIProcessBar uiProcessBar5;
+        private System.Windows.Forms.Timer timer2;
 
     }
 }
