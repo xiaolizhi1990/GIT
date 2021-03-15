@@ -12,14 +12,9 @@ namespace WindowsFormsApplication2
     public partial class Main : Form
     {
         IniFiles ini = new IniFiles(Application.StartupPath + @"\MyConfig.INI");//声明配置文件路径
-        Double count = 4.00;
         public Main()
         {
             InitializeComponent();
-            Timer t = new Timer();
-            t.Interval = 2000;
-            t.Tick += timer2_Tick;//注册时钟事件
-            t.Enabled = true;
         }
 
         private void uiButton1_Click(object sender, EventArgs e)
@@ -146,14 +141,22 @@ namespace WindowsFormsApplication2
                 uiSwitch5.Active = true;
                 uiLabel19.Text = ini.IniReadValue("5#泥浆罐", "H");
                 uiLabel20.Text = ini.IniReadValue("5#泥浆罐", "V");
-                String str0 = uiLabel20.Text;
+                String str0 = uiLabel19.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("5#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs( Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar5.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("5#泥浆罐","ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("5#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight5.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar5.RectColor = System.Drawing.Color.Red;
@@ -239,6 +242,21 @@ namespace WindowsFormsApplication2
                 uiLight8.State = Sunny.UI.UILightState.Off;
                 uiSwitch8.Active = false;
             }
+            //首页的循环罐和计量罐体积显示
+            Double V = 0, VV = 0;
+            for (int i = 1; i < 9; i++) 
+            {
+                if (ini.IniReadValue(i + "#泥浆罐", "G_Type") == "0")
+                {
+                    V += Convert.ToDouble(ini.IniReadValue(i + "#泥浆罐", "V"));
+                }
+                else 
+                {
+                    VV += Convert.ToDouble(ini.IniReadValue(i + "#泥浆罐", "V"));
+                }
+            }
+            uiTextBox8.Text = Convert.ToString(V);
+            uiTextBox1.Text = Convert.ToString(VV);
         }
 
         private void uiButton2_Click(object sender, EventArgs e)
@@ -263,7 +281,7 @@ namespace WindowsFormsApplication2
             {
                 uiLight1.State = Sunny.UI.UILightState.On;
                 ini.IniWriteValue("1#泥浆罐", "State", "1");
-                //uiLabel6.Text = ini.IniReadValue("1#泥浆罐", "H");
+                uiLabel6.Text = ini.IniReadValue("1#泥浆罐", "H");
                 uiLabel5.Text = ini.IniReadValue("1#泥浆罐", "V");
                 String str0 = uiLabel5.Text;
                 Double str00 = Convert.ToDouble(str0);
@@ -516,24 +534,5 @@ namespace WindowsFormsApplication2
             }
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            count-=0.1;//每到一定时间进入这个私有函数
-            ini.IniWriteValue("1#泥浆罐", "H", Convert.ToString(count));
-            String W = ini.IniReadValue("1#泥浆罐", "W");
-            String L = ini.IniReadValue("1#泥浆罐", "L");
-            Double w = Convert.ToDouble(W);
-            Double l = Convert.ToDouble(L);
-            Double V = count * w * l;
-            uiLabel6.Text = Convert.ToString(count);
-            uiLabel5.Text = Convert.ToString(V);
-            Double P = Convert.ToDouble(uiLabel5.Text);
-            uiProcessBar1.Value = Convert.ToInt32(P);
-            if (Convert.ToInt32(P) >= 80 || Convert.ToInt32(P) <= 20)
-            {
-                uiLight1.State = Sunny.UI.UILightState.Blink;
-                uiProcessBar1.RectColor = System.Drawing.Color.Red;
-            }
-        }
     }
 }

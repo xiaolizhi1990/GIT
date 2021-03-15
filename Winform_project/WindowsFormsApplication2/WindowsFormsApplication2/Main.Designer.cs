@@ -102,6 +102,9 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.uiLabel35 = new Sunny.UI.UILabel();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.uiLabel36 = new Sunny.UI.UILabel();
+            this.uiTextBox1 = new Sunny.UI.UITextBox();
+            this.uiLabel37 = new Sunny.UI.UILabel();
             this.uiGroupBox1.SuspendLayout();
             this.uiGroupBox2.SuspendLayout();
             this.uiGroupBox3.SuspendLayout();
@@ -951,11 +954,11 @@
             // uiLabel1
             // 
             this.uiLabel1.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiLabel1.Location = new System.Drawing.Point(430, 603);
+            this.uiLabel1.Location = new System.Drawing.Point(400, 603);
             this.uiLabel1.Name = "uiLabel1";
-            this.uiLabel1.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel1.Size = new System.Drawing.Size(128, 23);
             this.uiLabel1.TabIndex = 16;
-            this.uiLabel1.Text = "罐总体积：";
+            this.uiLabel1.Text = "循环罐总体积：";
             this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // uiTextBox8
@@ -964,14 +967,14 @@
             this.uiTextBox8.DoubleValue = 30D;
             this.uiTextBox8.FillColor = System.Drawing.Color.White;
             this.uiTextBox8.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox8.Location = new System.Drawing.Point(565, 600);
+            this.uiTextBox8.Location = new System.Drawing.Point(514, 600);
             this.uiTextBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiTextBox8.Maximum = 2147483647D;
             this.uiTextBox8.Minimum = -2147483648D;
             this.uiTextBox8.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiTextBox8.Name = "uiTextBox8";
             this.uiTextBox8.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox8.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox8.Size = new System.Drawing.Size(93, 29);
             this.uiTextBox8.TabIndex = 77;
             this.uiTextBox8.Text = "30.00";
             this.uiTextBox8.Type = Sunny.UI.UITextBox.UIEditType.Double;
@@ -979,9 +982,9 @@
             // uiLabel2
             // 
             this.uiLabel2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiLabel2.Location = new System.Drawing.Point(741, 603);
+            this.uiLabel2.Location = new System.Drawing.Point(614, 603);
             this.uiLabel2.Name = "uiLabel2";
-            this.uiLabel2.Size = new System.Drawing.Size(100, 23);
+            this.uiLabel2.Size = new System.Drawing.Size(36, 23);
             this.uiLabel2.TabIndex = 78;
             this.uiLabel2.Text = "m³";
             this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1000,9 +1003,42 @@
             this.uiLabel35.Text = "uiLabel35";
             this.uiLabel35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // timer2
+            // uiLabel36
             // 
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            this.uiLabel36.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLabel36.Location = new System.Drawing.Point(683, 603);
+            this.uiLabel36.Name = "uiLabel36";
+            this.uiLabel36.Size = new System.Drawing.Size(126, 23);
+            this.uiLabel36.TabIndex = 81;
+            this.uiLabel36.Text = "计量罐总体积：";
+            this.uiLabel36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiTextBox1
+            // 
+            this.uiTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox1.FillColor = System.Drawing.Color.White;
+            this.uiTextBox1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox1.Location = new System.Drawing.Point(799, 600);
+            this.uiTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox1.Maximum = 2147483647D;
+            this.uiTextBox1.Minimum = -2147483648D;
+            this.uiTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox1.Name = "uiTextBox1";
+            this.uiTextBox1.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox1.Size = new System.Drawing.Size(93, 29);
+            this.uiTextBox1.TabIndex = 82;
+            this.uiTextBox1.Text = "0.00";
+            this.uiTextBox1.Type = Sunny.UI.UITextBox.UIEditType.Double;
+            // 
+            // uiLabel37
+            // 
+            this.uiLabel37.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiLabel37.Location = new System.Drawing.Point(899, 603);
+            this.uiLabel37.Name = "uiLabel37";
+            this.uiLabel37.Size = new System.Drawing.Size(36, 23);
+            this.uiLabel37.TabIndex = 83;
+            this.uiLabel37.Text = "m³";
+            this.uiLabel37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Main
             // 
@@ -1010,6 +1046,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1296, 666);
+            this.Controls.Add(this.uiLabel37);
+            this.Controls.Add(this.uiTextBox1);
+            this.Controls.Add(this.uiLabel36);
             this.Controls.Add(this.uiLabel35);
             this.Controls.Add(this.uiLabel2);
             this.Controls.Add(this.uiTextBox8);
@@ -1116,6 +1155,9 @@
         private Sunny.UI.UILight uiLight8;
         private Sunny.UI.UIProcessBar uiProcessBar5;
         private System.Windows.Forms.Timer timer2;
+        private Sunny.UI.UILabel uiLabel36;
+        private Sunny.UI.UITextBox uiTextBox1;
+        private Sunny.UI.UILabel uiLabel37;
 
     }
 }

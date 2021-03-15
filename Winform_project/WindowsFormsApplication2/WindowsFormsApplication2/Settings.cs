@@ -274,9 +274,9 @@ namespace WindowsFormsApplication2
             Double c = Convert.ToDouble(str2);
             Double AD1 = Convert.ToDouble(str3);
             Double AD2 = Convert.ToDouble(str4);
-            Double A = (b - c) / (AD1 - AD2);
+            Double A = ((b/100) -(c/100)) / (AD1 - AD2);
             String AA = Convert.ToString(A);
-            Double B = b - (A * AD1);
+            Double B = (b / 100) - (A * AD1);
             String BB = Convert.ToString(B);
 
             switch (a) 
