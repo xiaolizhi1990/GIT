@@ -41,14 +41,22 @@ namespace WindowsFormsApplication2
                 uiSwitch1.Active = true;
                 uiLabel6.Text = ini.IniReadValue("1#泥浆罐", "H");
                 uiLabel5.Text = ini.IniReadValue("1#泥浆罐", "V");
-                String str0 = uiLabel5.Text;
+                String str0 = uiLabel6.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum)*100;
+                String str1 = ini.IniReadValue("1#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar1.Value = PP;
-                if (PP >= 80 && PP <= 20) //判断报警变红
+                String ALARM_H = ini.IniReadValue("1#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("1#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight5.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar1.RectColor = System.Drawing.Color.Red;
@@ -66,14 +74,22 @@ namespace WindowsFormsApplication2
                 uiSwitch2.Active = true;
                 uiLabel7.Text = ini.IniReadValue("2#泥浆罐", "H");
                 uiLabel8.Text = ini.IniReadValue("2#泥浆罐", "V");
-                String str0 = uiLabel8.Text;
+                String str0 = uiLabel7.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("2#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar2.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("2#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("2#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight2.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar2.RectColor = System.Drawing.Color.Red;
@@ -91,14 +107,22 @@ namespace WindowsFormsApplication2
                 uiSwitch3.Active = true;
                 uiLabel11.Text = ini.IniReadValue("3#泥浆罐", "H");
                 uiLabel12.Text = ini.IniReadValue("3#泥浆罐", "V");
-                String str0 = uiLabel12.Text;
+                String str0 = uiLabel11.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("3#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar3.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("3#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("3#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight3.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar3.RectColor = System.Drawing.Color.Red;
@@ -116,14 +140,22 @@ namespace WindowsFormsApplication2
                 uiSwitch4.Active = true;
                 uiLabel15.Text = ini.IniReadValue("4#泥浆罐", "H");
                 uiLabel16.Text = ini.IniReadValue("4#泥浆罐", "V");
-                String str0 = uiLabel16.Text;
+                String str0 = uiLabel15.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("4#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar4.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("4#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("4#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight4.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar4.RectColor = System.Drawing.Color.Red;
@@ -143,6 +175,7 @@ namespace WindowsFormsApplication2
                 uiLabel20.Text = ini.IniReadValue("5#泥浆罐", "V");
                 String str0 = uiLabel19.Text;
                 Double str00 = Convert.ToDouble(str0);
+                //五号罐的进度条，显示的是令X=0，y=kx+B，得到的Y值也就是高度值，再和实际高度的百分比。
                 String str1 = ini.IniReadValue("5#泥浆罐", "B");   //AD2
                 Double str11 = System.Math.Abs( Convert.ToDouble(str1));
                 Double Percent = (str11 / str00) * 100;
@@ -156,7 +189,7 @@ namespace WindowsFormsApplication2
                 Double H = Math.Round((ALARM_HH / str00) * 100);
                 Double L = Math.Round((ALARM_LL / str00) * 100);
 
-                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))   //根据设置的阈值判断是否变色
                 {
                     uiLight5.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar5.RectColor = System.Drawing.Color.Red;
@@ -174,14 +207,22 @@ namespace WindowsFormsApplication2
                 uiSwitch6.Active = true;
                 uiLabel23.Text = ini.IniReadValue("6#泥浆罐", "H");
                 uiLabel24.Text = ini.IniReadValue("6#泥浆罐", "V");
-                String str0 = uiLabel24.Text;
+                String str0 = uiLabel23.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("6#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar6.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("6#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("6#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight6.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar6.RectColor = System.Drawing.Color.Red;
@@ -199,14 +240,22 @@ namespace WindowsFormsApplication2
                 uiSwitch7.Active = true;
                 uiLabel27.Text = ini.IniReadValue("7#泥浆罐", "H");
                 uiLabel28.Text = ini.IniReadValue("7#泥浆罐", "V");
-                String str0 = uiLabel28.Text;
+                String str0 = uiLabel27.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("7#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar7.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("7#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("7#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight7.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar7.RectColor = System.Drawing.Color.Red;
@@ -224,14 +273,22 @@ namespace WindowsFormsApplication2
                 uiSwitch8.Active = true;
                 uiLabel31.Text = ini.IniReadValue("8#泥浆罐", "H");
                 uiLabel32.Text = ini.IniReadValue("8#泥浆罐", "V");
-                String str0 = uiLabel32.Text;
+                String str0 = uiLabel31.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("8#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar8.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("8#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("8#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight8.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar8.RectColor = System.Drawing.Color.Red;
@@ -283,14 +340,22 @@ namespace WindowsFormsApplication2
                 ini.IniWriteValue("1#泥浆罐", "State", "1");
                 uiLabel6.Text = ini.IniReadValue("1#泥浆罐", "H");
                 uiLabel5.Text = ini.IniReadValue("1#泥浆罐", "V");
-                String str0 = uiLabel5.Text;
+                String str0 = uiLabel6.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("1#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar1.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("1#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("1#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight5.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar1.RectColor = System.Drawing.Color.Red;
@@ -315,14 +380,22 @@ namespace WindowsFormsApplication2
                 ini.IniWriteValue("2#泥浆罐", "State", "1");
                 uiLabel7.Text = ini.IniReadValue("2#泥浆罐", "H");
                 uiLabel8.Text = ini.IniReadValue("2#泥浆罐", "V");
-                String str0 = uiLabel8.Text;
+                String str0 = uiLabel7.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("2#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar2.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("2#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("2#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight2.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar2.RectColor = System.Drawing.Color.Red;
@@ -348,14 +421,22 @@ namespace WindowsFormsApplication2
                 ini.IniWriteValue("3#泥浆罐", "State", "1");
                 uiLabel11.Text = ini.IniReadValue("3#泥浆罐", "H");
                 uiLabel12.Text = ini.IniReadValue("3#泥浆罐", "V");
-                String str0 = uiLabel12.Text;
+                String str0 = uiLabel11.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("3#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar3.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("3#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("3#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight3.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar3.RectColor = System.Drawing.Color.Red;
@@ -380,14 +461,22 @@ namespace WindowsFormsApplication2
                 ini.IniWriteValue("4#泥浆罐", "State", "1");
                 uiLabel15.Text = ini.IniReadValue("4#泥浆罐", "H");
                 uiLabel16.Text = ini.IniReadValue("4#泥浆罐", "V");
-                String str0 = uiLabel16.Text;
+                String str0 = uiLabel15.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("4#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar4.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("4#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("4#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight4.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar4.RectColor = System.Drawing.Color.Red;
@@ -412,14 +501,23 @@ namespace WindowsFormsApplication2
                 ini.IniWriteValue("5#泥浆罐", "State", "1");
                 uiLabel19.Text = ini.IniReadValue("5#泥浆罐", "H");
                 uiLabel20.Text = ini.IniReadValue("5#泥浆罐", "V");
-                String str0 = uiLabel20.Text;
+                String str0 = uiLabel19.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                //五号罐的进度条，显示的是令X=0，y=kx+B，得到的Y值也就是高度值，再和实际高度的百分比。
+                String str1 = ini.IniReadValue("5#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar5.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("5#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("5#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight5.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar5.RectColor = System.Drawing.Color.Red;
@@ -444,14 +542,22 @@ namespace WindowsFormsApplication2
                 ini.IniWriteValue("6#泥浆罐", "State", "1");
                 uiLabel23.Text = ini.IniReadValue("6#泥浆罐", "H");
                 uiLabel24.Text = ini.IniReadValue("6#泥浆罐", "V");
-                String str0 = uiLabel24.Text;
+                String str0 = uiLabel23.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("6#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar6.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("6#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("6#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight6.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar6.RectColor = System.Drawing.Color.Red;
@@ -476,14 +582,22 @@ namespace WindowsFormsApplication2
                 ini.IniWriteValue("7#泥浆罐", "State", "1");
                 uiLabel27.Text = ini.IniReadValue("7#泥浆罐", "H");
                 uiLabel28.Text = ini.IniReadValue("7#泥浆罐", "V");
-                String str0 = uiLabel28.Text;
+                String str0 = uiLabel27.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("7#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar7.Value = PP;
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("7#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("7#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight7.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar7.RectColor = System.Drawing.Color.Red;
@@ -508,16 +622,22 @@ namespace WindowsFormsApplication2
                 ini.IniWriteValue("8#泥浆罐", "State", "1");
                 uiLabel31.Text = ini.IniReadValue("8#泥浆罐", "H");
                 uiLabel32.Text = ini.IniReadValue("8#泥浆罐", "V");
-                String str0 = uiLabel32.Text;
+                String str0 = uiLabel31.Text;
                 Double str00 = Convert.ToDouble(str0);
-                Double Vum = 100.00;                //设置总体积
-                Double Percent = (str00 / Vum) * 100;
+                String str1 = ini.IniReadValue("8#泥浆罐", "B");   //AD2
+                Double str11 = System.Math.Abs(Convert.ToDouble(str1));
+                Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
                 int PP = Convert.ToInt32(P);
                 uiProcessBar8.Value = PP;
-                //String ALARM_H = ini.IniReadValue("8#泥浆罐", "ALARM_H");
-                //String ALARM_L = ini.IniReadValue("8#泥浆罐", "ALARM_L");
-                if (PP >= 80 || PP <= 20)
+                String ALARM_H = ini.IniReadValue("8#泥浆罐", "ALARM_H");
+                Double ALARM_HH = Convert.ToDouble(ALARM_H);
+                String ALARM_L = ini.IniReadValue("8#泥浆罐", "ALARM_L");
+                Double ALARM_LL = Convert.ToDouble(ALARM_L);
+                Double H = Math.Round((ALARM_HH / str00) * 100);
+                Double L = Math.Round((ALARM_LL / str00) * 100);
+
+                if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
                     uiLight8.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar8.RectColor = System.Drawing.Color.Red;
