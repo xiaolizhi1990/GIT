@@ -21,7 +21,7 @@ namespace WindowsFormsApplication2
         {
             this.Hide();
             Settings f = new Settings();
-            f.Show();
+            f.ShowDialog();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -55,11 +55,12 @@ namespace WindowsFormsApplication2
                 Double ALARM_LL = Convert.ToDouble(ALARM_L);
                 Double H = Math.Round((ALARM_HH / str00) * 100);
                 Double L = Math.Round((ALARM_LL / str00) * 100);
-
+                uiProcessBar1.RectColor = System.Drawing.Color.DodgerBlue;
                 if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
-                    uiLight5.State = Sunny.UI.UILightState.Blink;
+                    uiLight1.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar1.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar1.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -93,6 +94,7 @@ namespace WindowsFormsApplication2
                 {
                     uiLight2.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar2.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar2.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -126,6 +128,7 @@ namespace WindowsFormsApplication2
                 {
                     uiLight3.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar3.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar3.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -159,6 +162,7 @@ namespace WindowsFormsApplication2
                 {
                     uiLight4.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar4.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar4.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -193,6 +197,7 @@ namespace WindowsFormsApplication2
                 {
                     uiLight5.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar5.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar5.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -226,6 +231,7 @@ namespace WindowsFormsApplication2
                 {
                     uiLight6.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar6.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar6.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -259,6 +265,7 @@ namespace WindowsFormsApplication2
                 {
                     uiLight7.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar7.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar7.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -292,6 +299,7 @@ namespace WindowsFormsApplication2
                 {
                     uiLight8.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar8.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar8.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -357,8 +365,9 @@ namespace WindowsFormsApplication2
 
                 if (PP >= Convert.ToInt32(H) || PP <= Convert.ToInt32(L))
                 {
-                    uiLight5.State = Sunny.UI.UILightState.Blink;
+                    uiLight1.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar1.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar1.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -368,7 +377,8 @@ namespace WindowsFormsApplication2
                 uiLabel6.Text = "0.00";
                 uiLabel5.Text = "0.00";
                 uiProcessBar1.Value = 0;
-                uiProcessBar1.RectColor = uiProcessBar1.ForeColor;
+                uiProcessBar1.RectColor = System.Drawing.Color.DodgerBlue;
+                uiProcessBar1.ForeColor = System.Drawing.Color.DodgerBlue;
             }
         }
 
@@ -399,6 +409,8 @@ namespace WindowsFormsApplication2
                 {
                     uiLight2.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar2.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar2.ForeColor = System.Drawing.Color.Red;
+
                 }
 
             }
@@ -409,7 +421,8 @@ namespace WindowsFormsApplication2
                 uiLabel7.Text = "0.00";
                 uiLabel8.Text = "0.00";
                 uiProcessBar2.Value = 0;
-                uiProcessBar2.RectColor = uiProcessBar2.ForeColor;
+                uiProcessBar2.RectColor = System.Drawing.Color.DodgerBlue;
+                uiProcessBar2.ForeColor = System.Drawing.Color.DodgerBlue;
             }
         }
 
@@ -440,6 +453,8 @@ namespace WindowsFormsApplication2
                 {
                     uiLight3.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar3.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar3.ForeColor = System.Drawing.Color.Red;
+
                 }
             }
             else
@@ -449,7 +464,8 @@ namespace WindowsFormsApplication2
                 uiLabel11.Text = "0.00";
                 uiLabel12.Text = "0.00";
                 uiProcessBar3.Value = 0;
-                uiProcessBar3.RectColor = uiProcessBar3.ForeColor;
+                uiProcessBar3.RectColor = System.Drawing.Color.DodgerBlue;
+                uiProcessBar3.ForeColor = System.Drawing.Color.DodgerBlue;
             }
         }
 
@@ -480,6 +496,7 @@ namespace WindowsFormsApplication2
                 {
                     uiLight4.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar4.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar4.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -489,7 +506,8 @@ namespace WindowsFormsApplication2
                 uiLabel15.Text = "0.00";
                 uiLabel16.Text = "0.00";
                 uiProcessBar4.Value = 0;
-                uiProcessBar4.RectColor = uiProcessBar4.ForeColor;
+                uiProcessBar4.RectColor = System.Drawing.Color.DodgerBlue;
+                uiProcessBar4.ForeColor = System.Drawing.Color.DodgerBlue;
             }
         }
 
@@ -521,6 +539,7 @@ namespace WindowsFormsApplication2
                 {
                     uiLight5.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar5.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar5.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -530,7 +549,8 @@ namespace WindowsFormsApplication2
                 uiLabel19.Text = "0.00";
                 uiLabel20.Text = "0.00";
                 uiProcessBar5.Value = 0;
-                uiProcessBar5.RectColor = uiProcessBar5.ForeColor;
+                uiProcessBar5.RectColor = System.Drawing.Color.DodgerBlue;
+                uiProcessBar5.ForeColor = System.Drawing.Color.DodgerBlue;
             }
         }
 
@@ -561,6 +581,7 @@ namespace WindowsFormsApplication2
                 {
                     uiLight6.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar6.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar6.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -570,7 +591,8 @@ namespace WindowsFormsApplication2
                 uiLabel23.Text = "0.00";
                 uiLabel24.Text = "0.00";
                 uiProcessBar6.Value = 0;
-                uiProcessBar6.RectColor = uiProcessBar6.ForeColor;
+                uiProcessBar6.RectColor = System.Drawing.Color.DodgerBlue;
+                uiProcessBar6.ForeColor = System.Drawing.Color.DodgerBlue;
             }
         }
 
@@ -601,6 +623,7 @@ namespace WindowsFormsApplication2
                 {
                     uiLight7.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar7.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar7.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -610,7 +633,8 @@ namespace WindowsFormsApplication2
                 uiLabel27.Text = "0.00";
                 uiLabel28.Text = "0.00";
                 uiProcessBar7.Value = 0;
-                uiProcessBar7.RectColor = uiProcessBar7.ForeColor;
+                uiProcessBar7.RectColor = System.Drawing.Color.DodgerBlue;
+                uiProcessBar7.ForeColor = System.Drawing.Color.DodgerBlue;
             }
         }
 
@@ -641,6 +665,7 @@ namespace WindowsFormsApplication2
                 {
                     uiLight8.State = Sunny.UI.UILightState.Blink;
                     uiProcessBar8.RectColor = System.Drawing.Color.Red;
+                    uiProcessBar8.ForeColor = System.Drawing.Color.Red;
                 }
             }
             else
@@ -650,9 +675,9 @@ namespace WindowsFormsApplication2
                 uiLabel31.Text = "0.00";
                 uiLabel32.Text = "0.00";
                 uiProcessBar8.Value = 0;
-                uiProcessBar8.RectColor = uiProcessBar8.ForeColor;
+                uiProcessBar8.RectColor = System.Drawing.Color.DodgerBlue;
+                uiProcessBar8.ForeColor = System.Drawing.Color.DodgerBlue;
             }
         }
-
     }
 }

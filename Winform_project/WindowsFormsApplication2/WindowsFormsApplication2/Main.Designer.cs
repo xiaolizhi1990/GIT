@@ -120,15 +120,17 @@
             this.uiProcessBar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.uiProcessBar1.Cursor = System.Windows.Forms.Cursors.Default;
             this.uiProcessBar1.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiProcessBar1.ForeColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar1.Location = new System.Drawing.Point(13, 172);
             this.uiProcessBar1.MinimumSize = new System.Drawing.Size(70, 5);
             this.uiProcessBar1.Name = "uiProcessBar1";
+            this.uiProcessBar1.RectColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiProcessBar1.Size = new System.Drawing.Size(232, 43);
             this.uiProcessBar1.Style = Sunny.UI.UIStyle.Custom;
             this.uiProcessBar1.TabIndex = 0;
             this.uiProcessBar1.Text = "16.0%";
-            this.uiProcessBar1.Value = 80;
+            this.uiProcessBar1.Value = 50;
             // 
             // uiGroupBox1
             // 
@@ -146,7 +148,6 @@
             this.uiGroupBox1.Name = "uiGroupBox1";
             this.uiGroupBox1.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
             this.uiGroupBox1.Size = new System.Drawing.Size(270, 257);
-            this.uiGroupBox1.Style = Sunny.UI.UIStyle.Custom;
             this.uiGroupBox1.TabIndex = 5;
             this.uiGroupBox1.Text = "1#";
             // 
@@ -161,7 +162,6 @@
             this.uiLight1.Radius = 35;
             this.uiLight1.Size = new System.Drawing.Size(35, 35);
             this.uiLight1.State = Sunny.UI.UILightState.Blink;
-            this.uiLight1.Style = Sunny.UI.UIStyle.Custom;
             this.uiLight1.TabIndex = 1;
             this.uiLight1.Text = "uiLight1";
             // 
@@ -172,7 +172,6 @@
             this.uiLabel6.Location = new System.Drawing.Point(191, 85);
             this.uiLabel6.Name = "uiLabel6";
             this.uiLabel6.Size = new System.Drawing.Size(54, 23);
-            this.uiLabel6.Style = Sunny.UI.UIStyle.Custom;
             this.uiLabel6.TabIndex = 5;
             this.uiLabel6.Text = "1.00";
             this.uiLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -184,7 +183,6 @@
             this.uiLabel5.Location = new System.Drawing.Point(191, 132);
             this.uiLabel5.Name = "uiLabel5";
             this.uiLabel5.Size = new System.Drawing.Size(54, 23);
-            this.uiLabel5.Style = Sunny.UI.UIStyle.Custom;
             this.uiLabel5.TabIndex = 4;
             this.uiLabel5.Text = "6.00";
             this.uiLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -196,7 +194,6 @@
             this.uiLabel4.Location = new System.Drawing.Point(18, 132);
             this.uiLabel4.Name = "uiLabel4";
             this.uiLabel4.Size = new System.Drawing.Size(82, 23);
-            this.uiLabel4.Style = Sunny.UI.UIStyle.Custom;
             this.uiLabel4.TabIndex = 3;
             this.uiLabel4.Text = "体积(m³)";
             this.uiLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -208,7 +205,6 @@
             this.uiLabel3.Location = new System.Drawing.Point(18, 85);
             this.uiLabel3.Name = "uiLabel3";
             this.uiLabel3.Size = new System.Drawing.Size(82, 23);
-            this.uiLabel3.Style = Sunny.UI.UIStyle.Custom;
             this.uiLabel3.TabIndex = 2;
             this.uiLabel3.Text = "高度(m)";
             this.uiLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -221,7 +217,6 @@
             this.uiSwitch1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSwitch1.Name = "uiSwitch1";
             this.uiSwitch1.Size = new System.Drawing.Size(75, 29);
-            this.uiSwitch1.Style = Sunny.UI.UIStyle.Custom;
             this.uiSwitch1.TabIndex = 1;
             this.uiSwitch1.Text = "uiSwitch1";
             this.uiSwitch1.ValueChanged += new Sunny.UI.UISwitch.OnValueChanged(this.uiSwitch1_ValueChanged);
@@ -284,11 +279,14 @@
             this.uiProcessBar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.uiProcessBar2.Cursor = System.Windows.Forms.Cursors.Default;
             this.uiProcessBar2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiProcessBar2.ForeColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar2.Location = new System.Drawing.Point(16, 172);
             this.uiProcessBar2.MinimumSize = new System.Drawing.Size(70, 5);
             this.uiProcessBar2.Name = "uiProcessBar2";
+            this.uiProcessBar2.RectColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiProcessBar2.Size = new System.Drawing.Size(232, 43);
+            this.uiProcessBar2.Style = Sunny.UI.UIStyle.Custom;
             this.uiProcessBar2.TabIndex = 5;
             this.uiProcessBar2.Text = "16.0%";
             this.uiProcessBar2.Value = 50;
@@ -385,11 +383,14 @@
             this.uiProcessBar3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.uiProcessBar3.Cursor = System.Windows.Forms.Cursors.Default;
             this.uiProcessBar3.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiProcessBar3.ForeColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar3.Location = new System.Drawing.Point(13, 172);
             this.uiProcessBar3.MinimumSize = new System.Drawing.Size(70, 5);
             this.uiProcessBar3.Name = "uiProcessBar3";
+            this.uiProcessBar3.RectColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiProcessBar3.Size = new System.Drawing.Size(232, 43);
+            this.uiProcessBar3.Style = Sunny.UI.UIStyle.Custom;
             this.uiProcessBar3.TabIndex = 6;
             this.uiProcessBar3.Text = "16.0%";
             this.uiProcessBar3.Value = 50;
@@ -508,11 +509,14 @@
             this.uiProcessBar4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.uiProcessBar4.Cursor = System.Windows.Forms.Cursors.Default;
             this.uiProcessBar4.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiProcessBar4.ForeColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar4.Location = new System.Drawing.Point(17, 172);
             this.uiProcessBar4.MinimumSize = new System.Drawing.Size(70, 5);
             this.uiProcessBar4.Name = "uiProcessBar4";
+            this.uiProcessBar4.RectColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiProcessBar4.Size = new System.Drawing.Size(232, 43);
+            this.uiProcessBar4.Style = Sunny.UI.UIStyle.Custom;
             this.uiProcessBar4.TabIndex = 9;
             this.uiProcessBar4.Text = "16.0%";
             this.uiProcessBar4.Value = 50;
@@ -576,11 +580,14 @@
             this.uiProcessBar5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.uiProcessBar5.Cursor = System.Windows.Forms.Cursors.Default;
             this.uiProcessBar5.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiProcessBar5.ForeColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar5.Location = new System.Drawing.Point(13, 173);
             this.uiProcessBar5.MinimumSize = new System.Drawing.Size(70, 5);
             this.uiProcessBar5.Name = "uiProcessBar5";
+            this.uiProcessBar5.RectColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiProcessBar5.Size = new System.Drawing.Size(232, 43);
+            this.uiProcessBar5.Style = Sunny.UI.UIStyle.Custom;
             this.uiProcessBar5.TabIndex = 16;
             this.uiProcessBar5.Text = "16.0%";
             // 
@@ -708,11 +715,14 @@
             this.uiProcessBar6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.uiProcessBar6.Cursor = System.Windows.Forms.Cursors.Default;
             this.uiProcessBar6.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiProcessBar6.ForeColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar6.Location = new System.Drawing.Point(16, 173);
             this.uiProcessBar6.MinimumSize = new System.Drawing.Size(70, 5);
             this.uiProcessBar6.Name = "uiProcessBar6";
+            this.uiProcessBar6.RectColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiProcessBar6.Size = new System.Drawing.Size(232, 43);
+            this.uiProcessBar6.Style = Sunny.UI.UIStyle.Custom;
             this.uiProcessBar6.TabIndex = 17;
             this.uiProcessBar6.Text = "16.0%";
             // 
@@ -807,11 +817,14 @@
             this.uiProcessBar7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.uiProcessBar7.Cursor = System.Windows.Forms.Cursors.Default;
             this.uiProcessBar7.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiProcessBar7.ForeColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar7.Location = new System.Drawing.Point(13, 173);
             this.uiProcessBar7.MinimumSize = new System.Drawing.Size(70, 5);
             this.uiProcessBar7.Name = "uiProcessBar7";
+            this.uiProcessBar7.RectColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiProcessBar7.Size = new System.Drawing.Size(232, 43);
+            this.uiProcessBar7.Style = Sunny.UI.UIStyle.Custom;
             this.uiProcessBar7.TabIndex = 18;
             this.uiProcessBar7.Text = "16.0%";
             // 
@@ -906,11 +919,14 @@
             this.uiProcessBar8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.uiProcessBar8.Cursor = System.Windows.Forms.Cursors.Default;
             this.uiProcessBar8.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiProcessBar8.ForeColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar8.Location = new System.Drawing.Point(17, 173);
             this.uiProcessBar8.MinimumSize = new System.Drawing.Size(70, 5);
             this.uiProcessBar8.Name = "uiProcessBar8";
+            this.uiProcessBar8.RectColor = System.Drawing.Color.DodgerBlue;
             this.uiProcessBar8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiProcessBar8.Size = new System.Drawing.Size(232, 43);
+            this.uiProcessBar8.Style = Sunny.UI.UIStyle.Custom;
             this.uiProcessBar8.TabIndex = 19;
             this.uiProcessBar8.Text = "16.0%";
             // 

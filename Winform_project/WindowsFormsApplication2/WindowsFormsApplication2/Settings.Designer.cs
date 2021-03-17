@@ -227,7 +227,6 @@
             this.uiTabControlMenu1.Size = new System.Drawing.Size(1272, 642);
             this.uiTabControlMenu1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.uiTabControlMenu1.TabIndex = 0;
-            this.uiTabControlMenu1.Click += new System.EventHandler(this.uiTabControlMenu1_Click);
             // 
             // tabPage1
             // 
@@ -253,7 +252,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "刻度设置";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // uiTextBox9
             // 
@@ -459,7 +457,6 @@
             this.uiLabel2.TabIndex = 3;
             this.uiLabel2.Text = "当前AD采集值";
             this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel2.Click += new System.EventHandler(this.uiLabel2_Click);
             // 
             // uiButton1
             // 
@@ -485,7 +482,6 @@
             this.uiLabel1.TabIndex = 1;
             this.uiLabel1.Text = "罐号：";
             this.uiLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel1.Click += new System.EventHandler(this.uiLabel1_Click);
             // 
             // tabPage2
             // 
@@ -1198,7 +1194,6 @@
             this.uiLabel29.TabIndex = 50;
             this.uiLabel29.Text = "-";
             this.uiLabel29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiLabel29.Click += new System.EventHandler(this.uiLabel29_Click);
             // 
             // uiDatePicker4
             // 
