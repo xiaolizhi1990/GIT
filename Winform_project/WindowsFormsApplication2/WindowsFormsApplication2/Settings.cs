@@ -51,6 +51,28 @@ namespace WindowsFormsApplication2
                 uiTextBox14.Visible = false;
                 uiLabel37.Visible = false;
             }
+
+
+            //报警数据查询
+                int i;
+                DateTime dt = new DateTime();
+                dt = System.DateTime.Now;
+                string strFu = dt.ToString("yyyy-MM-dd");//获取年月日   标准格式为dt.ToString("yyyy-MM-dd HH:mm:ss")
+                for (i = 1; i < 9; i++)
+                {
+                    String str = ini.IniReadValue(i + "#泥浆罐", "B");
+                    String H = ini.IniReadValue(i + "#泥浆罐", "ALARM_H");
+                    String L = ini.IniReadValue(i + "#泥浆罐", "ALARM_L");
+                    String State = ini.IniReadValue(i + "#泥浆罐", "State");
+                    Double str1 = Convert.ToDouble(str);
+                    Double H1 = Convert.ToDouble(H);
+                    Double L1 = Convert.ToDouble(L);
+                    if (State == "1" && (str1 <= L1) || str1 >= H1)
+                    {
+                        String[] values = { Convert.ToString(i), strFu,str,"泥浆液面高度预警！" };
+                        dataGridView1.Rows.Add(values);
+                    }
+                }
         }
 
         private void uiButton1_Click(object sender, EventArgs e)

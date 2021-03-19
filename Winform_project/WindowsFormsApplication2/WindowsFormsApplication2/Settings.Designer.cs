@@ -85,6 +85,10 @@
             System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("6");
             System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("7");
             System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("8");
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -105,11 +109,17 @@
             this.uiButton1 = new Sunny.UI.UIButton();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.uiTextBox13 = new Sunny.UI.UITextBox();
             this.uiTextBox14 = new Sunny.UI.UITextBox();
+            this.uiTextBox12 = new Sunny.UI.UITextBox();
             this.uiLabel37 = new Sunny.UI.UILabel();
+            this.uiLabel17 = new Sunny.UI.UILabel();
             this.uiLabel38 = new Sunny.UI.UILabel();
+            this.uiLabel16 = new Sunny.UI.UILabel();
             this.uiTextBox11 = new Sunny.UI.UITextBox();
+            this.uiLabel15 = new Sunny.UI.UILabel();
             this.uiTextBox10 = new Sunny.UI.UITextBox();
+            this.uiLabel14 = new Sunny.UI.UILabel();
             this.uiButton5 = new Sunny.UI.UIButton();
             this.uiLabel13 = new Sunny.UI.UILabel();
             this.uiLabel12 = new Sunny.UI.UILabel();
@@ -119,12 +129,6 @@
             this.uiLabel9 = new Sunny.UI.UILabel();
             this.uiComboTreeView3 = new Sunny.UI.UIComboTreeView();
             this.uiLabel8 = new Sunny.UI.UILabel();
-            this.uiTextBox13 = new Sunny.UI.UITextBox();
-            this.uiTextBox12 = new Sunny.UI.UITextBox();
-            this.uiLabel17 = new Sunny.UI.UILabel();
-            this.uiLabel16 = new Sunny.UI.UILabel();
-            this.uiLabel15 = new Sunny.UI.UILabel();
-            this.uiLabel14 = new Sunny.UI.UILabel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.uiTextBox4 = new Sunny.UI.UITextBox();
             this.uiTextBox3 = new Sunny.UI.UITextBox();
@@ -149,7 +153,7 @@
             this.uiLabel19 = new Sunny.UI.UILabel();
             this.uiLabel26 = new Sunny.UI.UILabel();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.uiRichTextBox12 = new Sunny.UI.UIRichTextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.uiLabel29 = new Sunny.UI.UILabel();
             this.uiDatePicker4 = new Sunny.UI.UIDatePicker();
             this.uiTimePicker3 = new Sunny.UI.UITimePicker();
@@ -194,11 +198,16 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uiTabControlMenu1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
@@ -513,6 +522,23 @@
             this.tabPage2.Text = "罐型选择";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // uiTextBox13
+            // 
+            this.uiTextBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox13.FillColor = System.Drawing.Color.White;
+            this.uiTextBox13.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox13.Location = new System.Drawing.Point(744, 404);
+            this.uiTextBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox13.Maximum = 2147483647D;
+            this.uiTextBox13.Minimum = -2147483648D;
+            this.uiTextBox13.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox13.Name = "uiTextBox13";
+            this.uiTextBox13.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox13.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox13.TabIndex = 75;
+            this.uiTextBox13.Text = "0.00";
+            this.uiTextBox13.Type = Sunny.UI.UITextBox.UIEditType.Double;
+            // 
             // uiTextBox14
             // 
             this.uiTextBox14.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -530,6 +556,23 @@
             this.uiTextBox14.Text = "0.00";
             this.uiTextBox14.Type = Sunny.UI.UITextBox.UIEditType.Double;
             // 
+            // uiTextBox12
+            // 
+            this.uiTextBox12.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.uiTextBox12.FillColor = System.Drawing.Color.White;
+            this.uiTextBox12.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiTextBox12.Location = new System.Drawing.Point(744, 263);
+            this.uiTextBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.uiTextBox12.Maximum = 2147483647D;
+            this.uiTextBox12.Minimum = -2147483648D;
+            this.uiTextBox12.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiTextBox12.Name = "uiTextBox12";
+            this.uiTextBox12.Padding = new System.Windows.Forms.Padding(5);
+            this.uiTextBox12.Size = new System.Drawing.Size(150, 29);
+            this.uiTextBox12.TabIndex = 74;
+            this.uiTextBox12.Text = "0.00";
+            this.uiTextBox12.Type = Sunny.UI.UITextBox.UIEditType.Double;
+            // 
             // uiLabel37
             // 
             this.uiLabel37.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -540,6 +583,16 @@
             this.uiLabel37.Text = "m";
             this.uiLabel37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // uiLabel17
+            // 
+            this.uiLabel17.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel17.Location = new System.Drawing.Point(924, 384);
+            this.uiLabel17.Name = "uiLabel17";
+            this.uiLabel17.Size = new System.Drawing.Size(44, 69);
+            this.uiLabel17.TabIndex = 34;
+            this.uiLabel17.Text = "m";
+            this.uiLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // uiLabel38
             // 
             this.uiLabel38.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -549,6 +602,16 @@
             this.uiLabel38.TabIndex = 76;
             this.uiLabel38.Text = "锥高度：";
             this.uiLabel38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // uiLabel16
+            // 
+            this.uiLabel16.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel16.Location = new System.Drawing.Point(924, 243);
+            this.uiLabel16.Name = "uiLabel16";
+            this.uiLabel16.Size = new System.Drawing.Size(44, 69);
+            this.uiLabel16.TabIndex = 33;
+            this.uiLabel16.Text = "m";
+            this.uiLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // uiTextBox11
             // 
@@ -568,6 +631,16 @@
             this.uiTextBox11.Text = "0.00";
             this.uiTextBox11.Type = Sunny.UI.UITextBox.UIEditType.Double;
             // 
+            // uiLabel15
+            // 
+            this.uiLabel15.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel15.Location = new System.Drawing.Point(656, 384);
+            this.uiLabel15.Name = "uiLabel15";
+            this.uiLabel15.Size = new System.Drawing.Size(143, 69);
+            this.uiLabel15.TabIndex = 27;
+            this.uiLabel15.Text = "罐高度：";
+            this.uiLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // uiTextBox10
             // 
             this.uiTextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -585,6 +658,16 @@
             this.uiTextBox10.TabIndex = 74;
             this.uiTextBox10.Text = "0.00";
             this.uiTextBox10.Type = Sunny.UI.UITextBox.UIEditType.Double;
+            // 
+            // uiLabel14
+            // 
+            this.uiLabel14.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiLabel14.Location = new System.Drawing.Point(656, 243);
+            this.uiLabel14.Name = "uiLabel14";
+            this.uiLabel14.Size = new System.Drawing.Size(143, 69);
+            this.uiLabel14.TabIndex = 24;
+            this.uiLabel14.Text = "罐宽度：";
+            this.uiLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // uiButton5
             // 
@@ -722,80 +805,6 @@
             this.uiLabel8.TabIndex = 19;
             this.uiLabel8.Text = "罐号：";
             this.uiLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // uiTextBox13
-            // 
-            this.uiTextBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox13.FillColor = System.Drawing.Color.White;
-            this.uiTextBox13.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox13.Location = new System.Drawing.Point(744, 404);
-            this.uiTextBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox13.Maximum = 2147483647D;
-            this.uiTextBox13.Minimum = -2147483648D;
-            this.uiTextBox13.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox13.Name = "uiTextBox13";
-            this.uiTextBox13.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox13.Size = new System.Drawing.Size(150, 29);
-            this.uiTextBox13.TabIndex = 75;
-            this.uiTextBox13.Text = "0.00";
-            this.uiTextBox13.Type = Sunny.UI.UITextBox.UIEditType.Double;
-            // 
-            // uiTextBox12
-            // 
-            this.uiTextBox12.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.uiTextBox12.FillColor = System.Drawing.Color.White;
-            this.uiTextBox12.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiTextBox12.Location = new System.Drawing.Point(744, 263);
-            this.uiTextBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiTextBox12.Maximum = 2147483647D;
-            this.uiTextBox12.Minimum = -2147483648D;
-            this.uiTextBox12.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiTextBox12.Name = "uiTextBox12";
-            this.uiTextBox12.Padding = new System.Windows.Forms.Padding(5);
-            this.uiTextBox12.Size = new System.Drawing.Size(150, 29);
-            this.uiTextBox12.TabIndex = 74;
-            this.uiTextBox12.Text = "0.00";
-            this.uiTextBox12.Type = Sunny.UI.UITextBox.UIEditType.Double;
-            // 
-            // uiLabel17
-            // 
-            this.uiLabel17.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel17.Location = new System.Drawing.Point(924, 384);
-            this.uiLabel17.Name = "uiLabel17";
-            this.uiLabel17.Size = new System.Drawing.Size(44, 69);
-            this.uiLabel17.TabIndex = 34;
-            this.uiLabel17.Text = "m";
-            this.uiLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // uiLabel16
-            // 
-            this.uiLabel16.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel16.Location = new System.Drawing.Point(924, 243);
-            this.uiLabel16.Name = "uiLabel16";
-            this.uiLabel16.Size = new System.Drawing.Size(44, 69);
-            this.uiLabel16.TabIndex = 33;
-            this.uiLabel16.Text = "m";
-            this.uiLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // uiLabel15
-            // 
-            this.uiLabel15.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel15.Location = new System.Drawing.Point(656, 384);
-            this.uiLabel15.Name = "uiLabel15";
-            this.uiLabel15.Size = new System.Drawing.Size(143, 69);
-            this.uiLabel15.TabIndex = 27;
-            this.uiLabel15.Text = "罐高度：";
-            this.uiLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // uiLabel14
-            // 
-            this.uiLabel14.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel14.Location = new System.Drawing.Point(656, 243);
-            this.uiLabel14.Name = "uiLabel14";
-            this.uiLabel14.Size = new System.Drawing.Size(143, 69);
-            this.uiLabel14.TabIndex = 24;
-            this.uiLabel14.Text = "罐宽度：";
-            this.uiLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tabPage3
             // 
@@ -1154,7 +1163,7 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.uiRichTextBox12);
+            this.tabPage4.Controls.Add(this.dataGridView1);
             this.tabPage4.Controls.Add(this.uiLabel29);
             this.tabPage4.Controls.Add(this.uiDatePicker4);
             this.tabPage4.Controls.Add(this.uiTimePicker3);
@@ -1170,19 +1179,33 @@
             this.tabPage4.Text = "报警查询";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // uiRichTextBox12
+            // dataGridView1
             // 
-            this.uiRichTextBox12.AutoWordSelection = true;
-            this.uiRichTextBox12.FillColor = System.Drawing.Color.White;
-            this.uiRichTextBox12.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiRichTextBox12.Location = new System.Drawing.Point(58, 96);
-            this.uiRichTextBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiRichTextBox12.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiRichTextBox12.Name = "uiRichTextBox12";
-            this.uiRichTextBox12.Padding = new System.Windows.Forms.Padding(2);
-            this.uiRichTextBox12.Size = new System.Drawing.Size(1045, 507);
-            this.uiRichTextBox12.Style = Sunny.UI.UIStyle.Custom;
-            this.uiRichTextBox12.TabIndex = 51;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.dataGridView1.GridColor = System.Drawing.Color.DarkGray;
+            this.dataGridView1.Location = new System.Drawing.Point(58, 97);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.Height = 23;
+            this.dataGridView1.Size = new System.Drawing.Size(1045, 521);
+            this.dataGridView1.TabIndex = 51;
+            this.dataGridView1.TabStop = false;
             // 
             // uiLabel29
             // 
@@ -1862,6 +1885,48 @@
             // 
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column1.HeaderText = "罐号";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column2.HeaderText = "时间";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column3.HeaderText = "报警数据";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column4.HeaderText = "备注";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1882,6 +1947,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
@@ -1951,7 +2017,6 @@
         private Sunny.UI.UILabel uiLabel28;
         private Sunny.UI.UIComboTreeView uiComboTreeView7;
         private Sunny.UI.UILabel uiLabel27;
-        private Sunny.UI.UIRichTextBox uiRichTextBox12;
         private Sunny.UI.UISwitch uiSwitch1;
         private Sunny.UI.UIDatePicker uiDatePicker6;
         private Sunny.UI.UITimePicker uiTimePicker5;
@@ -1999,6 +2064,11 @@
         private Sunny.UI.UITextBox uiTextBox14;
         private Sunny.UI.UILabel uiLabel37;
         private Sunny.UI.UILabel uiLabel38;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }
 

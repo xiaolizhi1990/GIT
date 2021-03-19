@@ -18,3 +18,4 @@ D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\HZH_Controls.dll
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\HZH_Controls.pdb
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\MudTankMonitoringSystem.csprojResolveAssemblyReference.cache
+D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\MudTankMonitoringSystem.csproj.ResolveComReference.cache

@@ -175,12 +175,13 @@ namespace WindowsFormsApplication2
             {
                 uiLight5.State = Sunny.UI.UILightState.On;
                 uiSwitch5.Active = true;
-                uiLabel19.Text = ini.IniReadValue("5#泥浆罐", "H");
+                //uiLabel19.Text = ini.IniReadValue("5#泥浆罐", "H");
                 uiLabel20.Text = ini.IniReadValue("5#泥浆罐", "V");
-                String str0 = uiLabel19.Text;
+                String str0 = ini.IniReadValue("5#泥浆罐", "H");
                 Double str00 = Convert.ToDouble(str0);
-                //五号罐的进度条，显示的是令X=0，y=kx+B，得到的Y值也就是高度值，再和实际高度的百分比。
+                //五号罐的进度条，显示的是令X=0，y=kx+B，得到的Y值也就是高度值，再和罐高度的百分比。
                 String str1 = ini.IniReadValue("5#泥浆罐", "B");   //AD2
+                uiLabel19.Text = str1;  //显示的X=0时是B的值，实时高度。
                 Double str11 = System.Math.Abs( Convert.ToDouble(str1));
                 Double Percent = (str11 / str00) * 100;
                 Double P = Math.Round(Percent);
@@ -324,7 +325,7 @@ namespace WindowsFormsApplication2
             uiTextBox1.Text = Convert.ToString(VV);
         }
 
-        private void uiButton2_Click(object sender, EventArgs e)
+        private void uiButton2_Click(object sender, EventArgs e)    //关闭警报按钮
         {
           
             if (this.uiButton2.Text == "关闭警报")
