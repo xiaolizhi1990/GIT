@@ -27,49 +27,11 @@ namespace WindowsFormsApplication2
             get { return TextBox1B.Text; }
             set { TextBox1B.Text = value; }
         }
-        private void uiButton2_Click(object sender, EventArgs e)
-        {
-            String str1 = TextBox1A.Text;//获取文本框中内容
-            String str2 = TextBox1B.Text;
-           
-            //String str3 = uiTextBox2.Text;
-            //String str4 = uiTextBox1.Text;
-            //String str5 = uiTextBox4.Text;
-            //String str6 = uiTextBox3.Text;
-            //String str7 = uiTextBox7.Text;
-            //String str8 = uiTextBox5.Text;
-            //String str9 = uiTextBox16.Text;
-            //String str10 = uiTextBox15.Text;
-            //String str11 = uiTextBox14.Text;
-            //String str12 = uiTextBox13.Text;
-            //String str13 = uiTextBox12.Text;
-            //String str14 = uiTextBox11.Text;
-            //String str15 = uiTextBox10.Text;
-            //String str16 = uiTextBox9.Text;
-
-            ini.IniWriteValue("1#泥浆罐", "A", str1);
-            ini.IniWriteValue("1#泥浆罐", "B", str2);
-
-            MessageBox.Show("罐1系数保存成功！", "提示");
-            //ini.IniWriteValue("1#泥浆罐", "A", str3);
-            //ini.IniWriteValue("1#泥浆罐", "B", str4);
-            //ini.IniWriteValue("1#泥浆罐", "A", str5);
-            //ini.IniWriteValue("1#泥浆罐", "B", str6);
-            //ini.IniWriteValue("1#泥浆罐", "A", str7);
-            //ini.IniWriteValue("1#泥浆罐", "B", str8);
-            //ini.IniWriteValue("1#泥浆罐", "A", str9);
-            //ini.IniWriteValue("1#泥浆罐", "B", str10);
-            //ini.IniWriteValue("1#泥浆罐", "A", str11);
-            //ini.IniWriteValue("1#泥浆罐", "B", str12);
-            //ini.IniWriteValue("1#泥浆罐", "A", str13);
-            //ini.IniWriteValue("1#泥浆罐", "B", str14);
-            //ini.IniWriteValue("1#泥浆罐", "A", str15);
-            //ini.IniWriteValue("1#泥浆罐", "B", str16);
-        }
+        
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+            //如果文件存在，读取文本中的值
             if (ini.ExistINIFile())
             {
                 TextBox1A.Text = ini.IniReadValue("1#泥浆罐", "A");
@@ -100,9 +62,18 @@ namespace WindowsFormsApplication2
             MessageBox.Show("罐2系数保存成功！", "提示");
         }
 
+        private void uiButton2_Click(object sender, EventArgs e)
+        {
+            String str1 = TextBox1A.Text;//获取文本框中内容
+            String str2 = TextBox1B.Text;
+            ini.IniWriteValue("1#泥浆罐", "A", str1);
+            ini.IniWriteValue("1#泥浆罐", "B", str2);
+            MessageBox.Show("罐1系数保存成功！", "提示");
+        }
+
         private void uiButton3_Click(object sender, EventArgs e)
         {
-            String str5 = TextBox3A.Text;
+            String str5 = TextBox3A.Text;//获取文本框中内容
             String str6 = TextBox3B.Text;
             ini.IniWriteValue("3#泥浆罐", "A", str5);
             ini.IniWriteValue("3#泥浆罐", "B", str6);
@@ -111,7 +82,7 @@ namespace WindowsFormsApplication2
 
         private void uiButton4_Click(object sender, EventArgs e)
         {
-            String str7 = TextBox4A.Text;
+            String str7 = TextBox4A.Text;//获取文本框中内容
             String str8 = TextBox4B.Text;
             ini.IniWriteValue("4#泥浆罐", "A", str7);
             ini.IniWriteValue("4#泥浆罐", "B", str8);
@@ -120,7 +91,7 @@ namespace WindowsFormsApplication2
 
         private void uiButton8_Click(object sender, EventArgs e)
         {
-            String str9 = TextBox5A.Text;
+            String str9 = TextBox5A.Text;//获取文本框中内容
             String str10 = TextBox5B.Text;
             ini.IniWriteValue("5#泥浆罐", "A", str9);
             ini.IniWriteValue("5#泥浆罐", "B", str10);
@@ -129,7 +100,7 @@ namespace WindowsFormsApplication2
 
         private void uiButton7_Click(object sender, EventArgs e)
         {
-            String str11 = TextBox6A.Text;
+            String str11 = TextBox6A.Text;//获取文本框中内容
             String str12 = TextBox6B.Text;
             ini.IniWriteValue("6#泥浆罐", "A", str11);
             ini.IniWriteValue("6#泥浆罐", "B", str12);
@@ -138,7 +109,7 @@ namespace WindowsFormsApplication2
 
         private void uiButton6_Click(object sender, EventArgs e)
         {
-            String str13 = TextBox7A.Text;
+            String str13 = TextBox7A.Text;//获取文本框中内容
             String str14 = TextBox7B.Text;
             ini.IniWriteValue("7#泥浆罐", "A", str13);
             ini.IniWriteValue("7#泥浆罐", "B", str14);
@@ -147,7 +118,7 @@ namespace WindowsFormsApplication2
 
         private void uiButton5_Click(object sender, EventArgs e)
         {
-            String str15 = TextBox8A.Text;
+            String str15 = TextBox8A.Text;//获取文本框中内容
             String str16 = TextBox8B.Text;
             ini.IniWriteValue("8#泥浆罐", "A", str15);
             ini.IniWriteValue("8#泥浆罐", "B", str16);
