@@ -94,13 +94,6 @@ namespace WindowsFormsApplication2
             f.Show();
         }
 
-        private void uiButton12_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Main f = new Main();
-            f.Show();
-        }
-
         private void uiButton9_Click(object sender, EventArgs e)
         {
             string str = "5 秒";
@@ -147,9 +140,7 @@ namespace WindowsFormsApplication2
         private void uiButton6_Click(object sender, EventArgs e)
         {
             String str = uiTextBox2.Text;
-            String str1 = uiComboTreeView5.Text;
             ini.IniWriteValue("井名", "ProjectName", str);
-            ini.IniWriteValue("存储间隔", "TIME", str1);
             MessageBox.Show("保存成功！", "提示");
         }
 
@@ -319,6 +310,29 @@ namespace WindowsFormsApplication2
                 uiLabel38.Visible = true;
                 uiTextBox14.Visible = true;
                 uiLabel37.Visible = true;
+            }
+        }
+
+        //设置存储间隔
+        private void uiButton8_Click(object sender, EventArgs e)
+        {
+            String str0 = uiComboTreeView5.Text;
+            ini.IniWriteValue("存储间隔", "TIME", str0);
+            MessageBox.Show("保存成功！", "提示");
+        }
+
+        private void Settings_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
+            Main f = new Main();
+            f.Show();
+        }
+        //返回
+        private void uiTabControlMenu1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (uiTabControlMenu1.SelectedTab.Text == "返回") 
+            {
+                this.Close();
             }
         }
     }
