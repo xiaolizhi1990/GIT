@@ -73,6 +73,10 @@
             System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("6");
             System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("7");
             System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("8");
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("1");
             System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("2");
             System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("3");
@@ -159,7 +163,11 @@
             this.uiLabel27 = new Sunny.UI.UILabel();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.uiButton9 = new Sunny.UI.UIButton();
-            this.uiProcessBar1 = new Sunny.UI.UIProcessBar();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uiSwitch1 = new Sunny.UI.UISwitch();
             this.uiComboTreeView8 = new Sunny.UI.UIComboTreeView();
             this.uiLabel32 = new Sunny.UI.UILabel();
@@ -184,7 +192,6 @@
             this.uiTextBox5 = new Sunny.UI.UITextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.uiTabControlMenu1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -192,6 +199,7 @@
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1230,7 +1238,7 @@
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.uiButton9);
-            this.tabPage5.Controls.Add(this.uiProcessBar1);
+            this.tabPage5.Controls.Add(this.dataGridView2);
             this.tabPage5.Controls.Add(this.uiSwitch1);
             this.tabPage5.Controls.Add(this.uiComboTreeView8);
             this.tabPage5.Controls.Add(this.uiLabel32);
@@ -1244,31 +1252,92 @@
             // uiButton9
             // 
             this.uiButton9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.uiButton9.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiButton9.Location = new System.Drawing.Point(478, 515);
+            this.uiButton9.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.uiButton9.Location = new System.Drawing.Point(1003, 41);
             this.uiButton9.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiButton9.Name = "uiButton9";
-            this.uiButton9.Size = new System.Drawing.Size(172, 53);
-            this.uiButton9.TabIndex = 64;
-            this.uiButton9.Text = "确认查询";
+            this.uiButton9.Size = new System.Drawing.Size(100, 35);
+            this.uiButton9.TabIndex = 66;
+            this.uiButton9.Text = "导出数据";
             this.uiButton9.Click += new System.EventHandler(this.uiButton9_Click);
             // 
-            // uiProcessBar1
+            // dataGridView2
             // 
-            this.uiProcessBar1.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiProcessBar1.Location = new System.Drawing.Point(58, 286);
-            this.uiProcessBar1.MinimumSize = new System.Drawing.Size(70, 5);
-            this.uiProcessBar1.Name = "uiProcessBar1";
-            this.uiProcessBar1.Size = new System.Drawing.Size(1045, 56);
-            this.uiProcessBar1.TabIndex = 60;
-            this.uiProcessBar1.Text = "0.0%";
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToResizeColumns = false;
+            this.dataGridView2.AllowUserToResizeRows = false;
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.dataGridView2.GridColor = System.Drawing.Color.DarkGray;
+            this.dataGridView2.Location = new System.Drawing.Point(58, 94);
+            this.dataGridView2.MultiSelect = false;
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridView2.RowTemplate.Height = 23;
+            this.dataGridView2.Size = new System.Drawing.Size(1045, 522);
+            this.dataGridView2.TabIndex = 65;
+            this.dataGridView2.TabStop = false;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewTextBoxColumn1.HeaderText = "罐号";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewTextBoxColumn2.HeaderText = "时间";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridViewTextBoxColumn3.HeaderText = "高度数据";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewTextBoxColumn4.HeaderText = "体积数据";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // uiSwitch1
             // 
             this.uiSwitch1.ActiveText = "查询总体积";
             this.uiSwitch1.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiSwitch1.InActiveText = "查询总体积";
-            this.uiSwitch1.Location = new System.Drawing.Point(341, 46);
+            this.uiSwitch1.Location = new System.Drawing.Point(341, 41);
             this.uiSwitch1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSwitch1.Name = "uiSwitch1";
             this.uiSwitch1.Size = new System.Drawing.Size(135, 35);
@@ -1280,7 +1349,7 @@
             this.uiComboTreeView8.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.uiComboTreeView8.FillColor = System.Drawing.Color.White;
             this.uiComboTreeView8.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiComboTreeView8.Location = new System.Drawing.Point(145, 46);
+            this.uiComboTreeView8.Location = new System.Drawing.Point(145, 44);
             this.uiComboTreeView8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboTreeView8.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboTreeView8.Name = "uiComboTreeView8";
@@ -1632,10 +1701,6 @@
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // timer3
-            // 
-            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
-            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1650,6 +1715,7 @@
             this.Name = "Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "设置";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Settings_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Settings_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.uiTabControlMenu1.ResumeLayout(false);
@@ -1659,6 +1725,7 @@
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1720,8 +1787,6 @@
         private Sunny.UI.UISwitch uiSwitch1;
         private Sunny.UI.UIComboTreeView uiComboTreeView8;
         private Sunny.UI.UILabel uiLabel32;
-        private Sunny.UI.UIProcessBar uiProcessBar1;
-        private Sunny.UI.UIButton uiButton9;
         private Sunny.UI.UIButton uiButton11;
         private Sunny.UI.UIButton uiButton10;
         private Sunny.UI.UIDatePicker uiDatePicker7;
@@ -1752,7 +1817,6 @@
         private Sunny.UI.UILine uiLine4;
         public Sunny.UI.UITextBox uiTextBox6;
         public Sunny.UI.UITextBox uiTextBox7;
-        private System.Windows.Forms.Timer timer3;
         private Sunny.UI.UITextBox uiTextBox14;
         private Sunny.UI.UILabel uiLabel37;
         private Sunny.UI.UILabel uiLabel38;
@@ -1761,6 +1825,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private Sunny.UI.UIButton uiButton9;
     }
 }
 

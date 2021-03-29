@@ -105,6 +105,7 @@
             this.uiLabel36 = new Sunny.UI.UILabel();
             this.uiTextBox1 = new Sunny.UI.UITextBox();
             this.uiLabel37 = new Sunny.UI.UILabel();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.uiGroupBox1.SuspendLayout();
             this.uiGroupBox2.SuspendLayout();
             this.uiGroupBox3.SuspendLayout();
@@ -1036,6 +1037,10 @@
             this.uiLabel37.Text = "m³";
             this.uiLabel37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // timer3
+            // 
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -1155,6 +1160,7 @@
         private Sunny.UI.UILabel uiLabel36;
         private Sunny.UI.UITextBox uiTextBox1;
         private Sunny.UI.UILabel uiLabel37;
+        private System.Windows.Forms.Timer timer3;
 
     }
 }

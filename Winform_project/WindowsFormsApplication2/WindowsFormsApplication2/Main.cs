@@ -16,12 +16,33 @@ namespace WindowsFormsApplication2
         {
             InitializeComponent();
         }
+        //窗体标志位
+        public static bool MainFlag = false;
 
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            //定时器
+            if (MainFlag)
+            {
+                this.Show();
+                MainFlag = false;
+            }
+        }
+        //设置按钮
         private void uiButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Settings f = new Settings();
-            f.ShowDialog();
+
+            if (Settings.SettingsFlag == false)
+            {
+                this.Hide();
+                Settings f1 = new Settings();
+                f1.Show();
+            }
+            else
+            {
+                this.Hide();
+                Settings.pCurrentWin.Show();
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -34,7 +55,8 @@ namespace WindowsFormsApplication2
         private void Form4_Load_1(object sender, EventArgs e)
         {
             timer1.Enabled = true;
-            timer2.Enabled = true;    
+            timer2.Enabled = true;
+            timer3.Enabled = true;
         }
 
         private void uiButton2_Click(object sender, EventArgs e)    //关闭警报按钮
@@ -230,9 +252,8 @@ namespace WindowsFormsApplication2
             {
                 uiLight5.State = Sunny.UI.UILightState.On;
                 ini.IniWriteValue("5#泥浆罐", "State", "1");
-                uiLabel19.Text = ini.IniReadValue("5#泥浆罐", "H");
                 uiLabel20.Text = ini.IniReadValue("5#泥浆罐", "V");
-                String str0 = uiLabel19.Text;
+                String str0 = ini.IniReadValue("5#泥浆罐", "H");
                 Double str00 = Convert.ToDouble(str0);
                 //五号罐的进度条，显示的是令X=0，y=kx+B，得到的Y值也就是高度值，再和实际高度的百分比。
                 String str1 = ini.IniReadValue("5#泥浆罐", "B");   //AD2
@@ -395,6 +416,7 @@ namespace WindowsFormsApplication2
 
         private void timer2_Tick(object sender, EventArgs e)
         {
+            //1秒刷新主窗体
             timer2.Interval = 1000;
             //加载时读取ini文件数据
             if (ini.IniReadValue("1#泥浆罐", "State") == "1")
@@ -537,7 +559,6 @@ namespace WindowsFormsApplication2
             {
                 uiLight5.State = Sunny.UI.UILightState.On;
                 uiSwitch5.Active = true;
-                //uiLabel19.Text = ini.IniReadValue("5#泥浆罐", "H");
                 uiLabel20.Text = ini.IniReadValue("5#泥浆罐", "V");
                 String str0 = ini.IniReadValue("5#泥浆罐", "H");
                 Double str00 = Convert.ToDouble(str0);
@@ -692,5 +713,9 @@ namespace WindowsFormsApplication2
         {
             Application.Exit();
         }
+
+
+
+
     }
 }

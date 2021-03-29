@@ -34,9 +34,12 @@ namespace WindowsFormsApplication2
         }
         public static Settings pCurrentWin = null;//在窗体类中定义一个静态成员，来保存当前主窗体对象
 
+        //窗体标志位
+        public static bool SettingsFlag = false;
+
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            timer1.Enabled = true;
             if (ini.ExistINIFile())               //读取ini配置文件，并在窗体加载时显示数据
             {
                 uiTextBox2.Text = ini.IniReadValue("井名", "ProjectName");
@@ -73,6 +76,8 @@ namespace WindowsFormsApplication2
                         dataGridView1.Rows.Add(values);
                     }
                 }
+
+            
         }
 
         private void uiButton1_Click(object sender, EventArgs e)
@@ -94,27 +99,22 @@ namespace WindowsFormsApplication2
             f.Show();
         }
 
-        private void uiButton9_Click(object sender, EventArgs e)
-        {
-            string str = "5 秒";
-            time = Convert.ToInt16(str.Substring(0, 2));//将下拉菜单中的字符串内容转换成整形
-            uiProcessBar1.Maximum = time;//进度条的最大值
-            timer1.Start();//开始定时器
-            ///MessageBox.Show("绘制曲线图中......", "提示");//提示对话框
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
-            count++;//每到一定时间进入这个私有函数
+            String timer = ini.IniReadValue("存储间隔", "TIME");
+            int a = Convert.ToInt32(timer);
+            timer1.Interval = a*1000;
+            //记录查询
+            String num = uiComboTreeView8.Text;
+            int Num = Convert.ToInt32(num);
+            DateTime dtime = new DateTime();
+            dtime = System.DateTime.Now;
+            String strFu1 = dtime.ToString("yyyy-MM-dd HH:mm:ss");//获取年月日   标准格式为dt.ToString("yyyy-MM-dd HH:mm:ss")
+            String str2 = ini.IniReadValue(Num + "#泥浆罐", "B");
+            String V = ini.IniReadValue(Num + "#泥浆罐", "V");
+            String[] values1 = { Convert.ToString(Num), strFu1, str2 + "m", V + "m³" };
+            dataGridView2.Rows.Add(values1);     
 
-            uiProcessBar1.Value = count;
-            if (count == time)
-            {
-                timer1.Stop();
-                System.Media.SystemSounds.Asterisk.Play();//提示音
-                RealChart f = new RealChart();
-                f.Show();
-            }
         }
 
         private void uiButton11_Click(object sender, EventArgs e)
@@ -203,8 +203,6 @@ namespace WindowsFormsApplication2
 
         }
 
-
-
         private void uiSwitch3_ValueChanged(object sender, bool value)      //开关按钮开启改变下拉选择框为不可选中
         {
             if (uiSwitch3.Active == true)
@@ -213,21 +211,6 @@ namespace WindowsFormsApplication2
             }
             else
                 uiComboTreeView6.Enabled = true;
-        }
-
-        private void timer3_Tick(object sender, EventArgs e)
-        {
-            count++;//每到一定时间进入这个私有函数
-
-            uiProcessBar1.Value = count;
-            if (count == time)
-            {
-                timer3.Stop();
-                System.Media.SystemSounds.Asterisk.Play();//提示音
-                RealChart f = new RealChart();
-                f.Show();
-            }
-
         }
 
         private void uiButton4_Click(object sender, EventArgs e)
@@ -320,20 +303,88 @@ namespace WindowsFormsApplication2
             ini.IniWriteValue("存储间隔", "TIME", str0);
             MessageBox.Show("保存成功！", "提示");
         }
-
+       
+        //关闭本窗体后打开主窗体
         private void Settings_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Close();
-            Main f = new Main();
-            f.Show();
+            this.Hide();
+            SettingsFlag = true;
+            Main.MainFlag = true;
         }
+
         //返回
         private void uiTabControlMenu1_MouseClick(object sender, MouseEventArgs e)
         {
             if (uiTabControlMenu1.SelectedTab.Text == "返回") 
             {
-                this.Close();
+                this.Hide();
+                SettingsFlag = true;
+                Main.MainFlag = true;
             }
+        }
+        //解决窗体第二次不能调用的问题
+        private void Settings_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Visible = false;
+            e.Cancel = true;
+            SettingsFlag = true;
+            Main.MainFlag = true;
+        }
+
+        private void uiButton9_Click(object sender, EventArgs e)
+        {
+            //ToExcel export = new ToExcel();
+            //export.ExportExcel("", dataGridView2, "宋体", 11);//默认文件名,DataGridView控件的名称,字体,字号
+            if (this.dataGridView2.Rows.Count == 0)
+            {
+                MessageBox.Show("未能查找到数据！！！", "提示");
+                return;
+            }
+           
+            //// 实例化一张表并定义表结构
+            //DataTable dt = new DataTable(" dtable ");
+            //DataColumn dc1 = new DataColumn("罐号", Type.GetType("System.String"));
+            //DataColumn dc2 = new DataColumn("时间", Type.GetType("System.String"));
+            //DataColumn dc3 = new DataColumn("高度数据", Type.GetType("System.String"));
+            //DataColumn dc4 = new DataColumn("体积数据", Type.GetType("System.String"));
+            //dt.Columns.Add(dc1);
+            //dt.Columns.Add(dc2);
+            //dt.Columns.Add(dc3);
+            //dt.Columns.Add(dc4);
+
+            //// 该过程为将数据写入表中的第一行
+            //for (int i = 1; i <= dataGridView2.RowCount-1;i++)
+            //{
+            //    DataRow dr = dt.NewRow();
+            //    dr["罐号"] = dataGridView2.Rows[i].Cells[0].Value;
+            //    dr["时间"] = dataGridView2.Rows[i].Cells[1].Value;
+            //    dr["高度数据"] = dataGridView2.Rows[i].Cells[2].Value;
+            //    dr["体积数据"] = dataGridView2.Rows[i].Cells[3].Value;
+            //    dt.Rows.Add(dr);
+            //}
+            var dataTable = new DataTable();
+            DataColumn dc1 = new DataColumn("罐号", Type.GetType("System.String"));
+            DataColumn dc2 = new DataColumn("时间", Type.GetType("System.String"));
+            DataColumn dc3 = new DataColumn("高度数据", Type.GetType("System.String"));
+            DataColumn dc4 = new DataColumn("体积数据", Type.GetType("System.String"));
+            dataTable.Columns.Add(dc1);
+            dataTable.Columns.Add(dc2);
+            dataTable.Columns.Add(dc3);
+            dataTable.Columns.Add(dc4);
+
+            for (var i = 0; i < dataGridView2.RowCount; i++)//从第一行开始
+            {
+                var dr = dataTable.NewRow();
+                for (var j = 0; j < 4; j++)
+                {
+                    dr[j] = dataGridView2[j, i].Value;
+                }
+                dataTable.Rows.Add(dr);
+            }
+
+
+            ExportExcel.DtToExcel(dataTable, "默认文件名");//datatable的名称
+            
         }
     }
 }

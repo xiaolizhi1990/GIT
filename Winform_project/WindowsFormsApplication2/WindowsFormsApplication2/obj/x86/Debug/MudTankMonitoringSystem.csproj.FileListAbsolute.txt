@@ -7,7 +7,6 @@ D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\MudTankMonitoringSystem.csproj.GenerateResource.Cache
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.exe
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.pdb
-D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.RealChart.resources
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Settings.resources
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.HandSettings.resources
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\WindowsFormsApplication2.Main.resources
@@ -19,3 +18,7 @@ D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\HZH_Controls.pdb
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\MudTankMonitoringSystem.csprojResolveAssemblyReference.cache
 D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Debug\MudTankMonitoringSystem.csproj.ResolveComReference.cache
+D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\NPOI.dll
+D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\NPOI.OOXML.dll
+D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\NPOI.OpenXml4Net.dll
+D:\GITHUB\Winform_project\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\NPOI.OpenXmlFormats.dll
