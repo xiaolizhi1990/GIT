@@ -691,21 +691,23 @@ namespace WindowsFormsApplication2
                 uiLight8.State = Sunny.UI.UILightState.Off;
                 uiSwitch8.Active = false;
             }
-            //首页的循环罐和计量罐体积显示
+            //首页的循环罐和计量罐体积显示    
             Double V = 0, VV = 0;
             for (int i = 1; i < 9; i++)
             {
-                if (ini.IniReadValue(i + "#泥浆罐", "G_Type") == "0")
+                if (ini.IniReadValue(i + "#泥浆罐", "G_Type") == "0" && ini.IniReadValue(i + "#泥浆罐", "State") == "1")//罐类型属于循环罐且开关打开
                 {
                     V += Convert.ToDouble(ini.IniReadValue(i + "#泥浆罐", "V"));
                 }
-                else
+                else if (ini.IniReadValue(i + "#泥浆罐", "G_Type") == "1" && ini.IniReadValue(i + "#泥浆罐", "State") == "1")//罐类型属于计量罐且开关打开
                 {
                     VV += Convert.ToDouble(ini.IniReadValue(i + "#泥浆罐", "V"));
                 }
             }
             uiTextBox8.Text = Convert.ToString(V);                 //循环罐体积
             uiTextBox1.Text = Convert.ToString(VV);               //计量罐体积
+            ini.IniWriteValue("循环罐总体积", "v", Convert.ToString(V));
+            ini.IniWriteValue("计量罐总体积", "vv", Convert.ToString(VV));
         }
 
         //点击关闭时结束主窗体

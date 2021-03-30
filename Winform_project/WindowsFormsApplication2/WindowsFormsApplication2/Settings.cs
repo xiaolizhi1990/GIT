@@ -105,16 +105,42 @@ namespace WindowsFormsApplication2
             int a = Convert.ToInt32(timer);
             timer1.Interval = a*1000;
             //记录查询
-            String num = uiComboTreeView8.Text;
-            int Num = Convert.ToInt32(num);
-            DateTime dtime = new DateTime();
-            dtime = System.DateTime.Now;
-            String strFu1 = dtime.ToString("yyyy-MM-dd HH:mm:ss");//获取年月日   标准格式为dt.ToString("yyyy-MM-dd HH:mm:ss")
-            String str2 = ini.IniReadValue(Num + "#泥浆罐", "B");
-            String V = ini.IniReadValue(Num + "#泥浆罐", "V");
-            String[] values1 = { Convert.ToString(Num), strFu1, str2 + "m", V + "m³" };
-            dataGridView2.Rows.Add(values1);     
-
+            if (uiSwitch1.Active == false)
+            {
+                for (int Num = 1; Num < 9; Num++)
+                {
+                    DateTime dtime = new DateTime();
+                    dtime = System.DateTime.Now;
+                    String strFu1 = dtime.ToString("yyyy-MM-dd HH:mm:ss");//获取年月日   标准格式为dt.ToString("yyyy-MM-dd HH:mm:ss")
+                    String str2 = ini.IniReadValue(Num + "#泥浆罐", "B");
+                    String V = ini.IniReadValue(Num + "#泥浆罐", "V");
+                    String[] values1 = { Convert.ToString(Num), strFu1, str2 + "m", V + "m³" };
+                    dataGridView2.Rows.Add(values1);
+                }
+                String num = uiComboTreeView8.Text;
+                int b = dataGridView2.RowCount;
+                for (int i = 0; i < b; i++)
+                {
+                    if (dataGridView2.Rows[i].Cells[0].Value.ToString() != num)        //筛选罐号符合条件显示，不符合隐藏
+                    {
+                        dataGridView2.Rows[i].Visible = false;
+                    }
+                    else
+                    {
+                        dataGridView2.Rows[i].Visible = true;
+                    }
+                }
+            }
+            else 
+            {
+                    DateTime dtime = new DateTime();
+                    dtime = System.DateTime.Now;
+                    String strFu1 = dtime.ToString("yyyy-MM-dd HH:mm:ss");//获取年月日   标准格式为dt.ToString("yyyy-MM-dd HH:mm:ss")
+                    String v = ini.IniReadValue( "循环罐总体积", "v");
+                    String vv = ini.IniReadValue( "计量罐总体积", "vv");
+                    String[] values1 = { strFu1, v+ "m", vv+ "m³" };
+                    dataGridView3.Rows.Add(values1);
+            }
         }
 
         private void uiButton11_Click(object sender, EventArgs e)
@@ -330,61 +356,107 @@ namespace WindowsFormsApplication2
             SettingsFlag = true;
             Main.MainFlag = true;
         }
-
+        //导出excel
         private void uiButton9_Click(object sender, EventArgs e)
         {
-            //ToExcel export = new ToExcel();
-            //export.ExportExcel("", dataGridView2, "宋体", 11);//默认文件名,DataGridView控件的名称,字体,字号
-            if (this.dataGridView2.Rows.Count == 0)
+            if (uiSwitch1.Active == false)
             {
-                MessageBox.Show("未能查找到数据！！！", "提示");
-                return;
-            }
-           
-            //// 实例化一张表并定义表结构
-            //DataTable dt = new DataTable(" dtable ");
-            //DataColumn dc1 = new DataColumn("罐号", Type.GetType("System.String"));
-            //DataColumn dc2 = new DataColumn("时间", Type.GetType("System.String"));
-            //DataColumn dc3 = new DataColumn("高度数据", Type.GetType("System.String"));
-            //DataColumn dc4 = new DataColumn("体积数据", Type.GetType("System.String"));
-            //dt.Columns.Add(dc1);
-            //dt.Columns.Add(dc2);
-            //dt.Columns.Add(dc3);
-            //dt.Columns.Add(dc4);
-
-            //// 该过程为将数据写入表中的第一行
-            //for (int i = 1; i <= dataGridView2.RowCount-1;i++)
-            //{
-            //    DataRow dr = dt.NewRow();
-            //    dr["罐号"] = dataGridView2.Rows[i].Cells[0].Value;
-            //    dr["时间"] = dataGridView2.Rows[i].Cells[1].Value;
-            //    dr["高度数据"] = dataGridView2.Rows[i].Cells[2].Value;
-            //    dr["体积数据"] = dataGridView2.Rows[i].Cells[3].Value;
-            //    dt.Rows.Add(dr);
-            //}
-            var dataTable = new DataTable();
-            DataColumn dc1 = new DataColumn("罐号", Type.GetType("System.String"));
-            DataColumn dc2 = new DataColumn("时间", Type.GetType("System.String"));
-            DataColumn dc3 = new DataColumn("高度数据", Type.GetType("System.String"));
-            DataColumn dc4 = new DataColumn("体积数据", Type.GetType("System.String"));
-            dataTable.Columns.Add(dc1);
-            dataTable.Columns.Add(dc2);
-            dataTable.Columns.Add(dc3);
-            dataTable.Columns.Add(dc4);
-
-            for (var i = 0; i < dataGridView2.RowCount; i++)//从第一行开始
-            {
-                var dr = dataTable.NewRow();
-                for (var j = 0; j < 4; j++)
+                if (this.dataGridView2.Rows.Count == 0)
                 {
-                    dr[j] = dataGridView2[j, i].Value;
+                    MessageBox.Show("未能查找到数据！！！", "提示");
+                    return;
                 }
-                dataTable.Rows.Add(dr);
+
+                var dataTable = new DataTable();
+                DataColumn dc1 = new DataColumn("罐号", Type.GetType("System.String"));
+                DataColumn dc2 = new DataColumn("时间", Type.GetType("System.String"));
+                DataColumn dc3 = new DataColumn("高度数据", Type.GetType("System.String"));
+                DataColumn dc4 = new DataColumn("体积数据", Type.GetType("System.String"));
+                dataTable.Columns.Add(dc1);
+                dataTable.Columns.Add(dc2);
+                dataTable.Columns.Add(dc3);
+                dataTable.Columns.Add(dc4);
+
+                for (var i = 0; i < dataGridView2.RowCount; i++)//从第一行开始
+                {
+                    var dr = dataTable.NewRow();
+                    for (var j = 0; j < 4; j++)
+                    {
+                        dr[j] = dataGridView2[j, i].Value;
+                    }
+                    dataTable.Rows.Add(dr);
+                }
+                ExportExcel.DtToExcel(dataTable, "高度数据");//datatable的名称
             }
+            else 
+            {
+                if (this.dataGridView3.Rows.Count == 0)
+                {
+                    MessageBox.Show("未能查找到数据！！！", "提示");
+                    return;
+                }
 
+                var dataTable = new DataTable();
+                DataColumn dc1 = new DataColumn("时间", Type.GetType("System.String"));
+                DataColumn dc2 = new DataColumn("循环罐总体积", Type.GetType("System.String"));
+                DataColumn dc3 = new DataColumn("计量罐总体积", Type.GetType("System.String"));
+                
+                dataTable.Columns.Add(dc1);
+                dataTable.Columns.Add(dc2);
+                dataTable.Columns.Add(dc3);
 
-            ExportExcel.DtToExcel(dataTable, "默认文件名");//datatable的名称
+                for (var i = 0; i < dataGridView3.RowCount; i++)//从第一行开始
+                {
+                    var dr = dataTable.NewRow();
+                    for (var j = 0; j < 3; j++)
+                    {
+                        dr[j] = dataGridView3[j, i].Value;
+                    }
+                    dataTable.Rows.Add(dr);
+                }
+                ExportExcel.DtToExcel(dataTable, "体积数据");//datatable的名称
+            }  
+        }
+
+        //筛选数据
+        private void uiComboTreeView8_NodeSelected(object sender, TreeNode node)
+        {
+            String num = uiComboTreeView8.Text;
+            int a = dataGridView2.RowCount;
+            for(int i = 0;i<a;i++)
+            {
+                if (dataGridView2.Rows[i].Cells[0].Value.ToString() != num)        //筛选罐号符合条件显示，不符合隐藏
+                {
+                    dataGridView2.Rows[i].Visible = false;
+                }
+                else 
+                {
+                    dataGridView2.Rows[i].Visible = true;
+                }
+            }
             
+        }
+
+        private void uiSwitch1_ValueChanged(object sender, bool value)
+        {
+            if (uiSwitch1.Active == false)
+            {
+                dataGridView2.Visible = true;
+                dataGridView3.Visible = false;
+            }
+            else {
+                uiComboTreeView8.Enabled = false;
+                dataGridView2.Visible = false;
+                dataGridView3.Visible = true;
+            }
+        }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (this.dataGridView1.Rows.Count == 0)
+            {
+                MessageBox.Show("无报警数据！！！", "提示");
+            }
         }
     }
 }

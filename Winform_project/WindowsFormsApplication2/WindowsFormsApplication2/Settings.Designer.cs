@@ -65,6 +65,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("1");
             System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("2");
             System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("3");
@@ -73,10 +77,6 @@
             System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("6");
             System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("7");
             System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("8");
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("1");
             System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("2");
             System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("3");
@@ -85,14 +85,9 @@
             System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("6");
             System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("7");
             System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("8");
-            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("1");
-            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("2");
-            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("3");
-            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("4");
-            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("5");
-            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("6");
-            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("7");
-            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("8");
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -159,8 +154,6 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uiComboTreeView7 = new Sunny.UI.UIComboTreeView();
-            this.uiLabel27 = new Sunny.UI.UILabel();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.uiButton9 = new Sunny.UI.UIButton();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -192,6 +185,10 @@
             this.uiTextBox5 = new Sunny.UI.UITextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uiTabControlMenu1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -201,6 +198,7 @@
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // uiTabControlMenu1
@@ -1106,8 +1104,6 @@
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.dataGridView1);
-            this.tabPage4.Controls.Add(this.uiComboTreeView7);
-            this.tabPage4.Controls.Add(this.uiLabel27);
             this.tabPage4.Location = new System.Drawing.Point(131, 0);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1141, 642);
@@ -1133,15 +1129,17 @@
             this.Column3,
             this.Column4});
             this.dataGridView1.GridColor = System.Drawing.Color.DarkGray;
-            this.dataGridView1.Location = new System.Drawing.Point(58, 97);
+            this.dataGridView1.Location = new System.Drawing.Point(41, 27);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(1045, 521);
+            this.dataGridView1.Size = new System.Drawing.Size(1062, 591);
             this.dataGridView1.TabIndex = 51;
             this.dataGridView1.TabStop = false;
+            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
+
             // 
             // Column1
             // 
@@ -1185,60 +1183,11 @@
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
-            // uiComboTreeView7
-            // 
-            this.uiComboTreeView7.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
-            this.uiComboTreeView7.FillColor = System.Drawing.Color.White;
-            this.uiComboTreeView7.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiComboTreeView7.Location = new System.Drawing.Point(145, 46);
-            this.uiComboTreeView7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiComboTreeView7.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiComboTreeView7.Name = "uiComboTreeView7";
-            treeNode33.Name = "节点0";
-            treeNode33.Text = "1";
-            treeNode34.Name = "节点0";
-            treeNode34.Text = "2";
-            treeNode35.Name = "节点1";
-            treeNode35.Text = "3";
-            treeNode36.Name = "节点2";
-            treeNode36.Text = "4";
-            treeNode37.Name = "节点3";
-            treeNode37.Text = "5";
-            treeNode38.Name = "节点4";
-            treeNode38.Text = "6";
-            treeNode39.Name = "节点5";
-            treeNode39.Text = "7";
-            treeNode40.Name = "节点6";
-            treeNode40.Text = "8";
-            this.uiComboTreeView7.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode33,
-            treeNode34,
-            treeNode35,
-            treeNode36,
-            treeNode37,
-            treeNode38,
-            treeNode39,
-            treeNode40});
-            this.uiComboTreeView7.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboTreeView7.Size = new System.Drawing.Size(169, 29);
-            this.uiComboTreeView7.TabIndex = 36;
-            this.uiComboTreeView7.Text = "1";
-            this.uiComboTreeView7.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // uiLabel27
-            // 
-            this.uiLabel27.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiLabel27.Location = new System.Drawing.Point(53, 25);
-            this.uiLabel27.Name = "uiLabel27";
-            this.uiLabel27.Size = new System.Drawing.Size(127, 66);
-            this.uiLabel27.TabIndex = 35;
-            this.uiLabel27.Text = "罐号：";
-            this.uiLabel27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.uiButton9);
             this.tabPage5.Controls.Add(this.dataGridView2);
+            this.tabPage5.Controls.Add(this.dataGridView3);
+            this.tabPage5.Controls.Add(this.uiButton9);
             this.tabPage5.Controls.Add(this.uiSwitch1);
             this.tabPage5.Controls.Add(this.uiComboTreeView8);
             this.tabPage5.Controls.Add(this.uiLabel32);
@@ -1340,49 +1289,50 @@
             this.uiSwitch1.Location = new System.Drawing.Point(341, 41);
             this.uiSwitch1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiSwitch1.Name = "uiSwitch1";
-            this.uiSwitch1.Size = new System.Drawing.Size(135, 35);
+            this.uiSwitch1.Size = new System.Drawing.Size(125, 35);
             this.uiSwitch1.TabIndex = 59;
             this.uiSwitch1.Text = "uiSwitch1";
+            this.uiSwitch1.ValueChanged += new Sunny.UI.UISwitch.OnValueChanged(this.uiSwitch1_ValueChanged);
             // 
             // uiComboTreeView8
             // 
-            this.uiComboTreeView8.DropDownStyle = Sunny.UI.UIDropDownStyle.DropDownList;
             this.uiComboTreeView8.FillColor = System.Drawing.Color.White;
             this.uiComboTreeView8.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.uiComboTreeView8.Location = new System.Drawing.Point(145, 44);
             this.uiComboTreeView8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboTreeView8.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboTreeView8.Name = "uiComboTreeView8";
-            treeNode41.Name = "节点0";
-            treeNode41.Text = "1";
-            treeNode42.Name = "节点0";
-            treeNode42.Text = "2";
-            treeNode43.Name = "节点1";
-            treeNode43.Text = "3";
-            treeNode44.Name = "节点2";
-            treeNode44.Text = "4";
-            treeNode45.Name = "节点3";
-            treeNode45.Text = "5";
-            treeNode46.Name = "节点4";
-            treeNode46.Text = "6";
-            treeNode47.Name = "节点5";
-            treeNode47.Text = "7";
-            treeNode48.Name = "节点6";
-            treeNode48.Text = "8";
+            treeNode33.Name = "节点0";
+            treeNode33.Text = "1";
+            treeNode34.Name = "节点0";
+            treeNode34.Text = "2";
+            treeNode35.Name = "节点1";
+            treeNode35.Text = "3";
+            treeNode36.Name = "节点2";
+            treeNode36.Text = "4";
+            treeNode37.Name = "节点3";
+            treeNode37.Text = "5";
+            treeNode38.Name = "节点4";
+            treeNode38.Text = "6";
+            treeNode39.Name = "节点5";
+            treeNode39.Text = "7";
+            treeNode40.Name = "节点6";
+            treeNode40.Text = "8";
             this.uiComboTreeView8.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode41,
-            treeNode42,
-            treeNode43,
-            treeNode44,
-            treeNode45,
-            treeNode46,
-            treeNode47,
-            treeNode48});
+            treeNode33,
+            treeNode34,
+            treeNode35,
+            treeNode36,
+            treeNode37,
+            treeNode38,
+            treeNode39,
+            treeNode40});
             this.uiComboTreeView8.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.uiComboTreeView8.Size = new System.Drawing.Size(150, 29);
             this.uiComboTreeView8.TabIndex = 52;
             this.uiComboTreeView8.Text = "1";
             this.uiComboTreeView8.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.uiComboTreeView8.NodeSelected += new Sunny.UI.UIComboTreeView.OnNodeSelected(this.uiComboTreeView8_NodeSelected);
             // 
             // uiLabel32
             // 
@@ -1575,31 +1525,31 @@
             this.uiComboTreeView9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiComboTreeView9.MinimumSize = new System.Drawing.Size(63, 0);
             this.uiComboTreeView9.Name = "uiComboTreeView9";
-            treeNode49.Name = "节点0";
-            treeNode49.Text = "1";
-            treeNode50.Name = "节点0";
-            treeNode50.Text = "2";
-            treeNode51.Name = "节点1";
-            treeNode51.Text = "3";
-            treeNode52.Name = "节点2";
-            treeNode52.Text = "4";
-            treeNode53.Name = "节点3";
-            treeNode53.Text = "5";
-            treeNode54.Name = "节点4";
-            treeNode54.Text = "6";
-            treeNode55.Name = "节点5";
-            treeNode55.Text = "7";
-            treeNode56.Name = "节点6";
-            treeNode56.Text = "8";
+            treeNode41.Name = "节点0";
+            treeNode41.Text = "1";
+            treeNode42.Name = "节点0";
+            treeNode42.Text = "2";
+            treeNode43.Name = "节点1";
+            treeNode43.Text = "3";
+            treeNode44.Name = "节点2";
+            treeNode44.Text = "4";
+            treeNode45.Name = "节点3";
+            treeNode45.Text = "5";
+            treeNode46.Name = "节点4";
+            treeNode46.Text = "6";
+            treeNode47.Name = "节点5";
+            treeNode47.Text = "7";
+            treeNode48.Name = "节点6";
+            treeNode48.Text = "8";
             this.uiComboTreeView9.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode49,
-            treeNode50,
-            treeNode51,
-            treeNode52,
-            treeNode53,
-            treeNode54,
-            treeNode55,
-            treeNode56});
+            treeNode41,
+            treeNode42,
+            treeNode43,
+            treeNode44,
+            treeNode45,
+            treeNode46,
+            treeNode47,
+            treeNode48});
             this.uiComboTreeView9.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
             this.uiComboTreeView9.Size = new System.Drawing.Size(150, 29);
             this.uiComboTreeView9.TabIndex = 66;
@@ -1701,6 +1651,64 @@
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.AllowUserToResizeColumns = false;
+            this.dataGridView3.AllowUserToResizeRows = false;
+            this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.dataGridView3.GridColor = System.Drawing.Color.DarkGray;
+            this.dataGridView3.Location = new System.Drawing.Point(58, 94);
+            this.dataGridView3.MultiSelect = false;
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.RowHeadersVisible = false;
+            this.dataGridView3.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridView3.RowTemplate.Height = 23;
+            this.dataGridView3.Size = new System.Drawing.Size(1045, 522);
+            this.dataGridView3.TabIndex = 67;
+            this.dataGridView3.TabStop = false;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridViewTextBoxColumn6.HeaderText = "时间";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridViewTextBoxColumn7.HeaderText = "循环罐总体积";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridViewTextBoxColumn8.HeaderText = "计量罐体积数据";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1727,6 +1735,7 @@
             this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1782,8 +1791,6 @@
         private Sunny.UI.UILabel uiLabel18;
         private Sunny.UI.UIButton uiButton7;
         private Sunny.UI.UIButton uiButton8;
-        private Sunny.UI.UIComboTreeView uiComboTreeView7;
-        private Sunny.UI.UILabel uiLabel27;
         private Sunny.UI.UISwitch uiSwitch1;
         private Sunny.UI.UIComboTreeView uiComboTreeView8;
         private Sunny.UI.UILabel uiLabel32;
@@ -1831,6 +1838,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private Sunny.UI.UIButton uiButton9;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }
 
