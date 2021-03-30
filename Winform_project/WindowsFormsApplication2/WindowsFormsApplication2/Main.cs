@@ -715,9 +715,5 @@ namespace WindowsFormsApplication2
         {
             Application.Exit();
         }
-
-
-
-
     }
 }
