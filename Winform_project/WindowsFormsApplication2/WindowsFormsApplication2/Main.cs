@@ -418,7 +418,7 @@ namespace WindowsFormsApplication2
         {
             //1秒刷新主窗体
             timer2.Interval = 1000;
-            //加载时读取ini文件数据
+            //加载时读取ini文件数据,并每一秒都刷新8个罐的数据。
             if (ini.IniReadValue("1#泥浆罐", "State") == "1")
             {
                 uiLight1.State = Sunny.UI.UILightState.On;
@@ -715,5 +715,6 @@ namespace WindowsFormsApplication2
         {
             Application.Exit();
         }
+
     }
 }

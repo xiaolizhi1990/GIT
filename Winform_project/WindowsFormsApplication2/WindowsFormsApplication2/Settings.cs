@@ -86,7 +86,6 @@ namespace WindowsFormsApplication2
             f.Show();
         }
 
-
         private void uiButton2_Click(object sender, EventArgs e)
         {
             LockAD1 f = new LockAD1();
@@ -337,7 +336,6 @@ namespace WindowsFormsApplication2
             SettingsFlag = true;
             Main.MainFlag = true;
         }
-
         //返回
         private void uiTabControlMenu1_MouseClick(object sender, MouseEventArgs e)
         {
@@ -417,7 +415,6 @@ namespace WindowsFormsApplication2
                 ExportExcel.DtToExcel(dataTable, "体积数据");//datatable的名称
             }  
         }
-
         //筛选数据
         private void uiComboTreeView8_NodeSelected(object sender, TreeNode node)
         {
