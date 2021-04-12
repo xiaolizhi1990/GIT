@@ -361,7 +361,7 @@ namespace WindowsFormsApplication2
             {
                 if (this.dataGridView2.Rows.Count == 0)
                 {
-                    MessageBox.Show("未能查找到数据！！！", "提示");
+                    MessageBox.Show("暂无数据！", "提示");
                     return;
                 }
 
@@ -390,7 +390,7 @@ namespace WindowsFormsApplication2
             {
                 if (this.dataGridView3.Rows.Count == 0)
                 {
-                    MessageBox.Show("未能查找到数据！！！", "提示");
+                    MessageBox.Show("未能查找到数据！", "提示");
                     return;
                 }
 
@@ -415,7 +415,7 @@ namespace WindowsFormsApplication2
                 ExportExcel.DtToExcel(dataTable, "体积数据");//datatable的名称
             }  
         }
-        //筛选数据
+        //筛选数据显示指定
         private void uiComboTreeView8_NodeSelected(object sender, TreeNode node)
         {
             String num = uiComboTreeView8.Text;
@@ -452,7 +452,7 @@ namespace WindowsFormsApplication2
         {
             if (this.dataGridView1.Rows.Count == 0)
             {
-                MessageBox.Show("无报警数据！！！", "提示");
+                MessageBox.Show("无报警数据！", "提示");
             }
         }
     }
