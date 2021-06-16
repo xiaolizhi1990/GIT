@@ -16,7 +16,7 @@
             <el-col :lg="8">
                 <page-main title="框架信息" style="margin: 0 0 20px 0;">
                     <div class="fa-info">
-                        <img src="https://hooray.github.io/fantastic-admin/logo.png" style="width: 150px;">
+                        <img src="@/assets/images/logo.png" style="width: 150px;">
                         <h1>Fantastic-admin</h1>
                         <el-table :data="diff" row-key="prop" size="mini" border stripe>
                             <el-table-column label="基础版" align="center">
